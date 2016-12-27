@@ -1,0 +1,14 @@
+worldCupSpecialADShow([
+		{
+	        spicUrl:"http://img1.126.net/channel4/other/96080_0613.png",
+	        urlLink:"http://2014.163.com/"
+	    },
+		{
+	        spicUrl:"http://img1.126.net/channel4/other/96080_0613.png",
+	        urlLink:"http://2014.163.com/"
+	    },
+	    {
+	        spicUrl:"http://img1.126.net/channel4/017110/audi96080_0619.jpg",
+	        urlLink:"http://g.163.com/a?CID=29023&Values=3365016407&Redirect=http://8dhysu.c.admaster.com.cn/c/a19682,b200421018,c3376,i0,m101,h"
+	    }
+	])

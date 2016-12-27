@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>产品列表</title>
+    <meta name="viewport" content="initial-scale=1,width=device-width, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--360浏览器基于Webkit内核浏览-->
+    <meta name="render" content="webkit">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+    <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="css/admin_ie8.css">
+    <![endif]-->
+
+    <style>
+        .tips-wrap{width: 100%;min-width: 1070px;}
+        .tips-bg{background:#fafafa;}
+        .tips-top{padding:20px 0 0 30px; font-size:18px;color:#1167c1}
+        .tips-con{ width:100%; height:240px; padding:30px 0 0 0;}
+        .tips-list{ float:left; margin:0 5% 0 30px}
+        .tips-list p{ text-align:center; padding:0 0 15px 0; line-height:1.5; font-size:10px; margin:0}
+        .tips-arrow{ float:right; margin: 60px 40px 0 0}
+        .tips-arrow a{transition: inherit; display: block;width: 35px;height: 35px;line-height: 35px;background-image:url(/admin/source/images/web2/tips_upArrow.png);background-position: -46px 0}
+        .tips-arrow a:hover{background-position: 0 0}
+
+        .tips-display{ width:100%; height:50px;}
+        .tips-display-title{float:left;margin-right: 10px;}
+        .tips-arrow1{ float:right; margin: 0 40px 0 0}
+        .tips-arrow1 a{transition: inherit; display: block;width: 25px;height: 25px;line-height: 25px;background-image:url(/admin/source/images/web2/tips_downArrow.png);background-position: -35px 0}
+        .tips-arrow1 a:hover{background-position: 0 0}
+        .button_image{display:block;width: 25px;height: 25px;background: rgb(103,188,241);border-radius:12.5px;color: white;text-align: center;line-height: 24px}
+        .tips-list1{ float:left; margin:0 42px 0 0}
+        .tips-list1 span{ position:absolute;z-index:2; margin:0 5% 0 0}
+        .bigBtn{position:absolute;z-index:2;margin:80px 0px 0px 0px}
+        .bigBtn a{display:block;width:170px;height:30px;background:black;background: rgba(0,0,0,0.5);border-bottom-right-radius:5px;border-bottom-left-radius:5px;text-align:center;line-height: 28px;;font-size:12px;color: white}
+        .smallLeftBtn{position:absolute;z-index:2;margin:80px 0px 0px 0px}
+        .smallLeftBtn a{display:block;width:84.5px;height:30px;background:black;background: rgba(0,0,0,0.5);border-bottom-left-radius:5px;text-align:center;line-height: 28px;;font-size:12px;color: white}
+        .smallRightBtn{position:absolute;z-index:2;margin:80px 0px 0px 85.5px}
+        .smallRightBtn a{display:block;width:84.5px;height:30px;background:black;background: rgba(0,0,0,0.5);border-bottom-right-radius:5px;text-align:center;line-height: 28px;;font-size:12px;color: white}
+
+    </style>
+</head>
+<body>
+    <div class="container admin-content">
+        <div class="tips-wrap">
+            <div class="tips-bg" id="tipsDivDisplay" style="display:none">
+                <div class="tips-display">
+        <span class="tips-display-title">初次使用指引：</span>
+                    <div class="tips-list1"><span class="button_image">1</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp安装应用</div>
+                    <div class="tips-list1"><span class="button_image">2</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp导入通讯录</div>
+                    <div class="tips-list1"><span class="button_image">3</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp设置应用可见范围</div>
+                    <div class="tips-list1"><span class="button_image">4</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp获取二维码，员工扫描使用产品</div>
+                    <div class="tips-arrow1">
+                        <a href="javascript:hideTips()"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tips-bg" id="tipsDivWrap">
+                <div class="tips-top">初次使用产品，您需要做什么？</div>
+                <div class="tips-con">
+                    <div class="tips-list">
+                        <div class="expdiv">
+                            <!--这个是按钮，会显示在图片之上-->
+                            <div class="bigBtn"><a href="/admin/system/productCenter.do" target="main-box">安装应用</a></div>
+                            <!--这个是图片-->
+                            <p><img src="/admin/source/images/web2/tips_img1.jpg"></p>
+                        </div>
+                        <p>选择您公司需要的应用，<br>完成安装即可！</p>
+                    </div>
+
+                    <div class="tips-list">
+                        <div class="expdiv">
+                            <div class="bigBtn"><a href="/admin/system/contactSet/index.do" target="_blank">设置</a></div>
+                            <p><img src="/admin/source/images/web2/tips_img2.jpg"></p>
+                        </div>
+                        <p>进入21CN微企后台-通讯录<br>导入您公司的员工通讯录</p>
+                    </div>
+
+                    <div class="tips-list">
+                        <div class="expdiv">
+                            <div class="smallLeftBtn"><a href="/admin/help/index.html?tag=see" target="_blank">指引</a></div>
+                            <div class="smallRightBtn"><a href="https://qy.weixin.qq.com" target="_blank">设置</a></div>
+                            <p><img src="/admin/source/images/web2/tips_img3.jpg"></p>
+                        </div>
+                        <p>进入微信企业号-应用中心<br>设置具体应用的可见范围</p>
+                    </div>
+
+                    <div class="tips-list">
+                        <div class="expdiv">
+                            <div class="smallLeftBtn"><a href="/admin/help/index.html?tag=code" target="_blank">指引</a></div>
+                            <div class="smallRightBtn"><a href="https://qy.weixin.qq.com" target="_blank">获取</a></div>
+                            <p><img src="/admin/source/images/web2/tips_img4.jpg"></p>
+                        </div>
+                        <p>进入微信企业号-设置，获取二维码<br>让员工扫描，用起我们的产品</p>
+                    </div>
+
+                    <div class="tips-arrow">
+                        <a href="javascript:hideTips()"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- <div class="admin-app">移动办公套件</div> -->
+        <div  class="app-list clearfix" style="overflow:hidden">
+    <ul class="nav nav-tabs" id="suite-tab">
+    
+        <li role="presentation" class="
+                active
+        
+        ">
+            <a href="#tj2eb6270c1d70a12d" aria-controls="tj2eb6270c1d70a12d" role="tab" data-toggle="tab">移动办公</a>
+        </li>
+    
+        <li role="presentation" class="">
+            <a href="#tjf342dce8bdcf5bc4" aria-controls="tjf342dce8bdcf5bc4" role="tab" data-toggle="tab">企业邮箱</a>
+        </li>
+    
+        <li role="presentation" class="">
+            <a href="#tjb72be98e30e1e35f" aria-controls="tjb72be98e30e1e35f" role="tab" data-toggle="tab">企业消息</a>
+        </li>
+    
+        <li role="presentation" class="">
+            <a href="#tjc33de726d450cc81" aria-controls="tjc33de726d450cc81" role="tab" data-toggle="tab">人力资源</a>
+        </li>
+    
+        <li role="presentation" class="">
+            <a href="#tj5f4fba7c17a3499e" aria-controls="tj5f4fba7c17a3499e" role="tab" data-toggle="tab">企业文化</a>
+        </li>
+    
+    </ul>
+
+    <div class="tab-content">
+    
+        <div id="tj2eb6270c1d70a12d" class="clearfix tab-pane fade
+        active in"
+        role="tabpanel" aria-labelledby="tj2eb6270c1d70a12d-tab">
+            
+            <a href="/admin/system/goToManager.do?appFlag=contact" class="applist logo-contact" style="color:#328fee">通讯录
+            </a>
+            
+            <a href="/admin/system/goToManager.do?appFlag=attendance" class="applist logo-attendance" style="color:#328fee">移动考勤
+            </a>
+            
+            <a href="/admin/system/goToManager.do?appFlag=field" class="applist logo-field" style="color:#328fee">外勤管理
+            </a>
+            
+            <a href="/admin/system/goToManager.do?appFlag=approve" class="applist logo-approve" style="color:#328fee">审批流程
+            </a>
+            
+            <a href="/admin/system/goToManager.do?appFlag=workReport" class="applist logo-workReport" style="color:#328fee">工作日报
+            </a>
+            
+            <a href="/admin/system/goToManager.do?appFlag=personalCenter" class="applist logo-personalCenter" style="color:#328fee">个人中心
+            </a>
+            
+            <a href="/admin/system/goToManager.do?appFlag=meeting" class="applist logo-meeting" style="color:#328fee">订会议室
+            </a>
+            
+            <a href="/admin/system/goToManager.do?appFlag=dutyTask" class="applist logo-dutyTask" style="color:#328fee">任务交办
+            </a>
+            
+            <a class="applist link6" href="/admin/system/productCenter.do?suiteIdInBase=1" id="j_appMore" style="color:#4d9cef">添加</a>
+        </div>
+    
+        <div id="tjf342dce8bdcf5bc4" class="clearfix tab-pane fade
+        "
+        role="tabpanel" aria-labelledby="tjf342dce8bdcf5bc4-tab">
+            
+            <a class="applist link6" href="/admin/system/productCenter.do?suiteIdInBase=9" id="j_appMore" style="color:#4d9cef">添加</a>
+        </div>
+    
+        <div id="tjb72be98e30e1e35f" class="clearfix tab-pane fade
+        "
+        role="tabpanel" aria-labelledby="tjb72be98e30e1e35f-tab">
+            
+            <a class="applist link6" href="/admin/system/productCenter.do?suiteIdInBase=2" id="j_appMore" style="color:#4d9cef">添加</a>
+        </div>
+    
+        <div id="tjc33de726d450cc81" class="clearfix tab-pane fade
+        "
+        role="tabpanel" aria-labelledby="tjc33de726d450cc81-tab">
+            
+            <a class="applist link6" href="/admin/system/productCenter.do?suiteIdInBase=3" id="j_appMore" style="color:#4d9cef">添加</a>
+        </div>
+    
+        <div id="tj5f4fba7c17a3499e" class="clearfix tab-pane fade
+        "
+        role="tabpanel" aria-labelledby="tj5f4fba7c17a3499e-tab">
+            
+            <a href="/admin/system/goToManager.do?appFlag=corpContent" class="applist logo-corpContent" style="color:#328fee">企业公告
+            </a>
+            
+            <a class="applist link6" href="/admin/system/productCenter.do?suiteIdInBase=4" id="j_appMore" style="color:#4d9cef">添加</a>
+        </div>
+    
+    </div>
+        
+            
+                
+                
+                    
+                    
+                
+                
+            
+        
+    </div>
+
+
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+    <script type="text/javascript" src="js/plugins/jqueryForm/jquery.form.js"></script>
+    <script type="text/javascript" src="js/libs/bootstrap.js"></script>
+    <script type="text/javascript" language="javascript">
+    function hideTips(){
+    var tipsDivWrap = document.getElementById("tipsDivWrap");
+    var tipsDivDisplay = document.getElementById("tipsDivDisplay");
+    if (tipsDivWrap.style.display=="none") {
+        tipsDivWrap.style.display="block";
+        tipsDivDisplay.style.display="none";
+    }else{
+        tipsDivWrap.style.display="none";
+        tipsDivDisplay.style.display="block";
+    }
+    }
+    $(function(){
+        if('' === 'true'){
+            tipsDivWrap.style.display="block";
+            tipsDivDisplay.style.display="none";
+        }else{
+            tipsDivWrap.style.display="none";
+            tipsDivDisplay.style.display="block";
+        }
+        $('.nav-tabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    });
+</script>
+
+
+<div style="display:none">
+
+
+
+
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+    function isSessionOut(){
+        if(0==0){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    function reLogin(){
+        window.top.location.href="/admin/web";
+    }
+    
+    function checkLogin(){
+        if(isSessionOut()){
+            reLogin();
+        }
+    }
+    
+</script>

@@ -1,0 +1,417 @@
+
+
+    
+    
+    
+    
+    
+        
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>21CN微企后台管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--360浏览器基于Webkit内核浏览-->
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+    <style type="text/css">
+      .message-notify{
+        position: fixed;
+        top: 10%;
+        left:30%;
+        margin-left: -165px;
+        background: rgb(0,0,0);
+        background: rgba(0,0,0,.5);
+        text-align: center;
+        padding:15px;
+        width: 950px;
+        color: #fff;
+        font-size: 16px;
+        z-index: 11111;
+        border-radius: 5px;
+      }
+      .c-remove {
+        display: inline-block;
+        background: #cccccc;
+        position: absolute;
+        top: 4px;
+        right: 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 40px;
+        color: #fff;
+        cursor: pointer;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+      }
+      .c-remove:before{
+        position: absolute;
+        left: -4px;
+      }
+      .wxqyh-btn{
+        display:block;
+        color:#acc5dd;
+        padding:15px;
+      }
+      .wxqyh-btn:hover{
+        background: #274461;
+        color: #fff;
+        text-decoration:none;
+    }
+    </style>
+</head>
+<body>
+    <span style="display:none"></span>
+    <div class="message-notify" style='display:none'>
+      消息：密码已发到您的邮箱(service@housedata.cn)请注意查收，并请补充以下信息！
+      <span class="c-remove glyphicon diyicon-remove" data-id="110530"></span>
+    <iframe id="baiduSpFrame" border="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" framespacing="0" frameborder="0" scrolling="no" width="900" height="550" src="http://www.wenjuan.com/s/Zzyi6r/"></iframe>
+    </div>
+    <div class="admin-header navbar navbar-fixed-top">
+        <div class="logo pull-left">
+          <img src="images/logo.png">
+        </div>
+        <div class="navbar-right">
+          <div class="user-ico">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown">
+                    service@housedata.cn
+                  <span class="caret"></span><!--[if lte IE 8]><span>&#9662;</span><![endif]-->
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/admin/system/gotoChangePwd.do" target="main-box">修改密码</a></li>
+                <li><a href="/admin/system/adminLogout.do">退出</a></li>
+              </ul>
+          </div>
+    <a href="http://shang.qq.com/wpa/qunwpa?idkey=3a34adadd27e2b8114fcbfa6931abc54c78c2a46c72654112c6a0be55190dd49" target="_blank" class="header-link" alt="微企伙伴交流群3" title="微企伙伴交流群3">QQ群(咨询)：343315345 </a>  |
+          <a href="http://chat32.live800.com/live800/chatClient/chatbox.jsp?companyID=241394&jid=3986521146&skillId=3544&" target="_blank" class="header-link">在线咨询 </a>  |
+    <a href="http://w.21cn.com/res/help/index.html" target="_blank" class="header-link">帮助 </a>
+    <span class="header-link">环亚投资</span>
+        </div>
+    </div>
+    <div class="container-fluid content">
+        <div class="row">
+          <div class="side-left" id="j_leftMenu">
+              <ul class="nav nav-sidebar"> 
+              	<!-- 根目录菜单 start -->
+              	
+              		<li> 
+                  		<a href="/admin/system/corpBind.do" class="menu-link"
+                  				target="main-box"
+                  				data-toggle="menudown">产品设置
+                  			
+                  				<div class="pull-right"><span class="caret"></span><!--[if lte IE 8]><span>&#9662;</span><![endif]--></div>
+                  			 
+                  		</a>
+                  		<!-- 子菜单 start -->
+                  		
+	                    <!-- 子菜单 start -->
+	                    <!-- 产品设置菜单 start -->
+	                    
+	                    	
+		                    	<ul class="dropdown-menu" role="menu">
+			                    	<li>
+			                  		  <a href="/admin/corpContent/sso.do?type=show" class="menu-link"
+		                  				target="main-box" 
+		                  				>企业文化
+			                  			
+			                  		</a>
+			                  		<!-- 产品设置子菜单 start -->
+			                  		
+				                    </li>
+			                    </ul>
+		                    
+		                    	<ul class="dropdown-menu" role="menu">
+			                    	<li>
+			                  		  <a href="/admin/system/contactSet/index.do" class="menu-link"
+		                  				target="main-box" 
+		                  				>通讯录
+			                  			
+			                  		</a>
+			                  		<!-- 产品设置子菜单 start -->
+			                  		
+				                    </li>
+			                    </ul>
+		                    
+		                    	<ul class="dropdown-menu" role="menu">
+			                    	<li>
+			                  		  <a href="#" class="menu-link"
+		                  				 
+		                  				data-toggle="menudown">移动考勤
+			                  			
+			                  				<div class="pull-right"><span class="caret"></span><!--[if lte IE 8]><span>&#9662;</span><![endif]--></div>
+			                  			
+			                  		</a>
+			                  		<!-- 产品设置子菜单 start -->
+			                  		
+				                  		<ul class="dropdown-menu" role="menu">
+				                  		   
+				                  		   	<li><a style=" padding-left:30px" href="/admin/system/attenceSet/attenceSetLocalList.do" class="menu-link"  target="main-box" >设置地点</a></li>
+				                  		   
+				                  		   	<li><a style=" padding-left:30px" href="/admin/system/attenceSet/attenceSetRuleList.do" class="menu-link"  target="main-box" >设置规则</a></li>
+				                  		   
+				                  		   	<li><a style=" padding-left:30px" href="/admin/system/attenceSet/staffRule.do" class="menu-link"  target="main-box" >员工规则</a></li>
+				                  		   
+				                  		   	<li><a style=" padding-left:30px" href="/admin/system/attenceSet/attenceSetHistory.do" class="menu-link"  target="main-box" >历史查询</a></li>
+				                  		   
+					                    </ul>
+				                    
+				                    </li>
+			                    </ul>
+		                    
+		                    	<ul class="dropdown-menu" role="menu">
+			                    	<li>
+			                  		  <a href="#" class="menu-link"
+		                  				 
+		                  				data-toggle="menudown">外勤管理
+			                  			
+			                  				<div class="pull-right"><span class="caret"></span><!--[if lte IE 8]><span>&#9662;</span><![endif]--></div>
+			                  			
+			                  		</a>
+			                  		<!-- 产品设置子菜单 start -->
+			                  		
+				                  		<ul class="dropdown-menu" role="menu">
+				                  		   
+				                  		   	<li><a style=" padding-left:30px" href="/admin/system/fieldSet/index.do" class="menu-link"  target="main-box" >外勤查询</a></li>
+				                  		   
+				                  		   	<li><a style=" padding-left:30px" href="/admin/system/fieldSet/frequency.do" class="menu-link"  target="main-box" >拜访频次</a></li>
+				                  		   
+				                  		   	<li><a style=" padding-left:30px" href="/admin/system/fieldSet/track.do" class="menu-link"  target="main-box" >外勤轨迹</a></li>
+				                  		   
+					                    </ul>
+				                    
+				                    </li>
+			                    </ul>
+		                    
+		                    	<ul class="dropdown-menu" role="menu">
+			                    	<li>
+			                  		  <a href="/admin/approveSet/gotoApprovePage.do" class="menu-link"
+		                  				target="main-box" 
+		                  				>审批管理
+			                  			
+			                  		</a>
+			                  		<!-- 产品设置子菜单 start -->
+			                  		
+				                    </li>
+			                    </ul>
+		                    
+		                    	<ul class="dropdown-menu" role="menu">
+			                    	<li>
+			                  		  <a href="/admin/system/workReportSet/workReportCount.do" class="menu-link"
+		                  				target="main-box" 
+		                  				>工作日报
+			                  			
+			                  		</a>
+			                  		<!-- 产品设置子菜单 start -->
+			                  		
+				                    </li>
+			                    </ul>
+		                    
+		                    	<ul class="dropdown-menu" role="menu">
+			                    	<li>
+			                  		  <a href="/admin//system/meetingSet/meetingSet.do" class="menu-link"
+		                  				target="main-box" 
+		                  				>订会议室
+			                  			
+			                  		</a>
+			                  		<!-- 产品设置子菜单 start -->
+			                  		
+				                    </li>
+			                    </ul>
+		                    
+		                    <!-- 产品设置子菜单 end -->
+	                    
+	                    <!-- 产品设置菜单 end -->
+                	</li>
+                
+              		<li> 
+                  		<a href="#" class="menu-link"
+                  				
+                  				data-toggle="menudown">权限管理
+                  			
+                  				<div class="pull-right"><span class="caret"></span><!--[if lte IE 8]><span>&#9662;</span><![endif]--></div>
+                  			 
+                  		</a>
+                  		<!-- 子菜单 start -->
+                  		
+	                  		<ul class="dropdown-menu" role="menu">
+	                  		   
+	                  		   	<li><a href="/admin/system/roleManager.do" class="menu-link"  target="main-box" >角色管理</a></li>
+	                  		   
+	                  		   	<li><a href="/admin/system/userRoleManager.do" class="menu-link"  target="main-box" >用户授权</a></li>
+	                  		   
+		                    </ul>
+	                    
+	                    <!-- 子菜单 start -->
+	                    <!-- 产品设置菜单 start -->
+	                    
+	                    <!-- 产品设置菜单 end -->
+                	</li>
+                
+              		<li> 
+                  		<a href="#" class="menu-link"
+                  				
+                  				data-toggle="menudown">流量管理
+                  			
+                  				<div class="pull-right"><span class="caret"></span><!--[if lte IE 8]><span>&#9662;</span><![endif]--></div>
+                  			 
+                  		</a>
+                  		<!-- 子菜单 start -->
+                  		
+	                  		<ul class="dropdown-menu" role="menu">
+	                  		   
+	                  		   	<li><a href="/admin/system/flowSet.do" class="menu-link"  target="main-box" >流量设置</a></li>
+	                  		   
+	                  		   	<li><a href="/admin/system/flowInfo.do" class="menu-link"  target="main-box" >流量查询</a></li>
+	                  		   
+		                    </ul>
+	                    
+	                    <!-- 子菜单 start -->
+	                    <!-- 产品设置菜单 start -->
+	                    
+	                    <!-- 产品设置菜单 end -->
+                	</li>
+                
+              		<li> 
+                  		<a href="/admin/system/enterprise/index.do" class="menu-link"
+                  				target="main-box"
+                  				>web版个性化登录
+                  			 
+                  		</a>
+                  		<!-- 子菜单 start -->
+                  		
+	                    <!-- 子菜单 start -->
+	                    <!-- 产品设置菜单 start -->
+	                    
+	                    <!-- 产品设置菜单 end -->
+                	</li>
+                
+              		<li> 
+                  		<a href="calendar.html" class="menu-link"
+                  				target="main-box"
+                  				>节假日设置
+                  			 
+                  		</a>
+                  		<!-- 子菜单 start -->
+                  		
+	                    <!-- 子菜单 start -->
+	                    <!-- 产品设置菜单 start -->
+	                    
+	                    <!-- 产品设置菜单 end -->
+                	</li>
+                 
+                <!-- 根目录菜单 end -->
+              </ul>
+                <a class="wxqyh-btn" href="https://qy.weixin.qq.com/" target="_blank">进入企业号</a>
+          </div>
+          <div class="frame-wrap">
+              <!--[if lt IE 9]>
+              <style>
+                  .containerTips {
+                      z-index: 10000;
+                      width: 100%;
+                      height: 60px;
+                      position: relative;
+                      top: 0px;
+                      background: #fffcd4;
+                      border-radius: 2px;
+                      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+                  }
+                  .ie_tipIcon{
+                      width: 90px;
+                      height: 60px;
+                      display: inline-block;
+                      background: url(/admin/source/images/admin/tipIcon.png) center no-repeat;
+                  }
+                  .ie_tipContent{
+                      display: inline-block;
+                      position: absolute;
+                      line-height: 60px;
+                      font-size:14px;
+                      color:#000000;
+                  }
+                  .ie_tipContentLink{
+                      color:#328fee;
+                      font-size:14px;
+                      text-decoration: underline;
+                  }
+                  .ie_tipContentClose{
+                      color:#000000;
+                      font-size:14px;
+                      text-decoration: underline;
+                  }
+                  .ie_tipContent a:hover{
+                      color:#888;
+                  }
+                  .ie_tipClose{
+                      width: 64px;
+                      height: 60px;
+                      position: absolute;
+                      right: 0px;
+                      display: inline-block;
+                      background: url(images/tipClose.png) center no-repeat;
+                  }
+                  .ie_buttontipClose{
+                      width: 64px;
+                      height: 60px;
+                      display: inline-block;
+                  }
+              </style>
+              <script>
+                  function removeIEReminder(){
+                      var ieReminder=document.getElementById('j-ie_reminder');
+                      ieReminder.parentNode.removeChild(ieReminder);
+                  }
+              </script>
+              <div class="containerTips ie_reminder" id="j-ie_reminder">
+                 <div class="ie_tipIcon" id="j-ietipIcon"></div>
+                 <div class="ie_tipContent">
+                     <span>您现在使用的浏览器版本较低，可能会出现部分功能不可用，建议立即</span>
+                     <a class="ie_tipContentLink" href="http://www.microsoft.com/china/windows/IE/upgrade/index.aspx" target="_blank">免费升级</a>
+                     <span>或</span>
+                     <a class="ie_tipContentLink" href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%98%E6%96%B9%E4%B8%8B%E8%BD%BD&rsv_pq=eac3f5e90000ebd8&rsv_t=4aacgmmIRPfQpY9JEcqEjsaR%2FZgOWh4YsRlrPX%2FkPsa%2FT28OpKVuuIYs%2B4U&rsv_enter=1&rsv_sug3=5&rsv_sug1=4&rsv_sug2=0&inputT=4354&rsv_sug4=5803&rsv_sug=1" target="_blank">下载使用Chrome浏览器,</a>
+                     <a class="ie_tipContentClose" href="#" onclick="removeIEReminder()">(或者继续使用)</a>
+                 </div>
+                 <div class="ie_tipClose" id="j-ietipClose"><a class="ie_buttontipClose" href="javascript:removeIEReminder()"></a></div>
+               </div>
+                <![endif]-->
+    <!--[if lt IE 8]>
+    <script>
+    var ietipIcon=document.getElementById('j-ietipIcon');
+    ietipIcon.parentNode.removeChild(ietipIcon);
+    var ietipClose=document.getElementById('j-ietipClose');
+    ietipClose.parentNode.removeChild(ietipClose);
+    </script>
+    <![endif]-->
+            	<iframe class="frame-box" src="destop.html" name="main-box" frameborder="0" width="100%" height="100%"></iframe>
+          </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+    <script type="text/javascript" src="js/libs/bootstrap.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $('a[data-toggle="menudown"]').on('click',function(event) {
+            $(this).siblings('.dropdown-menu').toggle();
+            $(this).toggleClass('active');
+        });
+        $("#j_leftMenu").on('click', '.menu-link', function(event) {
+          if($(this).attr('data-toggle')!='menudown'){
+            $("#j_leftMenu").find('.menu-link').removeClass('current');
+            $(this).addClass('current');
+          }
+        });
+        $('#j_leftMenu').find('a').eq(0).trigger('click');
+        $('.c-remove').on('click', function(event) {
+          event.preventDefault();
+          $(this).parent().remove()
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=0"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta name="HandheldFriendly" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title>菜鸟裹裹-查快递,寄快递,上菜鸟裹裹</title>
+    <meta name="description" content="提供上百家快递/物流公司运单查询、包裹自动跟踪、预约寄快递、菜鸟驿站网点代收代寄、网点查询、时效查询"/>
+ 
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <style>
+        .location-box .btn2{
+            width: 568px;
+            height: 70px;
+            line-height: 70px;
+            margin: 20px auto 50px;
+            border-radius: 35px;
+            border: 1px solid #4eaaff;
+            background-color: #eaf5ff;
+            font-size: 36px;
+        }
+        .search-box .btn2.disable {
+            background: #ccc;
+        }
+        .search-box .btn2 {
+            float: right;
+            width: 150px;
+            height: 85px;
+            line-height: 85px;
+            font-size: 36px;
+            color: #fff;
+            background: #298def;
+            text-align: center;
+            -webkit-transition: all 800ms ease;
+            transition: all 800ms ease;
+        }
+        .index-footer{
+            margin: 30px auto 20px;
+        }
+
+        .index-footer .btn2 {
+            display: block;
+            text-align: center;
+            font-size: 36px;
+            color: #fff;
+            width: 564px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 34px;
+            background-color: #ff5300;
+            margin: 20px auto 30px;
+        }
+
+        .location-box .btn2 .icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .index-footer .info{
+            padding-bottom: 20px;
+        }
+
+        .site-list .items .content .tab span{
+            border-radius: 8px;
+        }
+        .site-list .items .content .tab{
+            bottom: 30px;
+        }
+        .site-list .items .content .list-title{
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body> 
+
+<div class="index-section J-index-page">
+
+    <div class="search-box">
+        <img class="logo" src="images/TB1Jp43KFXXXXXaXFXXXXXXXXXX-438-83.png">
+
+        <div class="input-box J-inputBox">
+            <input class="input queryCode J-queryCode" placeholder="请输入快递单号">
+            <a class="qcodeImg J-qcodeImg" href="guoguoBanner.htm">
+                <img src="images/TB181uvKXXXXXaKXFXXXXXXXXXX-43-43.png"/>
+            </a>
+            <span class="btn2 J-submit disable">查 询</span>
+
+            <div class="history-list J-historylist"></div>
+        </div>
+    </div>
+    <div class="menu-box">
+        <a href="postman.htm" class="items">
+            <span class="courier-icon"></span>
+            <span class="txt">附近快递员</span>
+        </a>
+        <a href="guoguoSite.htm?tbpm=1" class="items">
+            <span class="site-icon"></span>
+            <span class="txt">附近网点</span>
+        </a>
+        <a href="timeQuery.htm" class="items">
+            <span class="timing-icon"></span>
+            <span class="txt">时效查询</span>
+        </a>
+        <a href="cpCompany.htm?type=2" class="items">
+            <span class="internal-icon"></span>
+            <span class="txt">国内快递</span>
+        </a>
+        <a href="cpCompany.htm?type=3" class="items">
+            <span class="overseas-icon"></span>
+            <span class="txt">国外快递</span>
+        </a>
+        <a href="cpCompany.htm?type=10" class="items">
+            <span class="phone-icon"></span>
+            <span class="txt">快递电话</span>
+        </a>
+    </div>
+    <div class="location-box">
+        <div class="txt J-location-info">点击定位，查看附近快递员和网点信息</div>
+        <div class="btn2 J-location-btn">
+            <img class="icon" src="images/TB1CD81KFXXXXc9XpXXXXXXXXXX-38-38.png">
+            <span class="J-location-txt">定位</span>
+        </div>
+    </div>
+</div>
+
+<div class="index-section" id="J-postManSection"></div>
+
+<div class="index-section" id="J-siteSection"></div>
+
+
+<div class="index-section" id="J-innerList"></div>
+
+<div class="index-section" id="J-outerList"></div>
+
+<div class="index-footer">
+    <a href="//a.app.qq.com/o/simple.jsp?pkgname=com.cainiao.wireless" class="btn2 J-downBtn">下载菜鸟裹裹APP</a>
+
+    <div class="info">阿里巴巴旗下菜鸟集团出品   <a href="#" style="display: none;">关于菜鸟裹裹</a> 浙ICP备15027970号-1</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/doT.min.js"></script>
+<script src="js/all.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/main.min.js" charset="UTF-8" type="text/javascript"></script>
+
+
+<script id="innerListTpl" type="text/template">
+    <div class="title">
+        热门国内快递
+        <a class="more" href="cpCompany.htm?type=2">更多</a>
+    </div>
+    <div class="logoList clearfix">
+
+        {{ for (var i = 0, l = it.length; i < l; i++) { }}
+        {{if(i<8){ }}
+        <a class="items" href="indexCompany.htm?type=2&cpCode={{=it[i].cpCode}}">
+            <div class="logobox">
+                <img class="logo" src="{{=it[i].logo}}"/>
+            </div>
+            <span class="txt">{{=it[i].companyName}}</span>
+        </a>
+        {{ } }}
+        {{ } }}
+    </div>
+</script>
+<script id="outerListTpl" type="text/template">
+    <div class="title">
+        热门国外快递
+        <a class="more" href="cpCompany.htm?type=3">更多</a>
+    </div>
+    <div class="logoList clearfix">
+        {{ for (var i = 0, l = it.length; i < l; i++) { }}
+        {{if(i<8){ }}
+
+        <a class="items" href="indexCompany.htm?type=3&cpCode={{=it[i].cpCode}}">
+            <div class="logobox">
+                <img class="logo" src="{{=it[i].logo}}"/>
+            </div>
+            <span class="txt">{{=it[i].companyName}}</span>
+        </a>
+        {{ } }}
+        {{ } }}
+    </div>
+</script>
+
+
+<script id="courierSectionTpl" type="text/template">
+    <div class="title">
+        推荐快递员
+        <a class="more" href="postman.htm?longitude={{=it.params.longitude}}&latitude={{=it.params.latitude}}">更多</a>
+    </div>
+    <div class="courier-list">
+        {{ for (var i = 0, l = 3; i < l; i++) { }}
+        <div data-href="postmanDetail.htm?longitude={{=it.params.longitude}}&latitude={{=it.params.latitude}}&id={{=it[i].telePhone}}"
+             class="items">
+            <a href="tel:{{=it[i].telePhone}}" class="arrow">
+                <img src="//gw.alicdn.com/tps/TB1spaKKFXXXXcRXFXXXXXXXXXX-50-50.png"/>
+            </a>
+
+            <div class="content">
+                <div class="logobox">
+                    <img class="logo" src="{{=it[i].logo}}">
+                </div>
+                <div class="txt">
+                    <div class="name">{{=it[i].name}}</div>
+                    <div class="company">{{=it[i].cpName}}</div>
+                    <div class="range">收派范围：{{=it[i].deliveryArea}}</div>
+                </div>
+            </div>
+        </div>
+        {{ } }}
+    </div>
+</script>
+
+<script id="siteSectionTpl" type="text/template">
+    <div class="title">
+        推荐网点
+        <a class="more" href="guoguoSite.htm?longitude={{=it.params.longitude}}&latitude={{=it.params.latitude}}">更多</a>
+    </div>
+    <div class="site-list">
+        {{ for (var i = 0, l = 3; i < l; i++) { }}
+        <a href="guoguoSiteDetail.htm?stationId={{=it[i].stationId}}" class="items">
+            <div class="content">
+                <img src="//gw.alicdn.com/tps/TB1bw8.KFXXXXXFXpXXXXXXXXXX-14-26.png" class="arrow">
+
+                <div class="list-title">
+                    {{=it[i].stationName}}
+                </div>
+                <div class="tab">
+                    {{ if(!!it[i].PICK_SERVICE){ }}
+                    <span>代收</span>
+                    {{ } }}
+                    {{ if(!!it[i].SENDER){ }}
+                    <span>寄件</span>
+                    {{ } }}
+                </div>
+            </div>
+        </a>
+        {{ } }}
+    </div>
+</script>
+
+<script id="historylistTpl" type="text/template">
+
+    {{ for (var i = 0, l = it.length; i < l; i++) { }}
+    {{ if(it[i].mailNo){ }}
+    <div class="items">{{=it[i].mailNo}}</div>
+    {{ } }}
+    {{ } }}
+    <div class="footer-items items">
+        <span class="clear">清除历史记录</span>
+        <span class="closed">关闭</span>
+    </div>
+</script>
+
+<script>
+    new indexHandel();
+
+    window.onload = function () {
+        
+
+        $('.swiper-slide').click(function () {
+         
+            var href = $(this).data('href');
+            window.location = href;
+        });
+      
+      $('.J-submit').on('touchstart', function() {
+        var val = $('.J-queryCode').val();
+      	 
+      })
+
+        var url = window.mGG.urlParam();
+        if (url.togoList) {
+            var data = url.togoList;
+            goldlogList(data);
+        }
+    }; 
+    }
+</script>
+
+</body>
+
+</html>
+

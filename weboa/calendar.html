@@ -1,0 +1,160 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>21cn微企后台管理-节假日设置</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--360浏览器基于Webkit内核浏览-->
+    <meta name="render" content="webkit">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins/jstree/style.css">
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+    <link rel="stylesheet" type="text/css" href="css/vacation-set.css">
+</head>
+<body>
+<div class="container admin-content">
+        <div class="admin-adress">节假日设置</div>
+        <div class="calendar-box">
+            <div class="calendar-t">
+                <span class="btn btn-default j-backToday pull-left">返回今天</span>
+                <div class="calendar-set">
+                    <span class="month-prev diyicon-nav-left glyphicon" id="j-monthPrev"></span>
+                    <input class="month-choose" id="j-monthChs" readonly="">
+                    <span class="month-next diyicon-nav-right glyphicon" id="j-monthNext"></span>
+                </div>
+            </div>
+            <div class="calendar-m">
+                <div class="week-row">
+                  <div class="week-col">星期日</div>
+                  <div class="week-col">星期一</div>
+                  <div class="week-col">星期二</div>
+                  <div class="week-col">星期三</div>
+                  <div class="week-col">星期四</div>
+                  <div class="week-col">星期五</div>
+                  <div class="week-col">星期六</div>
+                </div>
+                <div class="calendar-date j-dateBox"><div class="date-row"><div data-status="1" data-date="2016-09-25" class="day-col pre-day-col day-col-1"><span class="show-solar">9月25日</span> <span class="show-lunar">廿五</span><p class="show-vacation" title=""></p><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-09-26" class="day-col pre-day-col day-col-0"><span class="show-solar">9月26日</span> <span class="show-lunar">廿六</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-09-27" class="day-col pre-day-col day-col-0"><span class="show-solar">9月27日</span> <span class="show-lunar">廿七</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-09-28" class="day-col pre-day-col day-col-0"><span class="show-solar">9月28日</span> <span class="show-lunar">廿八</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-09-29" class="day-col pre-day-col day-col-0"><span class="show-solar">9月29日</span> <span class="show-lunar">廿九</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-09-30" class="day-col pre-day-col day-col-0"><span class="show-solar">9月30日</span> <span class="show-lunar">三十</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="2" data-date="2016-10-01" class="day-col day-col-2"><span class="show-solar">1</span> <span class="show-lunar">九月初一</span><div class="icon-vacation">休</div><p class="show-vacation" title="国庆节">国庆节</p><p class="set-tip j-setBtn">设置节假日</p></div></div><div class="date-row"><div data-status="2" data-date="2016-10-02" class="day-col day-col-2"><span class="show-solar">2</span> <span class="show-lunar">初二</span><div class="icon-vacation">休</div><p class="show-vacation" title="国庆节">国庆节</p><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="2" data-date="2016-10-03" class="day-col day-col-2"><span class="show-solar">3</span> <span class="show-lunar">初三</span><div class="icon-vacation">休</div><p class="show-vacation" title="国庆节">国庆节</p><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="2" data-date="2016-10-04" class="day-col day-col-2"><span class="show-solar">4</span> <span class="show-lunar">初四</span><div class="icon-vacation">休</div><p class="show-vacation" title="国庆节">国庆节</p><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="2" data-date="2016-10-05" class="day-col day-col-2"><span class="show-solar">5</span> <span class="show-lunar">初五</span><div class="icon-vacation">休</div><p class="show-vacation" title="国庆节">国庆节</p><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="2" data-date="2016-10-06" class="day-col day-col-2"><span class="show-solar">6</span> <span class="show-lunar">初六</span><div class="icon-vacation">休</div><p class="show-vacation" title="国庆节">国庆节</p><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="2" data-date="2016-10-07" class="day-col day-col-2"><span class="show-solar">7</span> <span class="show-lunar">初七</span><div class="icon-vacation">休</div><p class="show-vacation" title="国庆节">国庆节</p><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-08" class="day-col day-col-0"><span class="show-solar">8</span> <span class="show-lunar">初八</span><p class="set-tip j-setBtn">设置节假日</p></div></div><div class="date-row"><div data-status="0" data-date="2016-10-09" class="day-col today-col day-col-0"><span class="show-solar">9<span class="today-tip">(今日)</span></span> <span class="show-lunar">初九</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-10" class="day-col day-col-0"><span class="show-solar">10</span> <span class="show-lunar">初十</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-11" class="day-col day-col-0"><span class="show-solar">11</span> <span class="show-lunar">十一</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-12" class="day-col day-col-0"><span class="show-solar">12</span> <span class="show-lunar">十二</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-13" class="day-col day-col-0"><span class="show-solar">13</span> <span class="show-lunar">十三</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-14" class="day-col day-col-0"><span class="show-solar">14</span> <span class="show-lunar">十四</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="1" data-date="2016-10-15" class="day-col day-col-1"><span class="show-solar">15</span> <span class="show-lunar">十五</span><p class="show-vacation" title=""></p><p class="set-tip j-setBtn">设置节假日</p></div></div><div class="date-row"><div data-status="1" data-date="2016-10-16" class="day-col day-col-1"><span class="show-solar">16</span> <span class="show-lunar">十六</span><p class="show-vacation" title=""></p><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-17" class="day-col day-col-0"><span class="show-solar">17</span> <span class="show-lunar">十七</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-18" class="day-col day-col-0"><span class="show-solar">18</span> <span class="show-lunar">十八</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-19" class="day-col day-col-0"><span class="show-solar">19</span> <span class="show-lunar">十九</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-20" class="day-col day-col-0"><span class="show-solar">20</span> <span class="show-lunar">二十</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-21" class="day-col day-col-0"><span class="show-solar">21</span> <span class="show-lunar">廿一</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="1" data-date="2016-10-22" class="day-col day-col-1"><span class="show-solar">22</span> <span class="show-lunar">廿二</span><p class="show-vacation" title=""></p><p class="set-tip j-setBtn">设置节假日</p></div></div><div class="date-row"><div data-status="1" data-date="2016-10-23" class="day-col day-col-1"><span class="show-solar">23</span> <span class="show-lunar">廿三</span><p class="show-vacation" title=""></p><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-24" class="day-col day-col-0"><span class="show-solar">24</span> <span class="show-lunar">廿四</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-25" class="day-col day-col-0"><span class="show-solar">25</span> <span class="show-lunar">廿五</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-26" class="day-col day-col-0"><span class="show-solar">26</span> <span class="show-lunar">廿六</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-27" class="day-col day-col-0"><span class="show-solar">27</span> <span class="show-lunar">廿七</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-28" class="day-col day-col-0"><span class="show-solar">28</span> <span class="show-lunar">廿八</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="1" data-date="2016-10-29" class="day-col day-col-1"><span class="show-solar">29</span> <span class="show-lunar">廿九</span><p class="show-vacation" title=""></p><p class="set-tip j-setBtn">设置节假日</p></div></div><div class="date-row"><div data-status="1" data-date="2016-10-30" class="day-col day-col-1"><span class="show-solar">30</span> <span class="show-lunar">三十</span><p class="show-vacation" title=""></p><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-10-31" class="day-col day-col-0"><span class="show-solar">31</span> <span class="show-lunar">十月初一</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-11-01" class="day-col pre-day-col day-col-" 0=""><span class="show-solar ">11月1日</span><span class="show-lunar">初二</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-11-02" class="day-col pre-day-col day-col-" 0=""><span class="show-solar ">11月2日</span><span class="show-lunar">初三</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-11-03" class="day-col pre-day-col day-col-" 0=""><span class="show-solar ">11月3日</span><span class="show-lunar">初四</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="0" data-date="2016-11-04" class="day-col pre-day-col day-col-" 0=""><span class="show-solar ">11月4日</span><span class="show-lunar">初五</span><p class="set-tip j-setBtn">设置节假日</p></div><div data-status="1" data-date="2016-11-05" class="day-col pre-day-col day-col-" 1=""><span class="show-solar ">11月5日</span><span class="show-lunar">初六</span><p class="show-vacation" title=""></p><p class="set-tip j-setBtn">设置节假日</p></div></div></div> 
+            </div>
+        </div>
+    </div>
+    <div class="container admin-content">
+        <div class="admin-adress">节假日设置</div>
+        <div class="calendar-box">
+            <div class="calendar-t">
+                <span class="btn btn-default j-backToday pull-left">返回今天</span>
+                <div class="calendar-set">
+                    <span class="month-prev diyicon-nav-left glyphicon" id="j-monthPrev"></span>
+                    <input class="month-choose" id="j-monthChs" readonly>
+                    <span class="month-next diyicon-nav-right glyphicon" id="j-monthNext"></span>
+                </div>
+            </div>
+            <div class="calendar-m">
+                <div class="week-row">
+                  <div class="week-col">星期日</div>
+                  <div class="week-col">星期一</div>
+                  <div class="week-col">星期二</div>
+                  <div class="week-col">星期三</div>
+                  <div class="week-col">星期四</div>
+                  <div class="week-col">星期五</div>
+                  <div class="week-col">星期六</div>
+                </div>
+                <div class="calendar-date j-dateBox">
+                    
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!--script模板-s-->
+    <script id="tmpl-dialog" type="text/template">
+        <div class="modal fade" id="<&= dialogId &>" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title"><&= title &></h4>
+                    </div>
+                    <div class="modal-body">
+                        <&= content &>
+                    </div>
+                    <div class="modal-footer">
+                            <div class="modal-btn-tip j-tip"></div>
+                        <button type="button" class="btn btn-primary j-save"><&= btnLeft &></button>
+                        <button type="button" class="btn btn-default j-cancel"><&= btnRight &></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script id="tmpl-dialog-set" type="text/template">
+           <div class="form-inline form-set-vacation">
+            <div class="form-group">
+                <label class="col-label" for="j-setStart">日期</label>
+                <div class="cal-input">
+                    <input type="text" class="form-control" value="<&=startTime&>" id="j-setStart" placeholder="选择开始时间">
+                <span class="glyphicon glyphicon-calendar"></span>
+                </div>
+                <span class="glyphicon diyicon-direct-right"></span>
+                <div  class="cal-input">
+                    <input type="text" class="form-control" value="<&=endTime&>" id="j-setEnd" placeholder="选择结束时间">
+                <span class="glyphicon glyphicon-calendar"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-label">类型</label>
+                <div class="checkbox-wrap">
+                    
+                    <div class="checkbox">
+                        <label>
+                          <input type="radio" name="iswork" <&if(!isVacation){&>checked<&}&>  value="0"> 工作日（例如：周一至周五）
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                          <input type="radio" name="iswork" <&if(isVacation===1){&>checked<&}&> value="1"> 周末日（例如：周六、周日）
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                          <input type="radio" name="iswork" <&if(isVacation===2){&>checked<&}&> value="2"> 节假日（例如：国庆、五一）
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-label" for="j-setStart">说明</label>
+                <input type="text" class="form-control remark-input" id="j-setMark" value="<&=vacationInfo&>" placeholder="请填写说明" maxlength="40">
+                <span style="font-size:12px;color:#f00">&nbsp;*限40字以内</span>
+            </div>
+            <div class="form-group">
+                <label class="col-label">设置人</label>
+                <input type="text" readonly class="form-control read-input" value="<&=setMan&>" placeholder="设置人">
+            </div>
+            <div class="form-group">
+                <label class="col-label">设置时间</label>
+                <input type="text" readonly class="form-control read-input" value="<&=setTime&>" placeholder="设置时间">
+            </div>
+        </div>
+    </script>
+    <script type="text/javascript">
+        window.g={
+           name:''
+        }
+    </script>
+    <!--script模板-e-->
+    <script src="js/libs/jquery.js"></script>
+    <script src="js/libs/sea-modules/seajs/sea.js"></script>
+    <script src="js/plus/admin/config.js"></script>
+    <script>
+    seajs.use('js/plus/admin/vacationSet/main');
+    </script>
+</body>
+</html>

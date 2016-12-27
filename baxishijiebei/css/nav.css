@@ -1,0 +1,198 @@
+.wcd_nav {
+	position: relative; z-index: 200; min-width: 960px; background-color: rgb(41, 41, 41);
+}
+.wcd_nav_bd {
+	position: relative; z-index: 210; background-color: rgb(41, 41, 41);
+}
+.wcd_nav_main {
+	float: left;
+}
+.wcd_nav_main li {
+	margin-right: 3px; float: left; display: inline; position: relative;
+}
+.wcd_nav_main li a {
+	color: rgb(153, 153, 153);
+}
+.wcd_nav_main li a:visited {
+	color: rgb(153, 153, 153);
+}
+.wcd_nav_main li a:hover {
+	color: rgb(153, 153, 153);
+}
+.wcd_nav_main a {
+	padding: 0px 8px; line-height: 35px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 14px; display: inline-block;
+}
+.wcd_nav_main a:hover {
+	text-decoration: none;
+}
+.wcd_nav_main .wcd_first {
+	margin-left: 20px;
+}
+.wcd_nav_main .wcd_first a {
+	padding-left: 0px;
+}
+.wcd_nav_main .wcd_first a {
+	color: rgb(35, 176, 95);
+}
+.wcd_nav_main .wcd_first a:visited {
+	color: rgb(35, 176, 95);
+}
+.wcd_nav_main .wcd_first a:hover {
+	color: rgb(35, 176, 95);
+}
+.wcd_nav_main .wcd_selected {
+	background-color: rgb(53, 53, 53);
+}
+.wcd_nav_main .wcd_selected a {
+	color: rgb(35, 176, 95);
+}
+.wcd_nav_main .wcd_selected a:visited {
+	color: rgb(35, 176, 95);
+}
+.wcd_nav_main .wcd_selected a:hover {
+	color: rgb(35, 176, 95);
+}
+.wcd_home {
+	width: 228px; height: 35px; margin-left: 15px; float: left; display: inline; position: relative; z-index: 300;
+}
+.wcd_home a {
+	background: url("http://img1.cache.netease.com/f2e/sports/wc2014detail/images/worldcup2014.png") no-repeat; left: 0px; top: 0px; width: 227px; height: 67px; overflow: hidden; position: absolute;
+}
+@media all and (min-width:1200px)
+{
+.wcd_nav_main .wcd_first {
+	margin-left: 45px;
+}
+.wcd_home {
+	margin-left: 35px;
+}
+.wcd_nav_main a {
+	padding: 0px 15px;
+}
+}
+.wcd_nav_163 {
+	line-height: 35px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 14px; margin-right: 20px; float: right; display: inline;
+}
+.wcd_nav_163 {
+	color: rgb(153, 153, 153);
+}
+.wcd_nav_163:visited {
+	color: rgb(153, 153, 153);
+}
+.wcd_nav_163:hover {
+	color: rgb(35, 176, 95); text-decoration: none;
+}
+.wcd_nav_sub {
+	transition:bottom 0.2s ease-in-out; left: 0px; width: 100%; position: absolute; z-index: 200; opacity: 0.95; background-color: rgb(53, 53, 53); -webkit-transition: bottom .2s ease-in-out; -moz-transition: bottom .2s ease-in-out; -o-transition: bottom .2s ease-in-out;
+}
+.wcd_nav_sub::before {
+	left: 0px; top: -200px; width: 100%; height: 200px; font-size: 0px; position: absolute; content: ""; background-color: rgb(41, 41, 41);
+}
+.wcd_nav_sub ul {
+	float: left; display: none; position: relative; z-index: 10;
+}
+.wcd_nav_sub li {
+	overflow: hidden; float: left; display: inline; position: relative;
+}
+.wcd_nav_sub li a {
+	color: rgb(255, 255, 255);
+}
+.wcd_nav_sub i {
+	left: 0px; top: 0px; height: 200px; border-left-color: rgb(65, 65, 65); border-left-width: 1px; border-left-style: solid; position: absolute;
+}
+.wcd_nav_txt li {
+	padding: 21px 14px;
+}
+.wcd_nav_txt a {
+	color: rgb(255, 255, 255);
+}
+.wcd_nav_txt a:visited {
+	color: rgb(255, 255, 255);
+}
+.wcd_nav_txt a:hover {
+	color: rgb(255, 255, 255);
+}
+.wcd_nav_txt i {
+	top: 24px; height: 12px; _top: 22px;
+}
+.wcd_nav_img {
+	width: 960px; padding-top: 20px;
+}
+.wcd_nav_img a:link {
+	color: rgb(136, 136, 136);
+}
+.wcd_nav_img a:visited {
+	color: rgb(136, 136, 136);
+}
+.wcd_nav_img a:hover {
+	color: rgb(136, 136, 136);
+}
+.wcd_nav_img li {
+	padding: 0px 0px 17px 10px; width: 109px;
+}
+.wcd_nav_team_hd {
+	text-align: center; color: rgb(255, 255, 255); line-height: 56px; font-family: Arial; font-size: 30px;
+}
+.wcd_nav_team_item {
+	height: 24px; overflow: hidden; padding-bottom: 13px; position: relative;
+}
+.wcd_nav_add {
+	background: url("images/add.png") no-repeat; top: 3px; width: 16px; height: 16px; right: 5px; overflow: hidden; position: absolute; cursor: pointer;
+}
+.wcd_nav_team_img {
+	font-size: 0px; margin-right: 6px; float: left; display: inline;
+}
+.wcd_nav_team_img img {
+	width: 30px; height: 20px;
+}
+.wcd_nav_team_txt {
+	line-height: 20px; float: left; white-space: nowrap;
+}
+@media all and (min-width:1220px)
+{
+.wcd_nav_img {
+	width: 1216px;
+}
+.wcd_nav_img li {
+	padding: 0px 0px 17px 18px; width: 134px;
+}
+.wcd_nav_img img {
+	width: 35px; height: 24px;
+}
+.wcd_nav_team_txt {
+	line-height: 24px;
+}
+}
+.wcd_nav_large .wcd_nav_img {
+	width: 1216px;
+}
+.wcd_nav_large .wcd_nav_img li {
+	padding: 0px 0px 17px 18px; width: 134px;
+}
+.wcd_nav_large .wcd_nav_img img {
+	width: 35px; height: 24px;
+}
+.wcd_nav_large .wcd_nav_team_txt {
+	line-height: 24px;
+}
+.wcd_media_query {
+	display: none;
+}
+@media all and (min-width:10px)
+{
+.wcd_media_query {
+	left: 0px; top: -9999px; display: block; position: absolute;
+}
+}
+.wcd_overlay {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: fixed; z-index: 9000; opacity: 0.7; background-color: rgb(0, 0, 0); _position: absolute;
+}
+.wcd_tip {
+	left: 50%; top: 150px; width: 520px; margin-left: -260px; position: absolute; z-index: 9600; background-color: rgb(255, 228, 0);
+}
+.wcd_tip p {
+	padding: 30px 55px; line-height: 28px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 16px;
+}
+.wcd_tip_close {
+	background: url("images/close.png") rgb(255, 255, 255); top: 0px; width: 40px; height: 40px; right: -40px; position: absolute; cursor: pointer;
+}

@@ -1,0 +1,21 @@
+<html>
+<style type="text/css">
+.btn{
+    display: block;
+    max-width: 306px;
+    margin: 14px auto 0;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background-color: #4f9aee;
+    border-radius: 5px;
+    text-decoration: none !important;
+}
+</style>
+<body>
+
+<a href="#" class="btn"></a>
+</body>
+</html>
