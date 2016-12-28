@@ -1,0 +1,230 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `retina-sprite` class sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+@icon-home-group: 'icon-home' @icon-home @icon-home-2x;
+
+.icon-home {
+  .retina-sprite(@icon-home-group);
+}
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+/*
+The `.retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in LESS
+
+.retina-sprites(@retina-groups);
+*/
+.g_header .nav li {
+  *display: inline;
+  *zoom: 1;
+}
+.g_header .account .logged_in .avatar {
+  *margin-top: 0;
+  *vertical-align: middle;
+}
+.page_index #header {
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#CCFFFFFF,endcolorstr=#CCFFFFFF);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#CCFFFFFF,endcolorstr=#CCFFFFFF);
+}
+.page_index .ad_sliders {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../image/index_sliders_bg.jpg', sizingMethod='scale');
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../image/index_sliders_bg.jpg', sizingMethod='scale');
+}
+.page_index .popular_templates #popular_templates_container {
+  list-style-type: none;
+}
+.page_index .popular_templates .template {
+  *display: inline;
+  *zoom: 1;
+}
+.page_index .popular_templates .view_all {
+  *top: 40px;
+}
+.page_index .user_comments .user {
+  *display: inline;
+  *zoom: 1;
+}
+.page_index .info .description,
+.page_index .info .contact_us,
+.page_index .info .wx_qrcode {
+  *display: inline;
+  *zoom: 1;
+}
+.page_mine {
+  *padding-top: 120px;
+}
+.page_mine #survey_detail .icon_2 .line_1 {
+  background-image: url(../image/pc/sprites_ico.png?v=1.9.22);
+  background-position: -476px -580px;
+  width: 12px;
+  height: 14px;
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+.page_mine #survey_detail .icon_2 .line_2 {
+  display: none;
+}
+.page_mine #survey_detail .icon_2 .line_3 {
+  display: none;
+}
+.page_mine #survey_detail .icon_2.pause .line_1 {
+  background-image: url(../image/pc/sprites_ico.png?v=1.9.22);
+  background-position: -489px -580px;
+  width: 12px;
+  height: 14px;
+  left: 13px;
+}
+.page_mine #survey_detail .icon_3_wrap:hover .pen_shadow {
+  opacity: 1;
+}
+.page_edit #end_time_hour,
+.page_edit #end_time_minute {
+  vertical-align: bottom\9;
+}
+.page_text_editor .CodeMirror pre {
+  *padding: 0px 20px;
+  *line-height: 100%;
+}
+.g_survey .survey_form_checkbox,
+.page_stat_recycle .survey_form_checkbox,
+.g_survey input.rating,
+.page_stat_recycle input.rating {
+  width: auto !important;
+  height: auto !important;
+  visibility: visible !important;
+}
+.g_survey .survey_form_ui,
+.page_stat_recycle .survey_form_ui {
+  display: none !important;
+}
+.g_survey .question_checkbox input,
+.page_stat_recycle .question_checkbox input,
+.g_survey .question_radio input,
+.page_stat_recycle .question_radio input {
+  margin-top: 15px !important;
+}
+.g_survey .question_matrix_radio .matrix_title_wrap,
+.page_stat_recycle .question_matrix_radio .matrix_title_wrap,
+.g_survey .question_matrix_checkbox .matrix_title_wrap,
+.page_stat_recycle .question_matrix_checkbox .matrix_title_wrap {
+  width: 24% !important;
+}
+.g_survey .question_matrix_radio input,
+.page_stat_recycle .question_matrix_radio input,
+.g_survey .question_matrix_checkbox input,
+.page_stat_recycle .question_matrix_checkbox input {
+  margin-left: 48%;
+  margin-top: 25px;
+}
+.g_survey .question_matrix_star input,
+.page_stat_recycle .question_matrix_star input {
+  margin-top: 15px !important;
+}
+.g_survey .question_matrix_star .irs-slider,
+.page_stat_recycle .question_matrix_star .irs-slider {
+  width: 10px !important;
+  height: 10px !important;
+  border: 6px solid #559ff8;
+  background-color: #fff !important;
+  top: -9px !important;
+}
+.g_survey .question_star input,
+.page_stat_recycle .question_star input {
+  width: auto;
+  height: auto;
+  visibility: visible;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.stat_sidebar .sidebar_item.current .chart_ico .icon .ie8Compacity,
+.stat_sidebar .sidebar_item.hover .chart_ico .icon .ie8Compacity {
+  background-image: url(../image/pc/sprites_ico.png?v=1.9.22);
+  background-position: -219px -488px;
+  width: 38px;
+  height: 38px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .stat_sidebar .sidebar_item.current .chart_ico .icon .ie8Compacity,
+  .stat_sidebar .sidebar_item.hover .chart_ico .icon .ie8Compacity {
+    background-image: url(../../image/pc/sprites_ico_2x.png?v=1.9.22);
+    background-size: 691px 684px;
+  }
+}
+.stat_sidebar .sidebar_item .chart_ico .icon {
+  border-color: transparent!important;
+}
+.stat_sidebar .sidebar_item .chart_ico .icon i {
+  display: none!important;
+}
+.stat_sidebar .sidebar_item .chart_ico .icon .ie8Compacity {
+  display: block!important;
+}
+.page_stat_recycle .recycle_filter .query .filters input {
+  display: inline-block;
+  width: 0;
+}
+.page_stat_recycle .del_input_label {
+  display: none!important;
+}
+.page_stat_recycle .survey_form_checkbox {
+  display: block;
+  visibility: visible;
+  margin: 15px 27px 15px 17px;
+  width: 16px;
+  height: 16px;
+}
