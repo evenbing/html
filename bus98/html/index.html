@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320.1, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*"><!--Ajax跨域问题浏览器兼容性-->
+    <link rel="shortcut icon" href="http://s.bus98.com/site/favicon.ico" type="image/x-icon" />  
+    <title>湖南汽车票务网</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/zepto.alert.css" type="text/css">
+</head>
+<body onselectstart="return false"><!--使网页的内容无法被鼠标或键盘选定-->
+<div id="main">
+<div class="load3" style="display:none"><div class="lrond"> <div class="ltest"></div></div><div class="load"><p>加载中</p></div></div>
+<div id="headerBox" class="headerBox">
+<div class="main_banner">
+ <div class="swipe">
+				<ul id="slider">
+                                        	<a href="#"><li style="display:block" class="liad">
+	                    <div class="slider_div"><img src="http://s.bus98.com/site/image/banner3.png" height="140">
+	                    </div></li></a>
+	                    <a href="#"><li id="ad2" style="display:none" class="liad">
+	                    <div class="slider_div"><img src="http://s.bus98.com/site/image/banner4.png" height="140">
+	                    </div></li></a>
+				</ul> 
+			</div>
+<div id="pagenavi"> 
+    <a href="javascript:void(0);" class="active">1</a>
+    <a href="javascript:void(0);">2</a>
+</div>
+</div><!--九宫格---> 
+</div>
+<!--mainBox--->
+ <div id="mainBox">
+      <div class="selBox">
+            <div class="selBox_C">           
+                    <div class="selBox_city" style="margin-right:0px;">
+                        <div class="fl-l"><i class="i_startC"></i></div>
+                        <a href="javascript:void(0);"><div class="selBox_item_v" >
+                        	<div id="startCityInput" class="selBox_extend">
+                        		<input id="startCityName" readonly="readonly" name="startCityName" placeholder="请选择出发城市" style="width:100%"/>
+                        	</div>
+                        </div></a>
+                    </div>
+                    
+                    <div class="selBox_city" style="margin-right:0px;">
+                        <div class="fl-l"><i class="i_endC"></i></div>
+                         <a href="javascript:void(0);"><div class="selBox_item_v">
+                        	<div id="destCityInput" class="selBox_extend">
+                        		<input id="endCityName" readonly="readonly" name="endCityName" placeholder="请选择到达城市" style="width:100%"/>
+                        	</div>
+                        </div></a>
+                    </div>
+                    
+                    
+                    <div id="ftStartDate" class="selBox_date">
+						<div class="fl-l"><i class="i_timeC"></i></div>
+						<div class="selBox_item_v">
+							<div id="startDateInput" class="selBox_extend">
+								<span id="dateline" class="city_input city_date">2017-01-22</span>
+								<span class="city_week">周日</span>
+							</div>
+							<input class="_start_time" value="2017-01-22" type="hidden" />
+						</div>
+					</div>
+             </div>        
+            <div class="ibtnRed_box"><button class="ibtnRed" id="searchSubmit" type="button">查询车票</button></div>
+            <div class="selBox_D">
+				<div class="blockd" onclick="location.href='/schedule/bus/school'"><img src="http://s.bus98.com/site/image/pic_1.png" alt="1" id="jjsc">校园巴士
+				    <p>学校周边，沿途停靠</p>
+				</div>
+				<div class="blockd" onclick="javascript:alert('即将推出');"><img src="http://s.bus98.com/site/image/pic_4.png" alt="4">包车
+				    <p>上门接送，专属座驾</p>
+				</div>
+				<div class="blockd" onclick="location.href='/schedule/bus/spot'"><img src="http://s.bus98.com/site/image/pic_2.png" alt="2">景区直通车
+				    <p>旅游乘车，全程服务</p>
+				</div>
+				<div class="blockd" onclick="location.href='/schedule/bus/city';"><img src="http://s.bus98.com/site/image/pic_3.png" alt="3">城际快线
+				    <p>量体订制，安全无忧</p>
+				</div>
+			</div>
+			<style type="text/css">
+				.selBox_D{ display:inline-block; width:100%; position:relative; padding:10px 3% 10px 3%;}
+				.selBox_D:after{clear:both;height:0;overflow:hidden;display:block;visibility:hidden;content:"."}
+				.selBox_D .blockd { width:50%; display: inline-block; float: left; color:#666; font-size:16px; padding:8px 0 ; padding-bottom:30px;}
+				.selBox_D .blockd img{float:left; width:40px; margin-right:8px;}
+				.selBox_D .blockd p{color:#999; font-size:10px;}
+				@media screen and (min-width: 321px) {.selBox_D .blockd p{font-size:10px;}}
+				@media screen and (min-width: 360px) {.selBox_D .blockd p{font-size:12px;}}
+				@media screen and (min-width: 375px) {.selBox_D .blockd p{font-size:13px;}}
+			</style>
+	</div>
+    </div>
+<!--/mainBox--->
+<div class="hot_line" style="display:none;">
+        <h1><span>查询历史</span></h1>
+        <div class="hot_line_l">
+            <a href="chepiao_list_old.html"><span>襄阳市</span>合肥市</a>
+            <a href="chepiao_list_old.html"><span>南宁南宁市</span>柳州</a>
+            <a href="chepiao_list_old.html"><span>南宁</span>大屯营</a>
+        </div>
+    </div><footer>
+    <div class="h50"></div>
+    <article class="footerBar">
+    <a class="tab_1 cur" id="tab_1" href="/">车票</a>
+    <a class="tab_2" href="/user/order/list">订单</a>
+    <a class="tab_3" id="tab_3" href="/user/main">我的</a>
+    </article>
+    </footer><!--/主页面层--->
+<!--出发城市.汽车票（查看预售期）--->
+		<div class="pagec current" id="cityListPage" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+			<div class="topFixedc">
+				<div class="searchbarc">
+					<div class="searchbar-inner" id="destcityInput2">
+						<i class="icon-search"></i> <input type="text" id="cityInput" placeholder="搜索你想去的地方" value="">
+						<i class="icon-clear display-none" id="startCityQueryClean" style="display: none;"></i>
+					</div>
+					<span class="btn-search" id="closePanel">取消</span>
+				</div>
+			</div>
+			<!--查询匹配区域-->
+			<div class="cityList startCityList" id="cityMatch" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: block;">
+				<dl id="cityMatchList"></dl>
+			</div>
+			<div class="middleFixedc startCityList">
+			</div>
+			<!--搜索--->
+<!--搜索--->
+<div class="cityListbox">
+	<div class="cityList startCityList" id="cityList">
+				<dl>
+				<dt id="startcity_A">A</dt>
+				<dd data-name="安江" data-predate="20" data-py="anjiang" data-jp="aj">
+					<p>安江</p>
+				</dd>
+				<dd data-name="安乡" data-predate="20" data-py="anxiang" data-jp="ax">
+					<p>安乡</p>
+				</dd>
+				<dt id="startcity_C">C</dt>
+				<dd data-name="辰溪" data-predate="20" data-py="chenxi" data-jp="cx">
+					<p>辰溪</p>
+				</dd>
+				<dd data-name="城步" data-predate="20" data-py="chengbu" data-jp="cb">
+					<p>城步</p>
+				</dd>
+				<dd data-name="常德" data-predate="20" data-py="changde" data-jp="cd">
+					<p>常德</p>
+				</dd>
+				<dd data-name="慈利" data-predate="20" data-py="cili" data-jp="cl">
+					<p>慈利</p>
+				</dd>
+				<dt id="startcity_D">D</dt>
+				<dd data-name="洞口" data-predate="20" data-py="dongkou" data-jp="dk">
+					<p>洞口</p>
+				</dd>
+				<dt id="startcity_G">G</dt>
+				<dd data-name="官庄" data-predate="20" data-py="guanzhang" data-jp="gz">
+					<p>官庄</p>
+				</dd>
+				<dd data-name="高沙" data-predate="20" data-py="gaosha" data-jp="gs">
+					<p>高沙</p>
+				</dd>
+				<dt id="startcity_H">H</dt>
+				<dd data-name="洪江" data-predate="20" data-py="hongjiang" data-jp="hj">
+					<p>洪江</p>
+				</dd>
+				<dd data-name="会同" data-predate="20" data-py="huitong" data-jp="ht">
+					<p>会同</p>
+				</dd>
+				<dd data-name="怀化" data-predate="20" data-py="huaihua" data-jp="hh">
+					<p>怀化</p>
+				</dd>
+				<dd data-name="汉寿" data-predate="20" data-py="hanshou" data-jp="hs">
+					<p>汉寿</p>
+				</dd>
+				<dt id="startcity_J">J</dt>
+				<dd data-name="靖州" data-predate="20" data-py="jingzhou" data-jp="jz">
+					<p>靖州</p>
+				</dd>
+				<dd data-name="津市" data-predate="20" data-py="jinshi" data-jp="js">
+					<p>津市</p>
+				</dd>
+				<dd data-name="吉首" data-predate="20" data-py="jishou" data-jp="js">
+					<p>吉首</p>
+				</dd>
+				<dt id="startcity_L">L</dt>
+				<dd data-name="隆回" data-predate="20" data-py="longhui" data-jp="lh">
+					<p>隆回</p>
+				</dd>
+				<dd data-name="澧县" data-predate="20" data-py="lixian" data-jp="lx">
+					<p>澧县</p>
+				</dd>
+				<dd data-name="临澧" data-predate="20" data-py="linli" data-jp="ll">
+					<p>临澧</p>
+				</dd>
+				<dd data-name="娄底" data-predate="20" data-py="loudi" data-jp="ld">
+					<p>娄底</p>
+				</dd>
+				<dd data-name="冷水江" data-predate="20" data-py="lengshuijiang" data-jp="lsj">
+					<p>冷水江</p>
+				</dd>
+				<dd data-name="涟源" data-predate="20" data-py="lianyuan" data-jp="ly">
+					<p>涟源</p>
+				</dd>
+				<dt id="startcity_M">M</dt>
+				<dd data-name="麻阳" data-predate="20" data-py="mayang" data-jp="my">
+					<p>麻阳</p>
+				</dd>
+				<dt id="startcity_Q">Q</dt>
+				<dd data-name="黔城" data-predate="20" data-py="qiancheng" data-jp="qc">
+					<p>黔城</p>
+				</dd>
+				<dd data-name="桥头河" data-predate="20" data-py="qiaotouhe" data-jp="qth">
+					<p>桥头河</p>
+				</dd>
+				<dt id="startcity_S">S</dt>
+				<dd data-name="韶山" data-predate="20" data-py="shaoshan" data-jp="ss">
+					<p>韶山</p>
+				</dd>
+				<dd data-name="邵阳" data-predate="20" data-py="shaoyang" data-jp="sy">
+					<p>邵阳</p>
+				</dd>
+				<dd data-name="邵东" data-predate="20" data-py="shaodong" data-jp="sd">
+					<p>邵东</p>
+				</dd>
+				<dd data-name="邵阳县" data-predate="20" data-py="shaoyangxian" data-jp="syx">
+					<p>邵阳县</p>
+				</dd>
+				<dd data-name="绥宁" data-predate="20" data-py="suining" data-jp="sn">
+					<p>绥宁</p>
+				</dd>
+				<dd data-name="石门" data-predate="20" data-py="shimen" data-jp="sm">
+					<p>石门</p>
+				</dd>
+				<dd data-name="双峰" data-predate="20" data-py="shuangfeng" data-jp="sf">
+					<p>双峰</p>
+				</dd>
+				<dt id="startcity_T">T</dt>
+				<dd data-name="通道" data-predate="20" data-py="tongdao" data-jp="td">
+					<p>通道</p>
+				</dd>
+				<dd data-name="桃源" data-predate="20" data-py="taoyuan" data-jp="ty">
+					<p>桃源</p>
+				</dd>
+				<dt id="startcity_W">W</dt>
+				<dd data-name="武冈" data-predate="20" data-py="wugang" data-jp="wg">
+					<p>武冈</p>
+				</dd>
+				<dt id="startcity_X">X</dt>
+				<dd data-name="溆浦" data-predate="20" data-py="xupu" data-jp="xp">
+					<p>溆浦</p>
+				</dd>
+				<dd data-name="新晃" data-predate="20" data-py="xinhuang" data-jp="xh">
+					<p>新晃</p>
+				</dd>
+				<dd data-name="湘潭" data-predate="20" data-py="xiangtan" data-jp="xt">
+					<p>湘潭</p>
+				</dd>
+				<dd data-name="湘潭县" data-predate="20" data-py="xiangtanxian" data-jp="xtx">
+					<p>湘潭县</p>
+				</dd>
+				<dd data-name="新宁" data-predate="20" data-py="xinning" data-jp="xn">
+					<p>新宁</p>
+				</dd>
+				<dd data-name="湘乡" data-predate="20" data-py="xiangxiang" data-jp="xx">
+					<p>湘乡</p>
+				</dd>
+				<dd data-name="新邵" data-predate="20" data-py="xinshao" data-jp="xs">
+					<p>新邵</p>
+				</dd>
+				<dd data-name="新化" data-predate="20" data-py="xinhua" data-jp="xh">
+					<p>新化</p>
+				</dd>
+				<dt id="startcity_Y">Y</dt>
+				<dd data-name="沅陵" data-predate="20" data-py="yuanling" data-jp="yl">
+					<p>沅陵</p>
+				</dd>
+				<dd data-name="杨家滩" data-predate="20" data-py="yangjiatan" data-jp="yjt">
+					<p>杨家滩</p>
+				</dd>
+				<dt id="startcity_Z">Z</dt>
+				<dd data-name="芷江" data-predate="20" data-py="zhijiang" data-jp="zj">
+					<p>芷江</p>
+				</dd>
+			
+		</dl>
+	</div>
+	<div class="quickPosition">
+		<ul>
+				<li title="startcity_A">A</li> 
+				<li title="startcity_B">B</li> 
+				<li title="startcity_C">C</li> 
+				<li title="startcity_D">D</li> 
+				<li title="startcity_E">E</li> 
+				<li title="startcity_F">F</li> 
+				<li title="startcity_G">G</li> 
+				<li title="startcity_H">H</li> 
+				<li title="startcity_J">J</li> 
+				<li title="startcity_K">K</li> 
+				<li title="startcity_L">L</li> 
+				<li title="startcity_M">M</li> 
+				<li title="startcity_N">N</li> 
+				<li title="startcity_P">P</li> 
+				<li title="startcity_Q">Q</li> 
+				<li title="startcity_R">R</li> 
+				<li title="startcity_S">S</li> 
+				<li title="startcity_T">T</li> 
+				<li title="startcity_W">W</li> 
+				<li title="startcity_X">X</li> 
+				<li title="startcity_Y">Y</li> 
+				<li title="startcity_Z">Z</li> 
+		</ul>
+	</div>
+</div>
+		</div>
+		<!--目的地城市.汽车票（查看预售期）--->
+<div class="pagec current" id="endcityListPage" style="display:none;transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+	<div class="topFixedc">
+		<div class="searchbarc">
+			<div class="searchbar-inner" id="destcityInput2">
+				<i class="icon-search"></i>
+				<input type="text" id="endCityInput" placeholder="搜索你想去的地方" value=""> 
+				<i class="icon-clear display-none" id="endCityQueryClean"></i>
+			</div>
+			<span class="btn-search" id="closeEndCityPanel">取消</span>
+		</div>
+	</div>
+	<!--查询匹配区域-->
+    <div class="cityList endCityList" id="endcityMatch" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: none;">
+    </div>
+	<!--搜索--->
+	<div class="cityListbox">
+	    <div class="cityList endCityList" id="endcityList"></div> 
+		<div id="endcityQuickPosition" class="quickPosition"></div>
+	</div>
+</div>
+<!--城市列表模板 -->
+<script type="text/template" id="cityListTpl">
+	<dl>
+  	<% _.each(data,function(item){  if(!_.isEmpty(item.citys)){ %>
+		<dt id="<%=isLoadStartCity%>_<%= item.name%>"><%= item.name%></dt>
+        <%_.each(item.citys,function(i){%>
+        <dd  data-name="<%=i.name%>" <%if(!_.isUndefined(i.preDate)){  %>data-preDate="<%=i.preDate%>" <% }%>   >
+            <p><%= i.name%></p>
+        </dd>
+        <%});%>
+     <% }});%>
+ 	</dl> 
+</script>
+
+<!--搜索模板 -->
+<script type="text/template" id="cityMatchTpl">
+	<dl>
+    <%_.each(data,function(item){
+    	%>
+    	<dd data-name="<%=item.name%>"  <%if(!_.isUndefined(item.preDate)){  %>data-preDate="<%=item.preDate%>" <% }%> ><p><%=item.name%></p></dd><%	
+    })%>
+    </dl>
+</script>
+
+<!--定位模板 -->
+<script type="text/template" id="quickMatchTpl">
+	<ul>
+    <%_.each(data,function(item){
+    	%>
+    	<li  title="<%=isLoadStartCity%>_<%=item%>"><%=item%></li><%	
+    })%>	  
+	</ul>
+</script>
+<input type="hidden" value="false" id="isLoadedEndcity"/><!--/城市搜索层--->
+    </div>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=EC1c73fc8b60954f150dcf52cb20c88e"></script>
+	<script type="text/javascript" src="js/require.min.js"></script>
+    <script type="text/javascript" src="js/index.js?v=1.130"></script>
+</body>
+</html>
