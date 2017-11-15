@@ -10,7 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" href="css/zepto.alert.css" type="text/css">
 </head>
-<body onselectstart="return false"><!--使网页的内容无法被鼠标或键盘选定-->
+<!--使网页的内容无法被鼠标或键盘选定-->
+<body onselectstart="return false">
 <div id="main">
 <div class="load3" style="display:none"><div class="lrond"> <div class="ltest"></div></div><div class="load"><p>加载中</p></div></div>
 <div id="headerBox" class="headerBox">
@@ -29,7 +30,8 @@
     <a href="javascript:void(0);" class="active">1</a>
     <a href="javascript:void(0);">2</a>
 </div>
-</div><!--九宫格---> 
+</div>
+<!--九宫格---> 
 </div>
 <!--mainBox--->
  <div id="mainBox">
@@ -99,15 +101,17 @@
             <a href="chepiao_list_old.html"><span>襄阳市</span>合肥市</a>
             <a href="chepiao_list_old.html"><span>南宁南宁市</span>柳州</a>
             <a href="chepiao_list_old.html"><span>南宁</span>大屯营</a>
-        </div>
-    </div><footer>
+</div>
+    </div>
+    <footer>
     <div class="h50"></div>
-    <article class="footerBar">
-    <a class="tab_1 cur" id="tab_1" href="/">车票</a>
-    <a class="tab_2" href="/user/order/list">订单</a>
-    <a class="tab_3" id="tab_3" href="/user/main">我的</a>
-    </article>
-    </footer><!--/主页面层--->
+	    <article class="footerBar">
+		    <a class="tab_1 cur" id="tab_1" href="index.html">车票</a>
+		    <a class="tab_2" href="orderlist.html">订单</a>
+		    <a class="tab_3" id="tab_3" href="usermain.html">我的</a>
+	    </article>
+    </footer>
+    <!--/主页面层--->
 <!--出发城市.汽车票（查看预售期）--->
 		<div class="pagec current" id="cityListPage" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
 			<div class="topFixedc">
@@ -370,7 +374,7 @@
 </script>
 <input type="hidden" value="false" id="isLoadedEndcity"/><!--/城市搜索层--->
     </div>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=EC1c73fc8b60954f150dcf52cb20c88e"></script>
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=EC1c73fc8b60954f150dcf52cb20c88e"></script>-->
 	<script type="text/javascript" src="js/require.min.js"></script>
     <script type="text/javascript" src="js/index.js?v=1.130"></script>
 </body>

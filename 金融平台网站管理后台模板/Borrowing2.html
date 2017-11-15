@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>金融平台网站管理后台模板 - FE素材网模板演示</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="stylesheet" href="css/font/iconfont.css"/>
+        <link rel="stylesheet" href="css/style.css"/><!-- 全局样式初始化 -->
+        <link rel="stylesheet" href="css/backstage.css"/>
+    </head>
+    <body>
+        <!-- 头部 -->
+        <div class="g-hd">
+
+            <div class="l-logo fl">
+                <div class="m-logo">
+                    <a href="#"><img src="images/logo.png"/></a>
+                </div>
+            </div>
+
+            <!-- 用户登录 -->
+            <div class="fr">
+                <div class="dropdown">
+                    <a class="topbar-btn">
+                        <img src="images/user.jpg" class="user-image" alt="User Image">
+                        <span class="fl text-normal">欢迎你，admin</span>
+                        <span class="iconfont icon-icon"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 左侧导航 -->
+        <div class="main-container" id="main-container"> 
+            <div class="sidebar" id="sidebar">
+                <div class="user-panel">
+                    <div class="fl">
+                      <img src="images/user.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="info">
+                      <p>欢迎你, admin</p>
+                      <a href="#">Online</a>
+                    </div>
+                </div>
+                <div id="menu_style" class="menu_style">
+                    <ul class="nav nav-list" id="nav_list">
+                        <li class="home">
+                            <a href="index.html" class="iframeurl">
+                                <i class="iconfont icon-work"></i>
+                                <span class="menu-text">工作面板 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-jiekuan"></i>借贷管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="Borrowing.html" class="iframeurl">借款检查</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">初审</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">复审</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">开标</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">招标中</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">满标放款</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">逾期列表</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">企业借款申请列表</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">停标中</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">标的LOGO管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">个人借款申请</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-zijinlinghuo"></i>资金管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">充值查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">提现管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">平台账户流水查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">流水管理</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-chanpin"></i>产品管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">借款产品</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-kehu"></i>客户管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">个人客户管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">企业客户管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">信用等级管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">客户类型管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">信用管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">短信群发</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">群发记录</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">个人预约借款</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-wangzhanicon"></i>网站管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">关于我们</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">专家顾问</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">平台公告</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">行业资讯</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">合作伙伴</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">招贤纳士</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">联系我们</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">Icon管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">合作伙伴(首页)</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">首页LOGO</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">首页Banner</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">消息中心</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">帮助中心</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">活动专区</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">安全保障</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">媒体报道</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">手机Banner</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信Banner</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信广告</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">登录Banner</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">注册Banner</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-dingdanchaxun"></i>查询统计<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">借款状态查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">放款记录查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">还款记录查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">债权转让查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">交易查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">用户查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">推荐情况统计</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">转化率统计</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">标的查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">交易流水查询</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-baoxiang"></i>百宝箱管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">积分管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">红包查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">积分兑换物品管理</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-xitong"></i>系统管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">部门管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">角色权限管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">员工管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">app版本管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">员工日志</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信菜单管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信文字回复</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信图文回复</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信粉丝管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信文本素材</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信图文素材</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-shebeicanshu"></i>参数设置<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">业务参数</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">红包设置</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">VIP等级设置</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-yunying"></i>运营统计<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">网站统计</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">用户统计</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">交易统计</a></li>
+                            </ul>
+                        </li>
+                        <li class="home">
+                            <a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl"><i class="iconfont icon-bao"></i>担保公司</a>
+                        </li>
+                        <li class="home">
+                            <a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl"><i class="iconfont icon-jiangli-2"></i>奖励管理</a>
+                        </li>
+                        <li class="home">
+                            <a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl"><i class="iconfont icon-icon05"></i>合同管理</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            
+            <!-- 右侧内容 -->
+            <div class="vie-product">
+                <!-- 面包屑 -->
+                <div class="subnav">
+                    <ul>
+                        <li><a href="Borrowing.html">借贷管理</a><i class="iconfont icon-jiantou"></i></li>
+                        <li><a href="Borrowing2.html">借款检查</a><i class="iconfont icon-jiantou"></i></li>
+                        <li>借款详细信息</li>
+                    </ul>
+                </div>
+                <!-- /面包屑 -->
+                 
+                <div class="padding-big">
+                    <div class="account-info clearfix">
+                        <div class="min-width-100 fl">
+                            
+                            <div class="box nav-tabs">
+                                <ul class="tab_menu">
+                                    <li class="current">借款信息</li>
+                                    <li>借款人详情</li>
+                                    <li>公司详情</li>
+                                    <li>财务信息</li>
+                                    <li>联系人详情</li>
+                                    <li>影像文件</li>
+                                </ul>
+                                <div class="tab_box">
+                                    <div class="g-r clearfix">
+                                        <div class="descri">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="bg">借款ID</td>
+                                                        <td>123</td>
+                                                        <td class="bg">借款标题</td>
+                                                        <td>sdgsdfgsdfg</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg">借款金额</td>
+                                                        <td>11,111.00元</td>
+                                                        <td class="bg">借款用途</td>
+                                                        <td>购车借款</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg">借款类型</td>
+                                                        <td>个人借款</td>
+                                                        <td class="bg">产品类型</td>
+                                                        <td>
+                                                            <div class="">
+                                                                <select class="form-control">
+                                                                    <option value="1" selected="">个人借贷测试</option>
+                                                                    <option value="2">企业借贷测试申请</option>
+                                                                    <option value="3">123456</option>
+                                                                    <option value="4">个人借贷01</option>
+                                                                    <option value="5">654321</option>
+                                                                    <option value="6">体验标</option>
+                                                                    <option value="7">产品类型zkbc</option>
+                                                                    <option value="8">大米测试天标</option>
+                                                                    <option value="9">佳优贷</option>
+                                                                    <option value="10">个人借款</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg">风险保证金</td>
+                                                        <td>2.00%</td>
+                                                        <td class="bg">平台手续费</td>
+                                                        <td>2.00%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg" colspan="2">项目描述</td>
+                                                        <td colspan="2"><textarea class="form-textarea">sdgf</textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg" colspan="2">风控措施</td>
+                                                        <td colspan="2"><textarea class="form-textarea"></textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg" colspan="2">原始借款人姓名</td>
+                                                        <td colspan="2"><input class="input" type="text" size="30" value=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg" colspan="2">原始借款人身份证号</td>
+                                                        <td colspan="2"><input class="input" type="text" size="30" value=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg" colspan="2">标的债权剩余本金数额</td>
+                                                        <td colspan="2"><input class="input" type="text" size="30" value=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg" colspan="2">标的债权剩余期限</td>
+                                                        <td colspan="2"><input class="input" type="text" size="30" value="">个月</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <div class="tac">
+                                                                <button type="button" class="u-btn">保存借款信息</button>
+                                                                <button type="button" class="u-btn">发标审核</button>
+                                                                <button type="button" class="u-btn">打回</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <button type="button" class="u-btn">返回</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                       </div>
+                                    </div>
+
+                                    <div class="hide">
+                                        <div class="g-r clearfix">
+                                            <div class="descri">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="4">借款人ID 39</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">性别</td>
+                                                            <td>男</td>
+                                                            <td class="bg">出生日期</td>
+                                                            <td>1979-12-11</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">固定电话</td>
+                                                            <td></td>
+                                                            <td class="bg">最高学历</td>
+                                                            <td>其他</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">婚姻状况</td>
+                                                            <td>未婚</td>
+                                                            <td class="bg">是否有孩子</td>
+                                                            <td>否</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">现住址邮编</td>
+                                                            <td>510000</td>
+                                                            <td class="bg">现住址详细地址</td>
+                                                            <td>广东省  广州市  天河区县  越秀金融</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg" colspan="2">户籍详细地址</td>
+                                                            <td colspan="4">广东省  广州市  天河区县  越秀金融</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hide">
+                                        <div class="g-r clearfix">
+                                            <div class="descri">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bg">公司名称</td>
+                                                            <td>越秀金融</td>
+                                                            <td class="bg">进入公司时间</td>
+                                                            <td>2016-06-02</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">公司地址</td>
+                                                            <td>广东 省广州 市天河区 县越秀金融</td>
+                                                            <td class="bg">所在部门</td>
+                                                            <td>IT</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">担任职务</td>
+                                                            <td>管理、技术、行政岗位</td>
+                                                            <td class="bg">工作电话</td>
+                                                            <td>75654892</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">公司性质</td>
+                                                            <td>其他</td>
+                                                            <td class="bg">公司规模</td>
+                                                            <td>10000人以上</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hide">
+                                        <div class="g-r clearfix">
+                                            <div class="descri">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bg">月收入</td>
+                                                            <td>1000000.00元</td>
+                                                            <td class="bg">发薪日</td>
+                                                            <td>15日</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">发薪方式</td>
+                                                            <td>打卡</td>
+                                                            <td class="bg">住房种类</td>
+                                                            <td>有房无贷款</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">房产面积</td>
+                                                            <td>500平米</td>
+                                                            <td class="bg">房产月供</td>
+                                                            <td>0.00元</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">名下有无汽车</td>
+                                                            <td>有</td>
+                                                            <td class="bg">汽车品牌</td>
+                                                            <td>宾利</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">汽车价值</td>
+                                                            <td>30万以上且无贷款</td>
+                                                            <td class="bg">名下有无证券</td>
+                                                            <td>有</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg">名下有无汽车</td>
+                                                            <td>有</td>
+                                                            <td class="bg">证券价值</td>
+                                                            <td>10000000.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="hide">
+                                        <div class="g-r clearfix">
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>借款者ID</th>
+                                                        <th>联系人中文姓名</th>
+                                                        <th>关系</th>
+                                                        <th>联系人手机</th>
+                                                        <th>联系人固定电话</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>39</td>
+                                                        <td>茫茫</td>
+                                                        <td>子女</td>
+                                                        <td>18648886286</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>39</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>39</td>
+                                                        <td>小茫</td>
+                                                        <td>同事</td>
+                                                        <td>18565655555</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>39</td>
+                                                        <td></td>
+                                                        <td>同事</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>39</td>
+                                                        <td>小豆</td>
+                                                        <td>朋友</td>
+                                                        <td>18666666598</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="hide">
+                                        <div class="g-r clearfix">
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>证件类型</th>
+                                                        <th>原证件图</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>身份证明</td>
+                                                        <td>
+                                                            <span class="ad_img">
+                                                                <img src="images/user.jpg" width="100%" height="100%">
+                                                            </span>
+                                                            <button type="button" class="u-btn u-top">下载</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>信用报告</td>
+                                                        <td>
+                                                            <span class="ad_img">
+                                                                <img src="images/user.jpg" width="100%" height="100%">
+                                                            </span>
+                                                            <button type="button" class="u-btn u-top">下载</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>收入证明</td>
+                                                        <td>
+                                                            <span class="ad_img">
+                                                                <img src="images/user.jpg" width="100%" height="100%">
+                                                            </span>
+                                                            <button type="button" class="u-btn u-top">下载</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>居住地址证明</td>
+                                                        <td>
+                                                            <span class="ad_img">
+                                                                <img src="images/user.jpg" width="100%" height="100%">
+                                                            </span>
+                                                            <button type="button" class="u-btn u-top">下载</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>工作证明</td>
+                                                        <td>
+                                                            <span class="ad_img">
+                                                                <img src="images/user.jpg" width="100%" height="100%">
+                                                            </span>
+                                                            <button type="button" class="u-btn u-top">下载</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>其它</td>
+                                                        <td>
+                                                            <span class="ad_img">
+                                                                <img src="images/user.jpg" width="100%" height="100%">
+                                                            </span>
+                                                            <button type="button" class="u-btn u-top">下载</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>   
+            </div>
+            <!-- /右侧内容 -->
+            
+        </div>
+        <!-- /左侧导航 -->
+        
+    </body>
+    
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tabs.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ace.min.js"></script>
+    <script type="text/javascript">
+        //头部用户下拉
+        $(".dropdown").live('click',function(e){
+            if($(this).hasClass("open")){
+                $(this).removeClass("open");
+            }else{
+                $(".dropdown").removeClass("open");
+                $(this).addClass("open");
+            }
+            //e.stopPropagation();
+        });
+        
+        //TAB
+        $(function(){
+            $('.nav-tabs').Tabs({
+                event:'click'
+            });
+        }); 
+
+    </script>
+        <script type="text/javascript"> 
+            $(function(){
+                var cid = $('#nav_list> li>.submenu');
+                cid.each(function(i){
+                    $(this).attr('id',"Sort_link_"+i);     
+                })
+            })
+            
+            jQuery(document).ready(function(){
+               
+                $(document).on('click','.iframeurl',function(){
+                    var cid = $(this).attr("name");
+                    var cname = $(this).attr("title");
+                    $("#iframe").attr("src",cid).ready();
+                    $("#Bcrumbs").attr("href",cid).ready();
+                    $(".Current_page a").attr('href',cid).ready();  
+                    $(".Current_page").attr('name',cid);
+                    $(".Current_page").html(cname).css({"color":"#333333","cursor":"default"}).ready(); 
+                    $("#parentIframe").html('<span class="parentIframe iframeurl"></span>').css("display","none").ready();  
+                    $("#parentIfour").html(''). css("display","none").ready();      
+                });  
+            });
+            $(document).on('click','.link_cz > li',function(){
+                $('.link_cz > li').removeClass('active');
+                $(this).addClass('active');
+            });
+            //点击事件
+            $( document).ready(function(){
+                $('#nav_list,.link_cz').find('li.home').on('click',function(){
+                    $('#nav_list,.link_cz').find('li.home').removeClass('active');
+                    $(this).addClass('active');
+                });                                             
+            });
+        </script>
+</html>

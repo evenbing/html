@@ -15,7 +15,7 @@
 }
 .rDialog-header-load {
 	text-align: center;
-	background: url("../image/alert-loading.gif");
+	background: url("../images/alert-loading.gif");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 100%;
@@ -25,7 +25,7 @@
 }
 .rDialog-header-alert,.rDialog-header-ok {
 	text-align: center;
-	background: url("../image/alert-icons.png");
+	background: url("../images/alert-icons.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 50px;

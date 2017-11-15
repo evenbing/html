@@ -1,0 +1,193 @@
+span { 
+	font-size:14px;
+	color:#001d51;
+}
+body {
+	color:#454545 ;
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px; 
+	PADDING-TOP: 0px;  
+	font-size:12px; 
+}
+body A:link {
+	FONT-SIZE: 12px; COLOR: #454545; TEXT-DECORATION: none
+}
+body A:visited {
+	FONT-SIZE: 12px; COLOR: #454545; TEXT-DECORATION: none
+}
+body A:hover {
+	FONT-SIZE: 12px; COLOR: #7a0000; TEXT-DECORATION: none
+}
+body A:active {
+	FONT-SIZE: 12px; COLOR: #454545; TEXT-DECORATION: none
+}
+.btn3_mouseout {    
+BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid   
+}    
+.btn3_mouseover {    
+BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid   
+}    
+.btn3_mousedown    
+{    
+BORDER-RIGHT: #FFE400 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #FFE400 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #FFE400 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #FFE400 1px solid   
+}    
+.btn3_mouseup {    
+BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid   
+}
+.tabpage
+{
+   margin-left:5px;margin-top:7px;font-size:14px;font-weight:bold;vertical-align:middle;
+}
+.tabpage A:link {
+	FONT-SIZE: 14px; COLOR: #454545; TEXT-DECORATION: none
+}
+.tabpage A:visited {
+	FONT-SIZE: 14px; COLOR: #454545; TEXT-DECORATION: none
+}
+.tabpage A:hover {
+	FONT-SIZE: 14px; COLOR: #7a0000; TEXT-DECORATION: none
+}
+.tabpage A:active {
+	FONT-SIZE: 14px; COLOR: #454545; TEXT-DECORATION: none
+}
+.tab {border-left-width:1px;background-color:#cccccc;jerry:expression(cellSpacing="1");}
+.tab td {font-size:12px;color:#333333;line-height:180%;padding:0;height:25px;text-align:center;}
+.tab th {font-size:12px;color:#333333;line-height:180%;padding:0;height:25px;text-align:center;}
+.tab tr {background-color:expression((this.sectionRowIndex%2==0)?"#ffffff":"#f4f4f4")} 
+.tabss {border-left-width:1px;background-color:#cccccc;jerry:expression(cellSpacing="1");}
+.tabss td {font-size:12px;color:#333333;line-height:180%;padding:0;height:25px;text-align:center;background-color:#ffffff;}
+.tabss th {font-size:12px;color:#333333;line-height:180%;padding:0;height:25px;text-align:center;background-color:#ffffff;} 
+ /* 新增界面表格样式*/
+ .tabNew
+ {
+  background-color:#cccccc;
+  font-size:12px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  jerry:expression(cellSpacing="1");
+}
+.tabNew_left 
+{
+    font-size:12px;
+    background-color:#e6f2ff;
+    height:30px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  
+}
+.tabNew_right 
+{
+    font-size:12px;
+    background-color:White;
+    height:30px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;	
+}
+
+ /* 课表的样式*/
+ .tabC
+ {
+	
+    FILTER:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ffffff,endColorStr=#B4DAF5);
+    jerry:expression(cellSpacing="0");
+	 BORDER-top: #ccc 1px solid ; BORDER-bottom: #ccc 1px solid ; BORDER-left: #ccc 1px solid ; BORDER-right: #ccc 1px solid ; 
+    padding:0;color:Black;
+}
+.tabC td
+{	
+   	 BORDER-top: #ccc 0px solid ; BORDER-bottom: #ccc 1px solid ; BORDER-left: #ccc 1px solid ; BORDER-right: #ccc 0px solid ; 
+    padding:0;   
+}
+ .tabCT
+ {
+	
+    FILTER:progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#ffffff,endColorStr=#f2f2f2);
+    font-size:14px;padding:0;
+}
+.tabCTNew
+ {
+	FILTER:progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#ffffff,endColorStr=#f2f2f2);
+    font-size:14px;
+    padding:0;    
+    position:relative;
+	top: expression(this.parentElement.parentElement.parentElement.scrollTop);
+	z-index:1;
+}
+
+.tabPrint
+{
+    border:1px;    
+}
+.diss
+{
+    display:none;    
+}
+/*把textbox装饰成lable*/
+.texttolab {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	text-align:center;
+	line-height:48px;
+	overflow-y:visible;
+	
+}
+.textAreatolab {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	overflow:hidden;
+}
+.ClassPKtexttolab {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	text-align:center;
+	overflow-y:visible;
+	
+}
+.PKlabSyle{
+    text-align:center;
+	font-size:9pt;
+	overflow-y:visible;
+	color:Black;
+    }
+
+
+
+
+
+ 
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #ddd;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #ddd;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #ddd;
+	background-color: #ffffff;
+}

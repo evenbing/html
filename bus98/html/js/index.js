@@ -11,7 +11,7 @@ baseUrl:  "js",
 		"api":"api",
 		"city":"city.js?v=1.1",
 	    'common': 'common-utils',
-	    'baiduMap':'baidu_map',
+	    //'baiduMap':'baidu_map',
 		"appFunc":"appFunc",//定义function
 		"dateHandler":"dateHandler"
 	},
@@ -21,8 +21,8 @@ baseUrl:  "js",
     	}
     }
 });
-
-require([ 'zepto', 'underscore', 'calendar', 'slider', 'findCitys','alertt','api','appFunc','dateHandler','common','baiduMap'], function($, _,calendar,slider,findCitys,alertt,api,appFunc,dateHandler,_obj,_baidu_map) {
+//,'baiduMap',_baidu_map
+require([ 'zepto', 'underscore', 'calendar', 'slider', 'findCitys','alertt','api','appFunc','dateHandler','common'], function($, _,calendar,slider,findCitys,alertt,api,appFunc,dateHandler,_obj) {
 	//var basePath = "http://localhost:8080";	
 	var index = {
 				init:function () {
@@ -193,8 +193,8 @@ require([ 'zepto', 'underscore', 'calendar', 'slider', 'findCitys','alertt','api
 					$("._yesLocation").css("display","none");
 				},
 				locationDetail:function(data){
-					var stCity = _baidu_map.receiveCity(data);
-					index.locationShow(stCity);
+					//var stCity = _baidu_map.receiveCity(data);
+					//index.locationShow(stCity);
 				}
 		};
         $(function(){
@@ -227,6 +227,6 @@ require([ 'zepto', 'underscore', 'calendar', 'slider', 'findCitys','alertt','api
 		        $("._index_open_advert").hide();
 	        });
 	        //定位
-	        _baidu_map.autoPosition(index.locationDetail);
+	        //_baidu_map.autoPosition(index.locationDetail);
         });
 });

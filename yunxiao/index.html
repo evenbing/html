@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+            <title>云校排课 - 让天下没有难排的课表</title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv='Cache-Control' content='no-cache'/>
+            <meta name="keywords" content="云校排课,免费排课,排课软件,排课网站"/>
+        <link href="/static/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/common.css?20160928" rel="stylesheet">
+    <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/img/favicon.ico"/>
+    <script type="text/javascript" src="/static/js/jquery-1.9.1.min.js" Charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/broswercheck.js"></script>
+    <script type="text/javascript" src="/static/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/common.js?20160928"></script>
+    <script type="text/javascript" src="/static/js/jsExtensionUtil.js?20160930"></script>
+    
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?094c18b89d31aa71223a3d783792b6c8";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <div class="navbar navbar-inverse navbar-top"
+             style="border-top:none;border-bottom-width:2px;border-bottom-color:#03a2ce;border-left:none;border-right: none">
+            <div class="container">
+                <ul class="nav nav-pills pull-right">
+                                            <li class="topbar-right-item">
+                            <div class="first common" onclick="goUrl('/m/task/list?isRegister=true')" title="已有账号登陆">登录</div>
+                        </li>
+                                    </ul>
+                <h3 class="muted">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="/static/img/logo.png" style="height:36px;width:144px;" alt="云校排课logo"/>
+                        </a>
+                    </div>
+                </h3>
+            </div>
+        </div>
+                            </div>
+</div>
+<div id="divbody">
+    <div class="container" id="divcon">
+        <style>
+    .row-border {
+        border-bottom: 2px solid #c6c6c6;
+    }
+
+    .table th {
+        text-align: center;
+        border-right: 1px solid #c6c6c6;
+        font-size: 14px;
+    }
+
+    .table td {
+        text-align: center;
+        font-size: 14.8px;
+    }
+
+    .field-color {
+        color: #038cda;
+    }
+
+    .field-color a {
+        text-decoration: none;
+    }
+
+    .status {
+        width: 150px;
+        color: #666;
+        /*color: #ec5d41;*/
+    }
+
+    .status span {
+        cursor: pointer;
+    }
+
+    .status img {
+        vertical-align: top;
+    }
+
+    .control-container a {
+        padding-left: 21px;
+        background-repeat: no-repeat;
+        margin-left: 8px;
+        text-decoration: none;
+    }
+
+    .control-container .disabled {
+        color: #adacac;
+        cursor: default;
+    }
+
+    .control-container a.execute {
+        background-image: url("/static/img/paike.png");
+    }
+
+    .control-container a.execute_ {
+        background-image: url("/static/img/paikeadac.png");
+    }
+
+    .control-container a.remove {
+        background-image: url("/static/img/delete.png");
+    }
+
+    .control-container a.remove_ {
+        background-image: url("/static/img/deleteadac.png");
+    }
+
+    .control-container a.view {
+        display: block;
+        background-image: url("/static/img/chakankebiao.png");
+    }
+
+    .control-container a.view_ {
+        display: block;
+        background-image: url("/static/img/chakankebiaoadac.png");
+    }
+
+    .control-container a.copy {
+        background-image: url("/static/img/fuyong.png");
+    }
+
+    .control-container a.copy_ {
+        background-image: url("/static/img/fuyongadac.png");
+    }
+
+    .control-container a.edit {
+        padding-left: 0px;
+    }
+
+    .list-inline a {
+        font-size: 14.8px;
+        color: #000;
+        padding: 0px;
+    }
+
+    .list-inline a.red {
+        font-size: 14.8px;
+        color: #ff0000;
+    }
+
+    .alert {
+        margin-left: 40px;
+        width: 480px;
+    }
+
+    /*#myUpdateModal{*/
+    /*top:300px;*/
+    /*}*/
+    /*#myModal{*/
+    /*top:300px;*/
+    /*}*/
+</style>
+<script type="text/javascript">
+
+    var totalCount =0;
+
+</script>
+<div class="row" id="row" style="padding-top:11px">
+    <div class="col-md-8">
+        <button id="btn_add_task" title="点击新增排课任务" type="button" class="btn btn-primary btn-md"
+                style="font-weight: bold" data-toggle="modal"
+                data-target="#myModal" onclick="beginAdd('${task.id}');return false;">
+            新增排课任务
+        </button>
+    </div>
+    <div class="col-md-4 text-right">
+        <ul class="list-unstyle list-inline">
+            <li>
+                <label id="label_school_name" style="visibility: hidden" disabled="disabled"></label>
+            </li>
+            <li>
+                <button id="btn_add_userInfo" onclick="loadInputTable()" class="btn btn-primary btn-sm"></button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal fade" id="myModalUserInfo" tabindex="-1" role="dialog"
+     aria-hidden="false"  data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content" id="modal1">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-title"><b>填写信息，获取更多云校免费产品</b></div>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="list_school_name" class="col-sm-2 control-label">*学校</label>
+                        <div class="col-sm-9">
+                            <input id="list_school_name" type="text" class="form-control" placeholder="学校全称" aria-describedby="basic-addon1" maxlength="60" style="display: inline;">
+                            <span id="inputError1" for="list_school_name" class="label label-danger" style="visibility: hidden">必填</span>
+                        </div>
+                        <br><br>
+                        <label for="list_qq" class="col-sm-2 control-label">QQ</label>
+                        <div  class="col-sm-9">
+                            <input id="list_qq" type="text" class="form-control" placeholder=""
+                                   aria-describedby="basic-addon1"  maxlength="20">
+                            <span id="inputError3" for="list_school_name" class="label label-danger" style="visibility: hidden">无效QQ号</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button id="btn_save_user_Info" type="button" class="btn btn-primary" onclick="userInfoEditor.inputUserInfo()">开始排课啦</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/user-info/user-info.js?v=20150715" charset="UTF-8"></script>
+<script>
+    var userInfoEditor = new UserInfoEditor();
+
+    $('#myModalUserInfo').on('show.bs.modal', function (e) {
+        $(this).find('.modal-dialog').css({
+            'margin-top': function () {
+                var modalHeight = 250; // $('#myModal').find('.modal-dialog').height();
+                return ($(window).height() / 2 - (modalHeight / 2));
+            }
+        });
+    });
+</script>
+<!-- addModal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" style="margin-top:300px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-title" id="myModalLabel"><b>添加排课任务</b></div>
+            </div>
+            <div class="modal-body">
+
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="txtName" class="col-sm-2 control-label">
+                            <span style="color: #ff0000">*</span>名称
+                        </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="txtName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPeriod" class="col-sm-2 control-label">学期</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="txtPeriod">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="btn_cancel" type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button id="btn_save" type="button" class="btn btn-primary" onclick="addTask();">保存</button>
+                <input type="hidden" value="0" id="copyId"/>
+                <input type="hidden" value="0" id="status"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- update Modal -->
+<div class="modal fade" id="myUpdateModal" tabindex="-1" role="dialog" data-backdrop="static"
+     aria-labelledby="myUpdateModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-title" id="myUpdateModalLabel"><b>修改任务</b></div>
+            </div>
+            <div class="modal-body">
+
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="txtName" class="col-sm-2 control-label">
+                            <span style="color: #ff0000">*</span>名称
+                        </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="updateTxtName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPeriod" class="col-sm-2 control-label">学期</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="updateTxtPeriod">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" onclick="updateTask();">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin-top: 30px;" id="showList">
+    <table class="table table-striped row-border">
+        <thead>
+        <tr class="row-border">
+            <th style="font-size:16px">名称</th>
+            <th style="font-size:16px">学期</th>
+            <th style="font-size:16px">状态</th>
+            <th style="font-size:16px;width:330px;border-right: 0px solid #fff">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+                    </tbody>
+    </table>
+        <div id="result">
+        <div id="resultMsg" style="font-size:14px;padding:5px;line-height: 22px;"></div>
+    </div>
+</div>
+
+<div class="p2" style="text-align:center;margin-top: 150px">
+    <div class="btn-lg" style="text-align:center;color: #ff0000">请点击“新增排课任务”，开始愉快的云校排课之旅吧！</div>
+    <div style="text-align: center">
+        <button id="btn_add_task_first" type="button" class="btn btn-primary btn-md" style="font-weight: bold"
+                data-toggle="modal"
+                data-target="#myModal" onclick="beginAdd('${task.id}');return false;">
+            新增排课任务
+        </button>
+    </div>
+</div>
+<script src="/static/jquery-ui/1.11.2/flick/jquery-ui.js"></script>
+<link href="/static/jquery-ui/1.11.2/flick/jquery-ui.css" rel="stylesheet">
+<script src="/static/js/task/list.js?v=20160817" charset="UTF-8"></script>
+
+    </div>
+</div>
+<div id="footer" class="footer">
+    <div class="footer-inner container">
+                <a class="footer-link" href="/about" target="_self">关于云校排课</a>
+        <a class="footer-link" href="/help" target="_self" style="margin-left: 6px">使用技巧</a>
+
+        <p>© 2014 <a href="http://www.yunxiao.com/">Yunxiao Inc.</a> All rights reserved.云校出品 </p>
+    </div>
+</div>
+</body>
+    
+</html>
+<script src="/static/js/baseInfo/autoHeight.js?v=20141230"></script>

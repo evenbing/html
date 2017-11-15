@@ -1,0 +1,233 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	查看当日课表
+</title>
+   
+    <!--表格样式表-->
+    <link rel="stylesheet" href="css/tableStyle.css" type="text/css" /> 
+</head>
+<body>
+<script type="text/javascript">
+        function handler(tp){
+        if(tp=='ok'){
+				
+			}
+			if(tp=='cancel'){
+			   
+			}
+			if(tp=='close'){
+				
+			}
+    }
+
+
+ function handlerPageErr(tp){
+        if(tp=='ok'){
+				window.close();
+			}
+			if(tp=='cancel'){
+			   window.close();
+			}
+			if(tp=='close'){
+				window.close();
+			}
+    }
+</script>
+
+<!--打印控件的JavaScript方法-->
+<script type="text/javascript">
+			function doPrint(how)
+			{
+			    
+				if(typeof(jatoolsPrinter.page_div_prefix)=='undefined'){
+					alert("请按页顶上的黄色提示下载ActiveX控件.如果没有提示请按以下步骤设置ie.\n 工具-> internet 选项->安全->自定义级别,设置 ‘下载未签名的 ActiveX ’为'启用'状态")
+					return ;
+				} 
+    			 //打印文档对象
+				var myreport ={ 
+					print_settings:{ 
+					              
+                               // 指定打打印方向为横向, 1/2 = 纵向/横向
+                               orientation : 2},
+								documents: document, // 打印页面(div)们在本文档中
+								copyrights : '杰创软件拥有版权 www.jatools.com' // 版权声明必须
+								}; 
+			    			  
+				// 调用打印方法
+				if(how == '打印预览...')
+    				jatoolsPrinter.printPreview(myreport);   // 打印预览
+			                 
+   				else if(how == '打印...')
+   					jatoolsPrinter.print(myreport ,true);   // 打印前弹出打印设置对话框
+			                
+   				else
+   					jatoolsPrinter.print(myreport ,false);       // 不弹出对话框打印
+			}
+		
+		</script>
+    <form name="form1" method="post" action="Rat_CourseQueryNow.aspx" id="form1">
+  
+    <table border="0" width="100%" align="center">
+        <tr><td align="center" style="font-size:14pt;"><b>当日课表</b></td></tr>
+    </table>
+    <table width="100%" align="center" class="tabNew">
+    <tr><td class="tabNew_left">
+        当前学期：<span id="labSemester">2012/2013第一学期</span>
+        选择年级：<select name="ddlGrade" id="ddlGrade">
+	<option selected="selected" value="1">一年级</option>
+	<option value="2">二年级</option>
+	<option value="3">三年级</option>
+	<option value="4">四年级</option>
+	<option value="5">五年级</option>
+	<option value="6">六年级</option>
+
+</select>
+        <input type="submit" name="btnQuery" value="查询" id="btnQuery" class="btn3_mouseout" onMouseOver="this.className='btn3_mouseover'" onmouseout="this.className='btn3_mouseout'" onmousedown="this.className='btn3_mousedown'" onmouseup="this.className='btn3_mouseup'" style="width:65px;" />
+        &nbsp; 改变日期：<a id="lbtnS" href="javascript:__doPostBack('lbtnS','')" style="color:#0000C0;"><< 上一日</a>
+        <span id="labData" style="color:Red;font-size:14pt;">2017-3-28</span>
+        <a id="lbtnX" href="javascript:__doPostBack('lbtnX','')" style="color:#0000C0;">下一日 >></a></td></tr>
+    <tr><td class="tabNew_right">
+    <table width="100%">
+        <tr><td width="300px" align="left">
+        <table id="rbtnQueryType" border="0">
+	<tr>
+		<td><input id="rbtnQueryType_0" type="radio" name="rbtnQueryType" value="0" checked="checked" /><label for="rbtnQueryType_0">排课信息全称方式显示</label></td><td><input id="rbtnQueryType_1" type="radio" name="rbtnQueryType" value="1" onclick="javascript:setTimeout('__doPostBack(\'rbtnQueryType$1\',\'\')', 0)" /><label for="rbtnQueryType_1">排课信息简称方式显示</label></td>
+	</tr>
+</table></td>
+        <td align="left">
+            <table id="cboxQueryType" border="0">
+	<tr>
+		<td><input id="cboxQueryType_0" type="checkbox" name="cboxQueryType$0" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'cboxQueryType$0\',\'\')', 0)" /><label for="cboxQueryType_0">显示学科</label></td><td><input id="cboxQueryType_1" type="checkbox" name="cboxQueryType$1" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'cboxQueryType$1\',\'\')', 0)" /><label for="cboxQueryType_1">显示教师</label></td>
+	</tr>
+</table></td>
+        <td align="right">
+            <input type="submit" name="btnExcel" value="导出" id="btnExcel" class="btn3_mouseout" style="width:65px;" />
+            <input class="btn3_mouseout" onclick="doPrint('打印预览...')" type="button" value="打印预览" />
+            </td></tr>
+    </table>
+        <!--控制控件不变形-->
+        <div style="overflow: auto; width: 99%"  align="left">
+        <!--打印控件所寻找的DIV-->
+        <div id="Div_Print">
+        <div id='page1'>
+        <span id="labTitle" style="font-size:14pt;font-weight:bold;">2012/2013第一学期一年级2017-3-28 当日课表</span><br />
+        <table id="tab_Data" class="gridtable">
+	<tr>
+		<td class="tabCT" align="center" valign="middle" height="25px" colspan="8">星期二</td>
+	</tr>
+	<tr>
+		<td align="center" class="tabCT" height="50px" width="100px">班级</td>
+		<td class="tabCT" align="center" valign="middle" height="50px" width="80px">第1节</td>
+		<td class="tabCT" align="center" valign="middle" height="50px" width="80px">第2节</td>
+		<td class="tabCT" align="center" valign="middle" height="50px" width="80px">第3节</td>
+		<td class="tabCT" align="center" valign="middle" height="50px" width="80px">第4节</td>
+		<td class="tabCT" align="center" valign="middle" width="30px" rowspan="11">午<br />休</td>
+		<td class="tabCT" align="center" valign="middle" height="50px" width="80px">第1节</td>
+		<td class="tabCT" align="center" valign="middle" height="50px" width="80px">第2节</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="right" height="50px" width="100px" class="tabCT">一年级(1)班</td>
+		<td id="td_215_2_1_S" valign="middle" align="center" height="50px" width="80px">数学<br />徐国凤</td>
+		<td id="td_215_2_2_S" valign="middle" align="center" height="50px" width="80px">语文<br />宋晓桃</td>
+		<td id="td_215_2_3_S" valign="middle" align="center" height="50px" width="80px">英语<br />高韵</td>
+		<td id="td_215_2_4_S" valign="middle" align="center" height="50px" width="80px">体育<br />钱丽雅</td>
+		<td id="td_215_2_1_X" valign="middle" align="center" height="50px" width="80px">音乐<br />吕梦霞</td>
+		<td id="td_215_2_2_X" valign="middle" align="center" height="50px" width="80px">体育<br />钱丽雅</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="right" height="50px" width="100px" class="tabCT">一年级(2)班</td>
+		<td id="td_216_2_1_S" valign="middle" align="center" height="50px" width="80px">美术<br />吴静</td>
+		<td id="td_216_2_2_S" valign="middle" align="center" height="50px" width="80px">&nbsp;</td>
+		<td id="td_216_2_3_S" valign="middle" align="center" height="50px" width="80px">&nbsp;</td>
+		<td id="td_216_2_4_S" valign="middle" align="center" height="50px" width="80px">数学<br />徐国凤</td>
+		<td id="td_216_2_1_X" valign="middle" align="center" height="50px" width="80px">体育<br />钱丽雅</td>
+		<td id="td_216_2_2_X" valign="middle" align="center" height="50px" width="80px">音乐<br />吕梦霞</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="right" height="50px" width="100px" class="tabCT">一年级(3)班</td>
+		<td id="td_217_2_1_S" valign="middle" align="center" height="50px" width="80px">数学<br />汤婷婷</td>
+		<td id="td_217_2_2_S" valign="middle" align="center" height="50px" width="80px">语文<br />王小燕</td>
+		<td id="td_217_2_3_S" valign="middle" align="center" height="50px" width="80px">&nbsp;</td>
+		<td id="td_217_2_4_S" valign="middle" align="center" height="50px" width="80px">语文<br />王小燕</td>
+		<td id="td_217_2_1_X" valign="middle" align="center" height="50px" width="80px">品德与生活<br />王小燕</td>
+		<td id="td_217_2_2_X" valign="middle" align="center" height="50px" width="80px">美术<br />吴静</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="right" height="50px" width="100px" class="tabCT">一年级(4)班</td>
+		<td id="td_218_2_1_S" valign="middle" align="center" height="50px" width="80px">语文<br />徐丽霞</td>
+		<td id="td_218_2_2_S" valign="middle" align="center" height="50px" width="80px">语文<br />徐丽霞</td>
+		<td id="td_218_2_3_S" valign="middle" align="center" height="50px" width="80px">数学<br />汤婷婷</td>
+		<td id="td_218_2_4_S" valign="middle" align="center" height="50px" width="80px">英语<br />李敏（英）</td>
+		<td id="td_218_2_1_X" valign="middle" align="center" height="50px" width="80px">美术<br />吴静</td>
+		<td id="td_218_2_2_X" valign="middle" align="center" height="50px" width="80px">品德与生活<br />徐丽霞</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="right" height="50px" width="100px" class="tabCT">一年级(5)班</td>
+		<td id="td_219_2_1_S" valign="middle" align="center" height="50px" width="80px">数学<br />葛丽莉</td>
+		<td id="td_219_2_2_S" valign="middle" align="center" height="50px" width="80px">体育<br />钱丽雅</td>
+		<td id="td_219_2_3_S" valign="middle" align="center" height="50px" width="80px">语文<br />张雨</td>
+		<td id="td_219_2_4_S" valign="middle" align="center" height="50px" width="80px">语文<br />张雨</td>
+		<td id="td_219_2_1_X" valign="middle" align="center" height="50px" width="80px">写字<br />张雨</td>
+		<td id="td_219_2_2_X" valign="middle" align="center" height="50px" width="80px">品德与生活<br />张雨</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="right" height="50px" width="100px" class="tabCT">一年级(6)班</td>
+		<td id="td_220_2_1_S" valign="middle" align="center" height="50px" width="80px">英语<br />李敏（英）</td>
+		<td id="td_220_2_2_S" valign="middle" align="center" height="50px" width="80px">数学<br />沈珊珊</td>
+		<td id="td_220_2_3_S" valign="middle" align="center" height="50px" width="80px">语文<br />杨长青</td>
+		<td id="td_220_2_4_S" valign="middle" align="center" height="50px" width="80px">语文<br />杨长青</td>
+		<td id="td_220_2_1_X" valign="middle" align="center" height="50px" width="80px">写字<br />杨长青</td>
+		<td id="td_220_2_2_X" valign="middle" align="center" height="50px" width="80px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="right" height="50px" width="100px" class="tabCT">一年级(7)班</td>
+		<td id="td_221_2_1_S" valign="middle" align="center" height="50px" width="80px">数学<br />沈珊珊</td>
+		<td id="td_221_2_2_S" valign="middle" align="center" height="50px" width="80px">语文<br />张洁</td>
+		<td id="td_221_2_3_S" valign="middle" align="center" height="50px" width="80px">&nbsp;</td>
+		<td id="td_221_2_4_S" valign="middle" align="center" height="50px" width="80px">语文<br />张洁</td>
+		<td id="td_221_2_1_X" valign="middle" align="center" height="50px" width="80px">品德与生活<br />张洁</td>
+		<td id="td_221_2_2_X" valign="middle" align="center" height="50px" width="80px">体育<br />李洪伟</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="right" height="50px" width="100px" class="tabCT">一年级(8)班</td>
+		<td id="td_222_2_1_S" valign="middle" align="center" height="50px" width="80px">英语<br />高韵</td>
+		<td id="td_222_2_2_S" valign="middle" align="center" height="50px" width="80px">语文<br />朱晓玲</td>
+		<td id="td_222_2_3_S" valign="middle" align="center" height="50px" width="80px">数学<br />葛丽莉</td>
+		<td id="td_222_2_4_S" valign="middle" align="center" height="50px" width="80px">&nbsp;</td>
+		<td id="td_222_2_1_X" valign="middle" align="center" height="50px" width="80px">体育<br />李洪伟</td>
+		<td id="td_222_2_2_X" valign="middle" align="center" height="50px" width="80px">美术<br />强晶</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="right" height="50px" width="100px" class="tabCT">一年级(9)班</td>
+		<td id="td_223_2_1_S" valign="middle" align="center" height="50px" width="80px">语文<br />高维</td>
+		<td id="td_223_2_2_S" valign="middle" align="center" height="50px" width="80px">语文<br />高维</td>
+		<td id="td_223_2_3_S" valign="middle" align="center" height="50px" width="80px">数学<br />徐蓉</td>
+		<td id="td_223_2_4_S" valign="middle" align="center" height="50px" width="80px">英语<br />岳淑婧</td>
+		<td id="td_223_2_1_X" valign="middle" align="center" height="50px" width="80px">品德与生活<br />高维</td>
+		<td id="td_223_2_2_X" valign="middle" align="center" height="50px" width="80px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="right" height="50px" width="100px" class="tabCT">一年级(10)班</td>
+		<td id="td_224_2_1_S" valign="middle" align="center" height="50px" width="80px">数学<br />徐蓉</td>
+		<td id="td_224_2_2_S" valign="middle" align="center" height="50px" width="80px">体育<br />李洪伟</td>
+		<td id="td_224_2_3_S" valign="middle" align="center" height="50px" width="80px">语文<br />钟倩</td>
+		<td id="td_224_2_4_S" valign="middle" align="center" height="50px" width="80px">语文<br />钟倩</td>
+		<td id="td_224_2_1_X" valign="middle" align="center" height="50px" width="80px">音乐<br />吴如美</td>
+		<td id="td_224_2_2_X" valign="middle" align="center" height="50px" width="80px">班健<br />钟倩</td>
+	</tr>
+</table>
+<br />
+        <span id="labdateInfo">打印时间：2017-3-28</span>
+        </div>
+    </div>
+</div>
+    </td></tr>
+    </table>
+    </form>
+</body>
+</html>

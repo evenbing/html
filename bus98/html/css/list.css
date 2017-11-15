@@ -1,0 +1,146 @@
+@charset "utf-8";
+body{ background:#f7f7f7}
+/*汽车票列表*/
+/*汽车票日期搜索*/
+
+
+.date_tab3{ padding:15px 15px 14px 15px;height:20px;background:#00a1ec; position:relative;border-top:1px solid #19aff5;}
+.date_tab3 ul{ height:20px;display:-webkit-box;display:-ms-flexbox;display:-moz-box;display:flex;-ms-flex-direction:row;}
+.date_tab3 li {font-size:13px;text-align: center;-webkit-box-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;line-height:20px;text-align:center;color:#fff;white-space:nowrap;position:relative}
+.date_tab3 li a{display:block;}
+.date_tab3 li.bflex-two{ border: solid #19aff5; border-width:0 1px;display:inline-block;text-align: center; min-width:138px}
+.date_tab3 li.bflex-two input,.date_tab3 li .date_value{ text-indent:18px;width:55px;font-size:13px;color:#fff;line-height:20px;background:none; border:0;text-align: center;display:inline-block}
+.date_tab3 li.bflex-two .dateico{position:relative; }
+.date_tab3 li.bflex-two .dateico:before{content:'';position:absolute;display:inline-block;background-position: -47px -32px; width:16px;height:12px; top:50%; margin-top:-6px; left:0px;}
+.date_tab3 li.bflex-left:before{width:5px;height:10px;content:'';display: inline-block;position:absolute; top:50%; left:50%;margin-top:-5px;margin-left:-32px; background-position:-66px 0}
+.date_tab3 li.bflex-right:before{width:5px;height:10px;content:'';display: inline-block;position:absolute; top:50%; right:50%;margin-top:-5px;margin-right:-32px; background-position:-74px 0}
+
+
+/*汽车票列表*/
+.chepiao_list{ padding:7px 0 0 0;}
+.kb_list_tab { font-size: 12px;color: #333; border-radius:0;background:#fff;clear:both; float:none;width: 100%;overflow: hidden;margin-bottom:7px;}
+.kb_list_tab:hover{background:#fefefe;}
+.kb_list_tab ul{position: relative; }
+.kb_list_tab li {float: left;}
+.kb_list_tab .kb_nmb{position: absolute;left: 0;top: 0;width:14px; padding:0 3px 0 3px; text-align:center; color:#fefefe;height:100%; text-align: left; background:#00a1ec;border-radius:0; line-height:24px;}
+.kb_list_tab .kb_nmb i{ top:50%;position: absolute; margin-top:-24px;}
+.kb_list_tab .kb_nmb2{background:#ff5d48;}
+.kb_list_tab .kb_trip .time{ font-size: 18px; font-weight: bold;line-height: 24px; font-family:Arial;}
+.kb_list_tab .kb_trip .stroke{font-weight:normal;line-height: 24px; color:#666; font-size:12px; padding-left:5px;}
+.kb_list_tab .kb_chezhan{padding:10px 0% 7px 13px;position: relative; width:100%;}
+.kb_list_tab .kb_chezhan p{padding:0px 110px 2px 22px; line-height: 24px;vertical-align:middle;font-size: 14px;text-overflow: ellipsis; position:relative;}
+.kb_list_tab .kb_chezhan p i{font-size: 14px; font-style:normal; padding-right:6px;color: #666;}
+
+
+.offer_box{ position:relative; display:block;height: 10px; width:100%}
+.offerN{ position:absolute; display: inline-block; height: 19px;top:0px; right:-13px;}
+.offerN span{ display: inline-block;margin-right:5px;position:relative;background-image:url(img/offerN.png); background-repeat: no-repeat;background-size: auto 19px;height: 19px;line-height: 19px;color: #fff; padding:0 8px 0 18px;}
+.offerN span:before{ content:"";display: inline-block;position:absolute;top:0; right:-10px; z-index:10;height: 19px; width:10px;background-image:url(img/offerN.png); background-repeat: no-repeat; background-position: top right;background-size: auto 19px;}
+.offerN span:last-child{ padding-right:18px;}
+.kb_list_tab .kb_price{position: absolute;right: 13px;top:15px;width:90px; text-align:right;font-size: 14px;}
+.kb_list_tab .kb_price strong{line-height:20px;color: #ff5d48;font-size: 24px; font-weight:normal;display:block; padding:6px 0 0 0}
+.kb_list_tab .kb_price p,.kb_list_tab .kb_price strong{overflow: hidden;white-space: nowrap;}
+.kb_list_tab .kb_price p{ padding-top:0;line-height:20px}
+.kb_list_tab .kb_price dfn {font-style: normal;font-size: 15px; padding:0 3px 0 0 ;}
+.kb_list_tab .kb_price b{font-family:arial;}
+
+.kb_list_tab .traicon {background-image:url(img/ic_list.png);background-repeat: no-repeat;background-size:100px auto ; position:absolute; left:0; top:4px;width: 16px;height: 16px;line-height:15px;text-indent:-999em;display:inline-block;}
+.kb_list_tab .begin {background-position: -0 -0;}
+.kb_list_tab .end {background-position: -18px -0;}
+.kb_list_tab .shang {background-position: -0 -53px;}
+.kb_list_tab .xia {background-position: -35px -53px;}
+
+.line_blue{ position:relative;}
+.line_blue:before{ position:absolute; top:5px; bottom:0; left:7px; width:1px;content:"";height: 91%; background:#c4e6f6; }
+
+.kb_btn{width:31px; height:15px; line-height:15px; text-align:center; display:inline-block;background-image:url(img/ic_list.png);background-repeat: no-repeat;background-size:100px auto ;background-position: 0 -17px;}
+.btn_frist{background-position: 0 -17px;}
+.btn_last{background-position: 0 -35px;}
+
+.btn_b{font-size: 14px; color:#666;text-align:right; display:inline-block}
+.btn_g{font-size: 14px; color:#999;text-align:right; display:inline-block}
+/*变灰*/
+.graybg, .graybg .kb_trip,.graybg .kb_price strong ,.graybg .btn_b,.graybg .kb_trip,.graybg .kb_trip .stroke{color: #999;}
+.graybg:hover{background:#fff;}
+.graybg .begin {background-position: -35px -0;}
+.graybg .end {background-position: -53px -0;}
+.graybg .shang {background-position: -18px -53px;}
+.graybg .xia {background-position: -53px -53px;}
+
+.graybg .btn_frist {background-position: -35px -17px;}
+.graybg .btn_last {background-position: -35px -35px;}
+.graybg .offerN span,.graybg .offerN span:before{background-image:url(img/offerNG.png);}
+.graybg .line_blue:before{background: #ccc;}
+.y_price{font-family:Arial; font-size:12px;line-height: 20px;color:#999; text-decoration:line-through;}
+
+/**/
+.listprompt p{ text-align:center;border: 1px solid #fbd5a7; font-size:14px;line-height: 20px;padding: 10px 10px;color: #f60;background: #ffffeb;}
+
+
+/*排序*/
+.fix_bottom {position: fixed;bottom: 0;width: 100%;left: 0;z-index: 1;}
+.tab_sort_b{height:48px}
+.tab_sort{ display:-webkit-box;display:-ms-flexbox;display:-moz-box;display:flex;height:48px;-ms-flex-direction:row;}
+.tab_sort li {background:rgba(0,0,0,.75);color:#fff;-webkit-box-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;font-size:13px;height:48px;text-align:center;color:#fff;white-space:nowrap;border-right:1px solid #fff;position: relative;}
+.tab_sort li a{color:#fff;height:48px; position: relative; }
+.tab_sort li span{ display: block; width:100%;}
+.tab_sort li i{ position:relative; height:24px; display: inline-block; width:100%}
+.tab_sort li i:before{width:20px;height:19px;content:'';display:block;margin:6px auto 0px auto;position:absolute; top:0px; left:50%;margin-left:-10px;}
+.tab_sort li .tab_1:before{background-position:0px 0px}
+.tab_sort li .tab_2:before{background-position:-26px 0px}
+.tab_sort li .tab_3:before{background-position:-53px 0px}
+.tab_sort li:last-child{border-right:0;}
+.tab_sort li.hover,.tab_sort li.hover{background:rgba(0,0,0,.8);}
+.tab_sort li.active:before{ content:"";position:absolute; top:6px; left:50%;margin-left:12px;background:#ff5d48; width:8px; height:8px; border-radius:50%; display:inline-block}
+
+.po_a{ position:fixed; right:60%; left:inherit;}
+.po_f{ position:fixed}
+.listprompt p{ text-align:center;border: 1px solid #fbd5a7; font-size:14px;line-height: 20px;padding: 10px 10px;color: #f60;background: #ffffeb;}
+
+
+/*筛选层*/
+.qcz_search{ color:#fff;width:100%; display:;background:rgba(0,0,0,.8);bottom: 48px;right: 0;overflow: hidden;padding: 0;position: fixed;z-index: 99; }
+.qcz_search .qcz_search_c{ padding-bottom:10px}
+.qcz_search .screen_title{ margin:0 15px 0 15px;height:35px; line-height:35px;border-bottom: 1px solid #fff;}
+.qcz_search .qcz_search_c .list{padding:0 15px 0 15px; max-height:176px; overflow-y:auto}
+.qcz_search .list li{color:#e5e5e5;font-size:14px;height: 44px;line-height: 44px; vertical-align:middle;}
+.qcz_search .list li.cur,.qcz_search .list li:hover{ color:#00a1ec}
+#mblocker{border: 0px;left: auto;top: 0;margin: 0; background: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==) transparent;width: 100%;height: 100%;position: fixed;z-index: 0; }  
+
+
+/*多选*/
+.checkbox label {cursor: pointer; display:block; position: relative;font-size: 14px;height: 44px;line-height: 44px; vertical-align: middle;}
+.checkbox label:before{content: "";background-position:-999px -999px;display: inline-block;width: 20px;height: 17px;position: absolute;right: 0;top:13px;}
+.checkbox .cur label:before {content: "";background-position:-60px -62px;}
+.checkbox .cur label{color:#00a1ec;}
+/*日历控件 */
+.datepicker { padding:0; margin:0;position: fixed; bottom: -100%; left: 0px; right: 0px; height: 100%; width: 100%; text-align: center; background: #fff; -webkit-transition: bottom .5s cubic-bezier(0,0,0.25,1); z-index: 9999999; }
+.datepicker *{ padding:0; margin:0}
+.datepicker.active { bottom: 0px; }
+.datepicker.active .picker_header{position:relative;width: 100%;}
+.datepicker.active .picker_header:before{ content:"选择日期"; text-align:center; color:#fff; position:absolute; top:-60px; left:0; width:100%; height:44px;line-height:44px;background: #00a1ec;}
+.datepicker.active .picker_black{position:absolute;right:0;top:-60px;height:44px; width:44px; display:inline-block; cursor:pointer;}
+.datepicker.active .picker_black:before,.datepicker.active .picker_black:after{width:2px;height:26px;position:absolute;right:25px;top:10px;background:#fff;content:""; z-index:11}
+.datepicker.active .picker_black:before{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
+.datepicker.active .picker_black:after{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}
+.datepicker .tabletitle { text-align: center;position: relative; margin-top:60px;margin-bottom:10px;}
+.datepicker .cell {font-weight: 500;color: #00a1ec;font-size: 1.2em;display: inline-block; line-height:22px;}
+.datepicker .mon,.datepicker .year{margin-left: .25em;margin-right: .25em;}
+.datepicker #prev, .datepicker #next {position: absolute;top: -0.33em;padding: .5em 1.33em;width: 1em;height: 1em;}
+.datepicker #prev {left: 2em;padding-right: 1.5em;}
+.datepicker #next {right: 2em;padding-left: 1.5em;}
+.datepicker #prev:before,.datepicker #next:before {content:' ';position:absolute;top:50%; margin-top:-5px;display:inline-block;border:#00a1ec solid;border-width:2px 2px 0 0;width:10px;height:10px;}
+.datepicker #prev:before{left:1.5em;transition-duration:0;-webkit-transition-duration:0;transform:rotate(225deg);-webkit-transform:rotate(225deg);}
+.datepicker #next:before {right:1.5em;transition-duration:0;-webkit-transition-duration:0;transform:rotate(45deg);-webkit-transform:rotate(45deg);}
+.datepicker #prev:hover,.datepicker #next:hover {cursor: pointer;color: #000000;background: #b1dcfb;}
+.datepicker .disabled,.datepicker .disabled:hover,.datepicker .disabled:before,.datepicker .disabled:before:hover {cursor: default;background: none;}
+.datepicker .week { font-size: .75em;padding-top: .35em;padding-bottom: .35em;display: table; width: 100%; table-layout: fixed; border-bottom: 1px solid #f0f0f0;background:#f8f8f8; box-sizing: border-box; -webkit-box-sizing: border-box; }
+.datepicker .week li {display: table-cell; border: 0; color: #999999;text-align: center; border: none; }
+.datepicker .week li:first-child,.datepicker .week li:last-child { color: #ff5d48; }
+.day { opacity: 0; -webkit-transition: all .3s ease-out;font-size: inherit; }
+.day.active { opacity: 1; }
+.datepicker .day li {margin:15px 0 0 0; float: left; width: 14.28%; height: 50px; line-height: 50px; text-align: center; list-style: none; color: #383838; transition: all .3s ease; box-sizing: border-box; -webkit-box-sizing: border-box; }
+.datepicker .day li[class="now active"]{  background: #ff5d48;color: #ffffff; }
+.datepicker .day li.today {border:1px solid #ff5d48; background:#f6f6f6; color: #ff5d48;}
+.datepicker .day li:hover{cursor: pointer;color: #fff;background:#F99;}
+.datepicker .day li.last { color: #ddd; }

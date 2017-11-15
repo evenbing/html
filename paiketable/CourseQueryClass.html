@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1"><title>
+	查看班级课表
+</title> 
+    <!--表格样式表-->
+    <link rel="stylesheet" href="css/tableStyle.css" type="text/css" />    
+</head>
+<body>
+<script type="text/javascript">
+        function handler(tp){
+        if(tp=='ok'){
+				
+			}
+			if(tp=='cancel'){
+			   
+			}
+			if(tp=='close'){
+				
+			}
+    }
+
+
+ function handlerPageErr(tp){
+        if(tp=='ok'){
+				window.close();
+			}
+			if(tp=='cancel'){
+			   window.close();
+			}
+			if(tp=='close'){
+				window.close();
+			}
+    }
+</script>
+
+<!--打印控件的JavaScript方法-->
+<script type="text/javascript">
+			function doPrint(how)
+			{
+			    
+				if(typeof(jatoolsPrinter.page_div_prefix)=='undefined'){
+					alert("请按页顶上的黄色提示下载ActiveX控件.如果没有提示请按以下步骤设置ie.\n 工具-> internet 选项->安全->自定义级别,设置 ‘下载未签名的 ActiveX ’为'启用'状态")
+					return ;
+				}
+			 
+    						 //打印文档对象
+				var myreport ={ 
+					print_settings:{ 
+					              
+                               // 指定打打印方向为横向, 1/2 = 纵向/横向
+                               orientation : 2},
+								documents: document, // 打印页面(div)们在本文档中
+								copyrights : '杰创软件拥有版权 www.jatools.com' // 版权声明必须
+								}; 
+			    			  
+				// 调用打印方法
+				if(how == '打印预览...')
+    				jatoolsPrinter.printPreview(myreport);   // 打印预览
+			                 
+   				else if(how == '打印...')
+   					jatoolsPrinter.print(myreport ,true);   // 打印前弹出打印设置对话框
+			                
+   				else
+   					jatoolsPrinter.print(myreport ,false);       // 不弹出对话框打印
+			}
+		
+		</script>
+		
+    <form name="form1" method="post" action="Rat_CourseQueryClass.aspx" id="form1"> 
+     <table border="0" width="100%" align="center">
+        <tr><td align="center" style="font-size:14pt;"><b>班级课表</b></td></tr>
+    </table>
+    <table width="100%" align="center" class="tabNew">
+    <tr><td class="tabNew_left">
+        <span id="labSemester">2012/2013第一学期</span>&nbsp;<select name="ddlGrade" onchange="javascript:setTimeout('__doPostBack(\'ddlGrade\',\'\')', 0)" id="ddlGrade">
+	<option selected="selected" value="1">一年级</option>
+	<option value="2">二年级</option>
+	<option value="3">三年级</option>
+	<option value="4">四年级</option>
+	<option value="5">五年级</option>
+	<option value="6">六年级</option>
+
+</select>&nbsp;<select name="ddlClass" id="ddlClass">
+	<option selected="selected" value="215">一年级(1)班</option>
+	<option value="216">一年级(2)班</option>
+	<option value="217">一年级(3)班</option>
+	<option value="218">一年级(4)班</option>
+	<option value="219">一年级(5)班</option>
+	<option value="220">一年级(6)班</option>
+	<option value="221">一年级(7)班</option>
+	<option value="222">一年级(8)班</option>
+	<option value="223">一年级(9)班</option>
+	<option value="224">一年级(10)班</option>
+
+</select>
+        <input type="submit" name="btnQuery" value="查询" id="btnQuery" class="btn3_mouseout" onMouseOver="this.className='btn3_mouseover'" onmouseout="this.className='btn3_mouseout'" onmousedown="this.className='btn3_mousedown'" onmouseup="this.className='btn3_mouseup'" style="width:65px;" />
+        </td></tr>
+    <tr><td align="center" class="tabNew_right" style="height: 30px">
+            <table width="100%">
+        <tr><td width="200px" align="left">
+        <table id="rbtnQueryType" border="0">
+	<tr>
+		<td><input id="rbtnQueryType_0" type="radio" name="rbtnQueryType" value="0" checked="checked" /><label for="rbtnQueryType_0">显示信息全称</label></td><td><input id="rbtnQueryType_1" type="radio" name="rbtnQueryType" value="1" onclick="javascript:setTimeout('__doPostBack(\'rbtnQueryType$1\',\'\')', 0)" /><label for="rbtnQueryType_1">显示信息简称</label></td>
+	</tr>
+</table></td>
+        <td align="left">
+            <table id="cboxQueryType" border="0">
+	<tr>
+		<td><input id="cboxQueryType_0" type="checkbox" name="cboxQueryType$0" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'cboxQueryType$0\',\'\')', 0)" /><label for="cboxQueryType_0">显示学科</label></td><td><input id="cboxQueryType_1" type="checkbox" name="cboxQueryType$1" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'cboxQueryType$1\',\'\')', 0)" /><label for="cboxQueryType_1">显示教师</label></td>
+	</tr>
+</table></td>
+        <td align="right">
+            <input type="submit" name="btnExcel" value="导出" id="btnExcel" class="btn3_mouseout" style="width:65px;" />
+            <input class="btn3_mouseout" onclick="doPrint('打印预览...')" type="button" value="打印预览" id="Button1" />
+            </td></tr>
+    </table>
+        <!--控制控件不变形-->
+        <div style="overflow: auto; width: 99%"  align="left">
+        <!--打印控件所寻找的DIV-->
+        <div id="Div_Print">
+        <div id='page1'>
+        <span id="labTitle" style="font-size:14pt;font-weight:bold;">2012/2013第一学期一年级(1)班课表</span><br />
+        <table id="tab_Data" class="gridtable">
+	<tr>
+		<td align="center" height="50px" width="50x">&nbsp;</td>
+		<td align="center" height="50px" width="50px">节次</td>
+		<td align="center" class="tabCT" height="50x" width="90px">星期一</td>
+		<td align="center" class="tabCT" height="50x" width="90px">星期二</td>
+		<td align="center" class="tabCT" height="50x" width="90px">星期三</td>
+		<td align="center" class="tabCT" height="50x" width="90px">星期四</td>
+		<td align="center" class="tabCT" height="50x" width="90px">星期五</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="center" rowspan="4" class="tabCT">上<br />午</td>
+		<td height="50px" width="50px" align="center">第1节</td>
+		<td height="50px" width="90px" align="center">语文<br />宋晓桃</td>
+		<td height="50px" width="90px" align="center">数学<br />徐国凤</td>
+		<td height="50px" width="90px" align="center">语文<br />宋晓桃</td>
+		<td height="50px" width="90px" align="center">数学<br />徐国凤</td>
+		<td height="50px" width="90px" align="center">数学<br />徐国凤</td>
+	</tr>
+	<tr>
+		<td height="50px" width="50px" align="center">第2节</td>
+		<td height="50px" width="90px" align="center">语文<br />宋晓桃</td>
+		<td height="50px" width="90px" align="center">语文<br />宋晓桃</td>
+		<td height="50px" width="90px" align="center">语文<br />宋晓桃</td>
+		<td height="50px" width="90px" align="center">语文<br />宋晓桃</td>
+		<td height="50px" width="90px" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="50px" width="50px" align="center">第3节</td>
+		<td height="50px" width="90px" align="center">英语<br />高韵</td>
+		<td height="50px" width="90px" align="center">英语<br />高韵</td>
+		<td height="50px" width="90px" align="center">数学<br />徐国凤</td>
+		<td height="50px" width="90px" align="center">体育<br />钱丽雅</td>
+		<td height="50px" width="90px" align="center">语文<br />宋晓桃</td>
+	</tr>
+	<tr>
+		<td height="50px" width="50px" align="center">第4节</td>
+		<td height="50px" width="90px" align="center">数学<br />徐国凤</td>
+		<td height="50px" width="90px" align="center">体育<br />钱丽雅</td>
+		<td height="50px" width="90px" align="center">&nbsp;</td>
+		<td height="50px" width="90px" align="center">英语<br />高韵</td>
+		<td height="50px" width="90px" align="center">语文<br />宋晓桃</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="center" colspan="7" class="tabCT">午&nbsp;&nbsp;&nbsp;&nbsp;休</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="center" rowspan="4" class="tabCT">下<br />午</td>
+		<td height="50px" width="50px" align="center">第5节</td>
+		<td align="center" height="50px" width="90px">体育<br />钱丽雅</td>
+		<td align="center" height="50px" width="90px">音乐<br />吕梦霞</td>
+		<td align="center" height="50px" width="90px">美术<br />吴静</td>
+		<td align="center" height="50px" width="90px">体育<br />钱丽雅</td>
+		<td align="center" height="50px" width="90px">音乐<br />吕梦霞</td>
+	</tr>
+	<tr>
+		<td height="50px" width="50px" align="center">第6节</td>
+		<td align="center" height="50px" width="90px">美术<br />吴静</td>
+		<td align="center" height="50px" width="90px">体育<br />钱丽雅</td>
+		<td align="center" height="50px" width="90px">体育<br />钱丽雅</td>
+		<td align="center" height="50px" width="90px">班健<br />宋晓桃</td>
+		<td align="center" height="50px" width="90px">品德与生活<br />宋晓桃</td>
+	</tr>
+</table>
+<br />
+            <span id="labdateInfo">打印时间：2017-3-28</span></div>
+    </div>
+</div>
+    </td></tr>
+    </table>
+    </form>
+</body>
+</html>

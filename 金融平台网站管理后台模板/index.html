@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>金融平台网站管理后台模板 - FE素材网模板演示</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<link rel="stylesheet" href="css/font/iconfont.css"/>
+		<link rel="stylesheet" href="css/style.css"/><!-- 全局样式初始化 -->
+		<link rel="stylesheet" href="css/backstage.css"/>
+		
+    </head>
+	<body>
+	    
+	    <!-- 顶部导航 -->
+	    <div class="g-hd">
+	        
+	        <div class="l-logo fl">
+	            <div class="m-logo">
+                    <a href="index.html"><img src="images/logo.png"/></a>
+                </div>
+	        </div>
+            
+            <!-- 用户登录 -->
+            <div class="dropdown">
+                <a class="topbar-btn">
+                    <img class="user-image" src="images/user.jpg" alt="">
+                    <span class="fl text-normal">欢迎你，admin</span>
+                    <span class="iconfont icon-icon"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">修改密码</a></li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+            </div>
+            
+	    </div>
+	    
+	    <!-- 左侧导航栏 -->
+        <div class="main-container" id="main-container"> 
+            <div class="sidebar" id="sidebar">
+                <div class="user-panel">
+                    <div class="fl">
+                      <img src="images/user.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="info">
+                      <p>欢迎你, admin</p>
+                      <a href="#">Online</a>
+                    </div>
+                </div>
+                <div id="menu_style" class="menu_style">
+                    <ul class="nav nav-list" id="nav_list">
+                        <li class="home">
+                            <a href="index.html" class="iframeurl">
+                                <i class="iconfont icon-work"></i>
+                                <span class="menu-text">工作面板 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-jiekuan"></i>借贷管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="Borrowing2.html" class="iframeurl">借款检查</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">初审</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">复审</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">开标</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">招标中</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">满标放款</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">逾期列表</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">企业借款申请列表</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">停标中</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">标的LOGO管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">个人借款申请</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-zijinlinghuo"></i>资金管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">充值查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">提现管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">平台账户流水查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">流水管理</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-chanpin"></i>产品管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">借款产品</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-kehu"></i>客户管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">个人客户管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">企业客户管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">信用等级管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">客户类型管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">信用管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">短信群发</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">群发记录</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">个人预约借款</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-wangzhanicon"></i>网站管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">关于我们</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">专家顾问</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">平台公告</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">行业资讯</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">合作伙伴</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">招贤纳士</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">联系我们</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">Icon管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">合作伙伴(首页)</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">首页LOGO</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">首页Banner</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">消息中心</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">帮助中心</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">活动专区</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">安全保障</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">媒体报道</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">手机Banner</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信Banner</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信广告</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">登录Banner</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">注册Banner</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-dingdanchaxun"></i>查询统计<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">借款状态查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">放款记录查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">还款记录查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">债权转让查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">交易查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">用户查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">推荐情况统计</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">转化率统计</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">标的查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">交易流水查询</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-baoxiang"></i>百宝箱管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">积分管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">红包查询</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">积分兑换物品管理</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-xitong"></i>系统管理<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">部门管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">角色权限管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">员工管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">app版本管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">员工日志</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信菜单管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信文字回复</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信图文回复</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信粉丝管理</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信文本素材</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">微信图文素材</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-shebeicanshu"></i>参数设置<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">业务参数</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">红包设置</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">VIP等级设置</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="iconfont icon-yunying"></i>运营统计<i class="fr iconfont icon-arrowll-copy"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">网站统计</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">用户统计</a></li>
+                                <li class="home"><a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl">交易统计</a></li>
+                            </ul>
+                        </li>
+                        <li class="home">
+                            <a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl"><i class="iconfont icon-bao"></i>担保公司</a>
+                        </li>
+                        <li class="home">
+                            <a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl"><i class="iconfont icon-jiangli-2"></i>奖励管理</a>
+                        </li>
+                        <li class="home">
+                            <a href="javascript:void(0)" name="Borrowing2.html" class="iframeurl"><i class="iconfont icon-icon05"></i>合同管理</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            
+            
+            <!-- 右侧内容 -->
+            <div class="vie-product">
+                <div class="padding-big">
+                    <div class="account-info clearfix">
+                        <!-- 统计信息 -->
+                        <div class="text-box-main min-width-500 fl">
+                            <div class="g-h">统计信息</div>
+                            <div class="g-r clearfix">
+                                <div class="col-sm-6 clearfix fl mr-3">
+                                    <div class="small-box bg-aqua">
+                                        <div class="inner">
+                                            <h3>0／1</h3>
+                                            <p>今日新增用户量／今日登录用户量</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 clearfix fl mr-none">
+                                    <div class="small-box bg-green">
+                                        <div class="inner">
+                                            <h3>0.42／9.56</h3>
+                                            <p>总收益（用户／平台）万元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 clearfix fl mr-3 col-top">
+                                    <div class="small-box bg-orange">
+                                        <div class="inner">
+                                            <h3>0.00／943.72</h3>
+                                            <p>充值金额（今日／累计）万元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 clearfix fl mr-none col-top">
+                                    <div class="small-box bg-red">
+                                        <div class="inner">
+                                            <h3>0／143</h3>
+                                            <p>借款申请笔数（今日／累计）</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 clearfix fl mr-3 col-top">
+                                    <div class="small-box bg-maroon">
+                                        <div class="inner">
+                                            <h3>0.00／75.78</h3>
+                                            <p>借款总额（今日／累计） 万元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 clearfix fl mr-none col-top">
+                                    <div class="small-box bg-lusr">
+                                        <div class="inner">
+                                            <h3>0.00／240.79</h3>
+                                            <p>提现金额（今日／累计）万元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /统计信息 -->
+                        
+                        <!-- 每日新增借款成功笔数／金额 -->
+                        <div class="text-box-main min-width-500 fl margin-right-none">
+                            <div class="g-h">每日新增借款成功笔数／金额</div>
+                            <div class="g-r clearfix">
+                                <div id="jkchart" class="main"></div>
+                            </div>
+                        </div>
+                        <!-- /每日新增借款成功笔数／金额 --> 
+                    </div> 
+                    
+                    <div class="account-info clearfix">
+                        <div class="g-top20 clearfix">
+                            <!-- 未处理借款申请 -->
+                            <div class="text-box-main min-width-500 fl">
+                                <div class="g-h">未处理借款申请</div>
+                                <div class="g-r clearfix">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <th>标题</th>
+                                                <th>金额</th>
+                                                <th>年利率</th>
+                                                <th>期限</th>
+                                                <th>还款方式</th>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">sdgsdfgsdfg</a></td>
+                                                <td>11,111.00</td>
+                                                <td>4.00%</td>
+                                                <td>2个月</td>
+                                                <td>按月付息，到期还本</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">测试不要审核</a></td>
+                                                <td>2,000.00</td>
+                                                <td>50.00%</td>
+                                                <td>8个月</td>
+                                                <td>按月付息，到期还本</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">测试不要审核</a></td>
+                                                <td>2,000.00</td>
+                                                <td>50.00%</td>
+                                                <td>8个月</td>
+                                                <td>按月付息，到期还本</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">测试不要审核</a></td>
+                                                <td>2,000.00</td>
+                                                <td>50.00%</td>
+                                                <td>8个月</td>
+                                                <td>按月付息，到期还本</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">测试不要审核</a></td>
+                                                <td>2,000.00</td>
+                                                <td>50.00%</td>
+                                                <td>8个月</td>
+                                                <td>按月付息，到期还本</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                    
+                                    
+                                    <div class="prev-ta">  
+                                        <ul class="pagination">
+                                            <li class="prev"><a href="javascript:;">上一页</a></li>
+                                            <li class="page active"><a href="javascript:;">1</a></li>
+                                            <li class="page"><a href="javascript:;">2</a></li>
+                                            <li class="page"><a href="javascript:;">3</a></li>
+                                            <li class="next"><a href="javascript:;">下一页</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /未处理借款申请 -->
+                            
+                            <!-- 每日新增投资笔数／金额 -->
+                            <div class="text-box-main min-width-500 fl margin-right-none">
+                                <div class="g-h">每日新增投资笔数／金额</div>
+                                <div class="g-r clearfix">
+                                    <div id="tzchart" class="main"></div>
+                                </div>
+                            </div>
+                            <!-- /每日新增投资笔数／金额 --> 
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="account-info clearfix">
+                        <div class="g-top20 clearfix">
+                            <!-- 登录IP地址信息（可查看最近5次登录ip） -->
+                            <div class="text-box-main min-width-500 fl margin-right-none">
+                                <div class="g-h">登录IP地址信息（可查看最近5次登录IP）</div>
+                                <div class="g-r clearfix">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <th>序号</th>
+                                                <th>登录用户名称</th>
+                                                <th>登录时间</th>
+                                                <th>登录IP</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>admin</td>
+                                                <td>2016-11-09 15:04:36</td>
+                                                <td>127.0.0.1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>admin</td>
+                                                <td>2016-11-09 15:04:36</td>
+                                                <td>127.0.0.1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>admin</td>
+                                                <td>2016-11-09 15:04:36</td>
+                                                <td>127.0.0.1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>admin</td>
+                                                <td>2016-11-09 15:04:36</td>
+                                                <td>127.0.0.1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>admin</td>
+                                                <td>2016-11-09 15:04:36</td>
+                                                <td>127.0.0.1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- /登录IP地址信息（可查看最近5次登录ip） -->
+                        </div>
+                    </div>
+                    
+                </div>   
+            </div>
+            <!-- /右侧内容 -->
+
+        </div>
+
+
+        <script src="js/jquery-1.7.2.min.js"></script>
+        <script src="js/echarts.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ace.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                //头部用户下拉
+                $(".dropdown").live('click',function(e){
+                    if($(this).hasClass("open")){
+                        $(this).removeClass("open");
+                    }else{
+                        $(".dropdown").removeClass("open");
+                        $(this).addClass("open");
+                    }
+                });
+            })
+        </script>
+        
+        <script type="text/javascript">
+        // 为模块加载器配置echarts的路径，从当前页面链接到echarts.js，定义所需图表路径
+        require.config({
+            paths: {
+                echarts: './js'
+            }
+        });
+        
+        // 动态加载echarts然后在回调函数中开始使用，注意保持按需加载结构定义图表路径
+        require([
+            'echarts',
+            'echarts/chart/line',
+            'echarts/chart/bar',
+            ],
+
+        //第一个数据
+        function (ec){
+            //折柱
+            var myChart = ec.init(document.getElementById('jkchart'));
+            myChart.setOption({
+                tooltip:{
+                    trigger:'axis',
+                    axisPointer:{            // 坐标轴指示器，坐标轴触发有效
+                        type:'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    },
+                },
+                
+                legend:{
+                    data:['借款笔数','借款金额'],
+                    
+                    //图例文字颜色
+                    textStyle:{
+                        color:'#333'
+                    },
+                    
+                },
+                
+                toolbox:{
+                    show:true,
+                    feature:{
+                        dataView:{show: true, readOnly: false},
+                        magicType:{show: true, type: ['line', 'bar']},
+                        restore:{show: true},
+                        saveAsImage:{show: true}
+                    }
+                },
+                
+                calculable : true,
+                
+                //X轴
+                xAxis:[{
+                    type:'category',
+                    data:['11-04','11-05','11-06','11-07','11-08','11-09','11-10'],
+                    
+                    //坐标轴文本样式
+                    axisLabel:{
+                        show:true,
+                        formatter:'{value}',
+                        textStyle:{
+                            color:'#333',
+                            fontSize: 14
+                        }
+                    },
+                    
+                    //网格线样式 
+                    splitLine:{
+                        show: true,
+                        lineStyle:{
+                            color:'#ccc',
+                            //type: 'dashed',
+                            width: 1
+                        }
+                    }
+                }],
+                
+                //Y轴
+                yAxis:[{
+                    type:'value',
+                    name:'笔数',
+                    axisLabel:{
+                        formatter:'{value}笔'
+                    },
+                    splitArea:{show:true}
+                },
+                {
+                    type:'value',
+                    name:'金额',
+                    axisLabel:{
+                        formatter:'{value}万元'
+                    },
+                    splitLine : {show : false}
+                }],
+    
+                series:[{
+                    name:'借款笔数',
+                    type:'bar',
+                    data:[0, 20, 40, 60, 80, 100,],
+                },
+                {
+                    name:'借款金额',
+                    type:'line',
+                    yAxisIndex: 1,
+                    data:[0.00,0.00,0.00,0.00,0.00,0.00,3.00],
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                }]
+            });
+
+            }
+        );
+        
+        
+/*        function (ec){
+            //折柱
+            var myChart = ec.init(document.getElementById('tzchart'));
+            myChart.setOption({
+                tooltip:{
+                    trigger:'axis',
+                    axisPointer:{            // 坐标轴指示器，坐标轴触发有效
+                        type:'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    },
+                },
+                
+                legend:{
+                    data:['投资笔数','投资金额'],
+                    
+                    //图例文字颜色
+                    textStyle:{
+                        color:'#333'
+                    },
+                    
+                },
+                
+                toolbox:{
+                    show:true,
+                    feature:{
+                        dataView:{show: true, readOnly: false},
+                        magicType:{show: true, type: ['line', 'bar']},
+                        restore:{show: true},
+                        saveAsImage:{show: true}
+                    }
+                },
+                
+                calculable : true,
+                
+                //X轴
+                xAxis:[{
+                    type:'category',
+                    data:['11-04','11-05','11-06','11-07','11-08','11-09','11-10'],
+                    
+                    //坐标轴文本样式
+                    axisLabel:{
+                        show:true,
+                        formatter:'{value}',
+                        textStyle:{
+                            color:'#333',
+                            fontSize: 14
+                        }
+                    },
+                    
+                    //网格线样式 
+                    splitLine:{
+                        show: true,
+                        lineStyle:{
+                            color:'#ccc',
+                            //type: 'dashed',
+                            width: 1
+                        }
+                    }
+                }],
+                
+                //Y轴
+                yAxis:[{
+                    type:'value',
+                    name:'笔数',
+                    axisLabel:{
+                        formatter:'{value}笔'
+                    },
+                    splitArea:{show:true}
+                },
+                {
+                    type:'value',
+                    name:'金额',
+                    axisLabel:{
+                        formatter:'{value}万元'
+                    },
+                    splitLine : {show : false}
+                }],
+    
+                series:[{
+                    name:'投资笔数',
+                    type:'bar',
+                    data:[0, 20, 40, 60, 80, 100,],
+                },
+                {
+                    name:'投资金额',
+                    type:'line',
+                    yAxisIndex: 1,
+                    data:[0.00,0.00,0.00,0.00,0.00,0.00,3.00],
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                }]
+            });
+
+            }
+        );*/
+    </script>
+        
+        
+        
+        <script type="text/javascript"> 
+            $(function(){
+                var cid = $('#nav_list> li>.submenu');
+                cid.each(function(i){
+                    $(this).attr('id',"Sort_link_"+i);     
+                })
+            })
+            
+            jQuery(document).ready(function(){
+
+                $(document).on('click','.iframeurl',function(){
+                    var cid = $(this).attr("name");
+                    var cname = $(this).attr("title");
+                    $("#iframe").attr("src",cid).ready();
+                    $("#Bcrumbs").attr("href",cid).ready();
+                    $(".Current_page a").attr('href',cid).ready();  
+                    $(".Current_page").attr('name',cid);
+                    $(".Current_page").html(cname).css({"color":"#333333","cursor":"default"}).ready(); 
+                    $("#parentIframe").html('<span class="parentIframe iframeurl"></span>').css("display","none").ready();  
+                    $("#parentIfour").html(''). css("display","none").ready();      
+                });  
+            });
+            $(document).on('click','.link_cz > li',function(){
+                $('.link_cz > li').removeClass('active');
+                $(this).addClass('active');
+            });
+            //点击事件
+            $( document).ready(function(){
+                $('#nav_list,.link_cz').find('li.home').on('click',function(){
+                    $('#nav_list,.link_cz').find('li.home').removeClass('active');
+                    $(this).addClass('active');
+                });                                             
+            });
+        </script>
+
+
+
+
+
+
+	</body>
+</html>

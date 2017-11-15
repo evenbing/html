@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jRange : jQuery Range Selector</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/jquery.range.css">
+ 
+	<script src="js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+ 
+    <section class="body demo">
+        <div class="container">
+            <h2>See it in Action</h2>
+            <h3>Play around with the demo</h3>
+            <div class="demo-container clearfix">
+            	 
+            	<div class="demo-section">
+            		 
+                    <div class="demo-output">
+                        <input class="range-slider" type="hidden" value="86.75,98.11"/>
+                    </div>
+                    <input type="text" id="firstValue" value="86.75" style="" />
+                    <input type="text" id="lastValue"  value="98.11" />
+            	</div> 
+            </div> 
+    <script src="js/jquery.range.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){ 
+            $('.range-slider').jRange({
+           from: 10000,
+    to: 0,
+    step: 1,
+    scale: [100,80,60,40,20,0],//[0,20,40,60,80,100]
+    format: '%s',
+    width: 872,
+    showLabels: true,
+    isRange : true
+            });
+        });
+      //$('.range-slider').jRange('setValue', "8000,2000");
+    
+    </script>
+</body>
+</html>

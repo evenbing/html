@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320.1, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>湖南汽车票务网</title>
+	<link rel="stylesheet" href="css/base.css?v=1.0" type="text/css">
+    <link rel="stylesheet" href="css/list.css" type="text/css">
+    <link rel="stylesheet" href="css/zepto.alert.css" type="text/css">
+</head>
+<body onselectstart="return false"><!--使网页的内容无法被鼠标或键盘选定-->
+<div id="main">
+<div class="load3" style="display:none"><div class="lrond"> <div class="ltest"></div></div><div class="load"><p>加载中</p></div></div>
+<div id="headerBox" class="headerBox">
+<!--head--->   
+<article class="header">
+<header>
+    <a class="header_left" href="/"><i class="returnico" id="pageBack"></i></a> 
+    <h1>洞口<span>—</span>上海</h1>
+</header>
+</article>
+</div>
+<!--/head---> 
+<!--mainBox--->
+<div id="mainBox">   
+    <div class="date_tab3">   
+    <ul id="prev_next">
+        <li id="prevDay" class="bflex-left">前一天</li>
+        <li id="currentDay" class="bflex-two cur" >
+							<span class="dateico"></span>
+							<span class="date_value"  id="_showDate" style="font-weight:bold;color:#fff;">02-11</span>
+							<input type="hidden" class="_start_time" value="2017-02-11" data-date="2017-02-11"/>
+							<span id="week">星期六</span>
+		</li>
+        <li id="nextDay" class="bflex-right">后一天</li>
+    </ul>
+    </div>
+    <input type="hidden" value="2017-02-11" id="inputDate" />
+	<input type="hidden" value="洞口" id="startCityName" />
+	<input type="hidden" value="上海" id="endCityName" />
+	<input type="hidden" value="2017-02-05" id="todayDate" />
+	
+    <div id="content">
+					
+	</div>
+</div>
+<!--排序--->
+	<div class="h48"></div>
+	<div id="in_footer" class="fix_bottom">
+	 <div class="tab_sort_b">
+	    <ul class="tab_sort">
+	        <li id="selectStartPalce"><i class="tab_1"></i><span>选择上车点</span></li><!--弹出层--class= hover 点点的话在li class = active"-->
+	        <li id="selectEndPalce"><i class="tab_2"></i><span>选择下车点</span></li>
+	    </ul>
+	    </div>
+	</div>
+	<!--筛选层--->
+	<article id="startPlacePage" class="qcz_search"  style="display:none">
+	    <div class="qcz_search_c">
+	    <div class="screen_title"><span class="cancelStartPlaceFilter">全部上车点</span><span class="f_r closeStartPlace">取消</span></div>
+	    <ul class="list checkbox startPlaceList">
+	    <!--全部上车点-->
+	    </ul>
+	    </div>
+	</article>
+	 <article id="endPlacePage" class="qcz_search" style="display:none"> 
+	    <div class="qcz_search_c">  
+	    <div class="screen_title"><span class="cancelEndPlaceFilter">全部下车点</span><span class="f_r closeEndPlace">取消</span></div>
+	    <ul class="list checkbox endPlaceList">
+	        <!--全部下车点-->
+	    </ul>
+	    </div>
+	</article>
+	<!--/筛选层--->          
+<!--/主页面层--->
+
+</div>
+<script type="text/javascript" src="js/require.min.js"></script>
+<script type="text/javascript" src="js/chepiao_list.js?v=1.02834"></script>
+</body>
+</html>

@@ -157,7 +157,9 @@ define(['zepto'],function ($) {
                 if (_month < 10) {
                     _month = "0" + _month
                 }
-                if(nowDate.getDate()==b){ 
+                var todayDate=_year + '-' + _month + '-' +b;
+                //var currentDate=nowDate.getFullYear() + '-' + _month + '-' +b;
+                if(todayDate==_today){ 
                 	daysItems += '<li class="now" data-date="' + _year + '-' + _month + '-' + (b >= 10 ? b : "0" + b) + '">今天</li>';
                 }else{
                 	daysItems += '<li class="now" data-date="' + _year + '-' + _month + '-' + (b >= 10 ? b : "0" + b) + '">'+ b +'</li>';

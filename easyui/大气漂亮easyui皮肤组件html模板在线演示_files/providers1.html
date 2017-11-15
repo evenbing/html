@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://www.fesucai.com/uploads/show/easyui/pages/providers1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>供应商列表</title> 
+
+<link href="./base.css" rel="stylesheet">
+<link rel="stylesheet" href="./easyui.css">
+<link rel="stylesheet" type="text/css" href="./icon.css">
+<link rel="stylesheet" href="./providers1.css">
+</head> 
+<body>
+    <div class="container">
+       <div class="panel datagrid easyui-fluid" style="width: 0px;"><div class="panel-header" style="width: 0px;"><div class="panel-title">全体供应商列表</div><div class="panel-tool"><a href="javascript:void(0)" class="panel-tool-collapse"></a></div></div><div class="datagrid-wrap panel-body" title="" style="width: 0px; height: 487px;"><div id="tb" style="padding:0 30px;" class="datagrid-toolbar">
+        <div class="conditions">
+            <span class="con-span">供应商编码: </span><input class="easyui-textbox textbox-f" type="text" style="width: 166px; height: 35px; line-height: 35px; display: none;" textboxname="code"><span class="textbox" style="width: 164px; height: 33px;"><input type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 0px; padding-top: 0px; padding-bottom: 0px; height: 33px; line-height: 33px; width: 150px;"><input type="hidden" class="textbox-value" name="code" value=""></span>
+            <span class="con-span">供应商名称: </span><input class="easyui-textbox textbox-f" type="text" style="width: 166px; height: 35px; line-height: 35px; display: none;" textboxname="name"><span class="textbox" style="width: 164px; height: 33px;"><input type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 0px; padding-top: 0px; padding-bottom: 0px; height: 33px; line-height: 33px; width: 150px;"><input type="hidden" class="textbox-value" name="name" value=""></span>
+            <a href="http://www.fesucai.com/uploads/show/easyui/pages/providers1.html#" class="easyui-linkbutton l-btn l-btn-small l-btn-selected" iconcls="icon-search" data-options="selected:true" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">查询</span><span class="l-btn-icon icon-search">&nbsp;</span></span></a>
+            <a href="http://www.fesucai.com/uploads/show/easyui/pages/providers1.html#" class="easyui-linkbutton l-btn l-btn-small" iconcls="icon-reload" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">重置</span><span class="l-btn-icon icon-reload">&nbsp;</span></span></a>
+            <a href="http://www.fesucai.com/uploads/show/easyui/pages/providers1.html#" class="easyui-linkbutton more l-btn l-btn-small" iconcls="icon-more" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">更多</span><span class="l-btn-icon icon-more">&nbsp;</span></span></a>
+        </div>
+        <div class="conditions hide">
+            <span class="con-span">合同名称: </span><input class="easyui-textbox textbox-f" type="text" style="width: 166px; height: 35px; line-height: 35px; display: none;" textboxname="code"><span class="textbox" style="width: 164px; height: 33px;"><input type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 0px; padding-top: 0px; padding-bottom: 0px; height: 33px; line-height: 33px; width: 150px;"><input type="hidden" class="textbox-value" name="code" value=""></span>
+            <span class="con-span">合同模板: </span><select class="easyui-combobox combobox-f combo-f textbox-f" style="height: 35px; width: 166px; display: none;" textboxname="language" comboname="language"><option>合同模板1</option></select><span class="textbox combo" style="width: 164px; height: 33px;"><span class="textbox-addon textbox-addon-right" style="right: 0px;"><a href="javascript:void(0)" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 33px;"></a></span><input type="text" class="textbox-text validatebox-text" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 18px; padding-top: 0px; padding-bottom: 0px; height: 33px; line-height: 33px; width: 132px;"><input type="hidden" class="textbox-value" name="language" value="合同模板1"></span>
+            <span class="con-span">供应商编码: </span><input class="easyui-textbox textbox-f" type="text" style="width: 166px; height: 35px; line-height: 35px; display: none;" textboxname="code"><span class="textbox" style="width: 164px; height: 33px;"><input type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 0px; padding-top: 0px; padding-bottom: 0px; height: 33px; line-height: 33px; width: 150px;"><input type="hidden" class="textbox-value" name="code" value=""></span>
+            <span class="con-span">供应商: </span><input class="easyui-textbox textbox-f" type="text" style="width: 166px; height: 35px; line-height: 35px; display: none;" textboxname="code"><span class="textbox" style="width: 164px; height: 33px;"><input type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 0px; padding-top: 0px; padding-bottom: 0px; height: 33px; line-height: 33px; width: 150px;"><input type="hidden" class="textbox-value" name="code" value=""></span>
+        </div>
+        <div class="conditions hide">
+            <span class="con-span">公司代码: </span><input class="easyui-textbox textbox-f" type="text" style="width: 166px; height: 35px; line-height: 35px; display: none;" textboxname="code"><span class="textbox" style="width: 164px; height: 33px;"><input type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 0px; padding-top: 0px; padding-bottom: 0px; height: 33px; line-height: 33px; width: 150px;"><input type="hidden" class="textbox-value" name="code" value=""></span>
+            <span class="con-span">公司名称: </span><select class="easyui-combobox combobox-f combo-f textbox-f" style="height: 35px; width: 166px; display: none;" textboxname="language" comboname="language"><option>公司名称</option></select><span class="textbox combo" style="width: 164px; height: 33px;"><span class="textbox-addon textbox-addon-right" style="right: 0px;"><a href="javascript:void(0)" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 33px;"></a></span><input type="text" class="textbox-text validatebox-text" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 18px; padding-top: 0px; padding-bottom: 0px; height: 33px; line-height: 33px; width: 132px;"><input type="hidden" class="textbox-value" name="language" value="公司名称"></span>
+            <span class="con-span">发布时间: </span><input class="easyui-datetimebox combo-f textbox-f datetimebox-f" style="width: 166px; height: 35px; line-height: 35px; display: none;"><span class="textbox combo datebox" style="width: 164px; height: 33px;"><span class="textbox-addon textbox-addon-right" style="right: 0px;"><a href="javascript:void(0)" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 33px;"></a></span><input type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 18px; padding-top: 0px; padding-bottom: 0px; height: 33px; line-height: 33px; width: 132px;"><input type="hidden" class="textbox-value" name="" value=""></span>
+            <span class="con-span">合同状态: </span><input class="easyui-textbox textbox-f" type="text" style="width: 166px; height: 35px; line-height: 35px; display: none;" textboxname="code"><span class="textbox" style="width: 164px; height: 33px;"><input type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 0px; padding-top: 0px; padding-bottom: 0px; height: 33px; line-height: 33px; width: 150px;"><input type="hidden" class="textbox-value" name="code" value=""></span>
+        </div>
+        <div class="opt-buttons">
+            <a href="http://www.fesucai.com/uploads/show/easyui/pages/providers1.html#" class="easyui-linkbutton l-btn l-btn-small l-btn-selected" data-options="selected:true" group="" id=""><span class="l-btn-left"><span class="l-btn-text">新增</span></span></a>
+            <a href="http://www.fesucai.com/uploads/show/easyui/pages/providers1.html#" class="easyui-linkbutton l-btn l-btn-small" group="" id=""><span class="l-btn-left"><span class="l-btn-text">发布</span></span></a>
+            <a href="http://www.fesucai.com/uploads/show/easyui/pages/providers1.html#" class="easyui-linkbutton l-btn l-btn-small" group="" id=""><span class="l-btn-left"><span class="l-btn-text">取消发布</span></span></a>
+            <a href="http://www.fesucai.com/uploads/show/easyui/pages/providers1.html#" class="easyui-linkbutton l-btn l-btn-small" group="" id=""><span class="l-btn-left"><span class="l-btn-text">标记为执行完毕</span></span></a>
+            <a href="http://www.fesucai.com/uploads/show/easyui/pages/providers1.html#" class="easyui-linkbutton l-btn l-btn-small" group="" id=""><span class="l-btn-left"><span class="l-btn-text">导出</span></span></a>
+        </div>
+      </div><div class="datagrid-view" style="width: 0px; height: 38px;"><div class="datagrid-view1" style="width: 40px;"><div class="datagrid-header" style="width: 40px; height: 37px;"><div class="datagrid-header-inner" style="display: block;"><table class="datagrid-htable" border="0" cellspacing="0" cellpadding="0" style="height: 38px;"><tbody><tr class="datagrid-header-row"><td rowspan="0"><div class="datagrid-header-rownumber"></div></td></tr></tbody></table></div></div><div class="datagrid-body" style="width: 40px; margin-top: 0px; height: 0px;"><div class="datagrid-body-inner"><table class="datagrid-btable" cellspacing="0" cellpadding="0" border="0"><tbody><tr id="datagrid-row-r1-1-0" datagrid-row-index="0" class="datagrid-row  "><td class="datagrid-td-rownumber"><div class="datagrid-cell-rownumber">1</div></td></tr><tr id="datagrid-row-r1-1-1" datagrid-row-index="1" class="datagrid-row datagrid-row-alt "><td class="datagrid-td-rownumber"><div class="datagrid-cell-rownumber">2</div></td></tr><tr id="datagrid-row-r1-1-2" datagrid-row-index="2" class="datagrid-row  "><td class="datagrid-td-rownumber"><div class="datagrid-cell-rownumber">3</div></td></tr><tr id="datagrid-row-r1-1-3" datagrid-row-index="3" class="datagrid-row datagrid-row-alt "><td class="datagrid-td-rownumber"><div class="datagrid-cell-rownumber">4</div></td></tr><tr id="datagrid-row-r1-1-4" datagrid-row-index="4" class="datagrid-row  "><td class="datagrid-td-rownumber"><div class="datagrid-cell-rownumber">5</div></td></tr><tr id="datagrid-row-r1-1-5" datagrid-row-index="5" class="datagrid-row datagrid-row-alt "><td class="datagrid-td-rownumber"><div class="datagrid-cell-rownumber">6</div></td></tr><tr id="datagrid-row-r1-1-6" datagrid-row-index="6" class="datagrid-row  "><td class="datagrid-td-rownumber"><div class="datagrid-cell-rownumber">7</div></td></tr><tr id="datagrid-row-r1-1-7" datagrid-row-index="7" class="datagrid-row datagrid-row-alt "><td class="datagrid-td-rownumber"><div class="datagrid-cell-rownumber">8</div></td></tr><tr id="datagrid-row-r1-1-8" datagrid-row-index="8" class="datagrid-row  "><td class="datagrid-td-rownumber"><div class="datagrid-cell-rownumber">9</div></td></tr><tr id="datagrid-row-r1-1-9" datagrid-row-index="9" class="datagrid-row datagrid-row-alt "><td class="datagrid-td-rownumber"><div class="datagrid-cell-rownumber">10</div></td></tr></tbody></table></div></div><div class="datagrid-footer" style="width: 40px;"><div class="datagrid-footer-inner" style="display: none;"></div></div></div><div class="datagrid-view2" style="width: 0px;"><div class="datagrid-header" style="width: 0px; height: 37px;"><div class="datagrid-header-inner" style="display: block;"><table class="datagrid-htable" border="0" cellspacing="0" cellpadding="0" style="height: 38px;"><tbody><tr class="datagrid-header-row"><td field="code"><div class="datagrid-cell datagrid-cell-c1-code" style=""><span>供应商编码</span><span class="datagrid-sort-icon"></span></div></td><td field="name"><div class="datagrid-cell datagrid-cell-c1-name" style=""><span>供应商名称</span><span class="datagrid-sort-icon"></span></div></td><td field="level"><div class="datagrid-cell datagrid-cell-c1-level" style=""><span>等级</span><span class="datagrid-sort-icon"></span></div></td><td field="provide"><div class="datagrid-cell datagrid-cell-c1-provide" style=""><span>主供品类</span><span class="datagrid-sort-icon"></span></div></td><td field="full"><div class="datagrid-cell datagrid-cell-c1-full" style=""><span>资料是否完善</span><span class="datagrid-sort-icon"></span></div></td><td field="issubmit"><div class="datagrid-cell datagrid-cell-c1-issubmit" style=""><span>调查表格是否提交</span><span class="datagrid-sort-icon"></span></div></td><td field="status"><div class="datagrid-cell datagrid-cell-c1-status" style=""><span>审核状态</span><span class="datagrid-sort-icon"></span></div></td><td field="note"><div class="datagrid-cell datagrid-cell-c1-note" style=""><span>备注</span><span class="datagrid-sort-icon"></span></div></td></tr></tbody></table></div></div><div class="datagrid-body" style="width: 0px; margin-top: 0px; height: 0px;"><table class="datagrid-btable" cellspacing="0" cellpadding="0" border="0"><tbody><tr id="datagrid-row-r1-2-0" datagrid-row-index="0" class="datagrid-row  "><td field="code"><div style="" class="datagrid-cell datagrid-cell-c1-code">10695</div></td><td field="name"><div style="" class="datagrid-cell datagrid-cell-c1-name">南京天泽星网股份有限公司</div></td><td field="level"><div style="" class="datagrid-cell datagrid-cell-c1-level">正式</div></td><td field="provide"><div style="" class="datagrid-cell datagrid-cell-c1-provide">光纤通信设备配件</div></td><td field="full"><div style="" class="datagrid-cell datagrid-cell-c1-full">√</div></td><td field="issubmit"><div style="" class="datagrid-cell datagrid-cell-c1-issubmit">√</div></td><td field="status"><div style="" class="datagrid-cell datagrid-cell-c1-status">已审核</div></td><td field="note"><div style="" class="datagrid-cell datagrid-cell-c1-note">-</div></td></tr><tr id="datagrid-row-r1-2-1" datagrid-row-index="1" class="datagrid-row datagrid-row-alt "><td field="code"><div style="" class="datagrid-cell datagrid-cell-c1-code">10695</div></td><td field="name"><div style="" class="datagrid-cell datagrid-cell-c1-name">南京天泽星网股份有限公司</div></td><td field="level"><div style="" class="datagrid-cell datagrid-cell-c1-level">正式</div></td><td field="provide"><div style="" class="datagrid-cell datagrid-cell-c1-provide">光纤通信设备配件</div></td><td field="full"><div style="" class="datagrid-cell datagrid-cell-c1-full">√</div></td><td field="issubmit"><div style="" class="datagrid-cell datagrid-cell-c1-issubmit">√</div></td><td field="status"><div style="" class="datagrid-cell datagrid-cell-c1-status">已审核</div></td><td field="note"><div style="" class="datagrid-cell datagrid-cell-c1-note">-</div></td></tr><tr id="datagrid-row-r1-2-2" datagrid-row-index="2" class="datagrid-row  "><td field="code"><div style="" class="datagrid-cell datagrid-cell-c1-code">10695</div></td><td field="name"><div style="" class="datagrid-cell datagrid-cell-c1-name">南京天泽星网股份有限公司</div></td><td field="level"><div style="" class="datagrid-cell datagrid-cell-c1-level">正式</div></td><td field="provide"><div style="" class="datagrid-cell datagrid-cell-c1-provide">光纤通信设备配件</div></td><td field="full"><div style="" class="datagrid-cell datagrid-cell-c1-full">√</div></td><td field="issubmit"><div style="" class="datagrid-cell datagrid-cell-c1-issubmit">√</div></td><td field="status"><div style="" class="datagrid-cell datagrid-cell-c1-status">已审核</div></td><td field="note"><div style="" class="datagrid-cell datagrid-cell-c1-note">-</div></td></tr><tr id="datagrid-row-r1-2-3" datagrid-row-index="3" class="datagrid-row datagrid-row-alt "><td field="code"><div style="" class="datagrid-cell datagrid-cell-c1-code">10695</div></td><td field="name"><div style="" class="datagrid-cell datagrid-cell-c1-name">南京天泽星网股份有限公司</div></td><td field="level"><div style="" class="datagrid-cell datagrid-cell-c1-level">正式</div></td><td field="provide"><div style="" class="datagrid-cell datagrid-cell-c1-provide">光纤通信设备配件</div></td><td field="full"><div style="" class="datagrid-cell datagrid-cell-c1-full">√</div></td><td field="issubmit"><div style="" class="datagrid-cell datagrid-cell-c1-issubmit">√</div></td><td field="status"><div style="" class="datagrid-cell datagrid-cell-c1-status">已审核</div></td><td field="note"><div style="" class="datagrid-cell datagrid-cell-c1-note">-</div></td></tr><tr id="datagrid-row-r1-2-4" datagrid-row-index="4" class="datagrid-row  "><td field="code"><div style="" class="datagrid-cell datagrid-cell-c1-code">10695</div></td><td field="name"><div style="" class="datagrid-cell datagrid-cell-c1-name">南京天泽星网股份有限公司</div></td><td field="level"><div style="" class="datagrid-cell datagrid-cell-c1-level">正式</div></td><td field="provide"><div style="" class="datagrid-cell datagrid-cell-c1-provide">光纤通信设备配件</div></td><td field="full"><div style="" class="datagrid-cell datagrid-cell-c1-full">√</div></td><td field="issubmit"><div style="" class="datagrid-cell datagrid-cell-c1-issubmit">√</div></td><td field="status"><div style="" class="datagrid-cell datagrid-cell-c1-status">已审核</div></td><td field="note"><div style="" class="datagrid-cell datagrid-cell-c1-note">-</div></td></tr><tr id="datagrid-row-r1-2-5" datagrid-row-index="5" class="datagrid-row datagrid-row-alt "><td field="code"><div style="" class="datagrid-cell datagrid-cell-c1-code">10695</div></td><td field="name"><div style="" class="datagrid-cell datagrid-cell-c1-name">南京天泽星网股份有限公司</div></td><td field="level"><div style="" class="datagrid-cell datagrid-cell-c1-level">正式</div></td><td field="provide"><div style="" class="datagrid-cell datagrid-cell-c1-provide">光纤通信设备配件</div></td><td field="full"><div style="" class="datagrid-cell datagrid-cell-c1-full">√</div></td><td field="issubmit"><div style="" class="datagrid-cell datagrid-cell-c1-issubmit">√</div></td><td field="status"><div style="" class="datagrid-cell datagrid-cell-c1-status">已审核</div></td><td field="note"><div style="" class="datagrid-cell datagrid-cell-c1-note">-</div></td></tr><tr id="datagrid-row-r1-2-6" datagrid-row-index="6" class="datagrid-row  "><td field="code"><div style="" class="datagrid-cell datagrid-cell-c1-code">10695</div></td><td field="name"><div style="" class="datagrid-cell datagrid-cell-c1-name">南京天泽星网股份有限公司</div></td><td field="level"><div style="" class="datagrid-cell datagrid-cell-c1-level">正式</div></td><td field="provide"><div style="" class="datagrid-cell datagrid-cell-c1-provide">光纤通信设备配件</div></td><td field="full"><div style="" class="datagrid-cell datagrid-cell-c1-full">√</div></td><td field="issubmit"><div style="" class="datagrid-cell datagrid-cell-c1-issubmit">√</div></td><td field="status"><div style="" class="datagrid-cell datagrid-cell-c1-status">已审核</div></td><td field="note"><div style="" class="datagrid-cell datagrid-cell-c1-note">-</div></td></tr><tr id="datagrid-row-r1-2-7" datagrid-row-index="7" class="datagrid-row datagrid-row-alt "><td field="code"><div style="" class="datagrid-cell datagrid-cell-c1-code">10695</div></td><td field="name"><div style="" class="datagrid-cell datagrid-cell-c1-name">南京天泽星网股份有限公司</div></td><td field="level"><div style="" class="datagrid-cell datagrid-cell-c1-level">正式</div></td><td field="provide"><div style="" class="datagrid-cell datagrid-cell-c1-provide">光纤通信设备配件</div></td><td field="full"><div style="" class="datagrid-cell datagrid-cell-c1-full">√</div></td><td field="issubmit"><div style="" class="datagrid-cell datagrid-cell-c1-issubmit">√</div></td><td field="status"><div style="" class="datagrid-cell datagrid-cell-c1-status">已审核</div></td><td field="note"><div style="" class="datagrid-cell datagrid-cell-c1-note">-</div></td></tr><tr id="datagrid-row-r1-2-8" datagrid-row-index="8" class="datagrid-row  "><td field="code"><div style="" class="datagrid-cell datagrid-cell-c1-code">10695</div></td><td field="name"><div style="" class="datagrid-cell datagrid-cell-c1-name">南京天泽星网股份有限公司</div></td><td field="level"><div style="" class="datagrid-cell datagrid-cell-c1-level">正式</div></td><td field="provide"><div style="" class="datagrid-cell datagrid-cell-c1-provide">光纤通信设备配件</div></td><td field="full"><div style="" class="datagrid-cell datagrid-cell-c1-full">√</div></td><td field="issubmit"><div style="" class="datagrid-cell datagrid-cell-c1-issubmit">√</div></td><td field="status"><div style="" class="datagrid-cell datagrid-cell-c1-status">已审核</div></td><td field="note"><div style="" class="datagrid-cell datagrid-cell-c1-note">-</div></td></tr><tr id="datagrid-row-r1-2-9" datagrid-row-index="9" class="datagrid-row datagrid-row-alt "><td field="code"><div style="" class="datagrid-cell datagrid-cell-c1-code">10695</div></td><td field="name"><div style="" class="datagrid-cell datagrid-cell-c1-name">南京天泽星网股份有限公司</div></td><td field="level"><div style="" class="datagrid-cell datagrid-cell-c1-level">正式</div></td><td field="provide"><div style="" class="datagrid-cell datagrid-cell-c1-provide">光纤通信设备配件</div></td><td field="full"><div style="" class="datagrid-cell datagrid-cell-c1-full">√</div></td><td field="issubmit"><div style="" class="datagrid-cell datagrid-cell-c1-issubmit">√</div></td><td field="status"><div style="" class="datagrid-cell datagrid-cell-c1-status">已审核</div></td><td field="note"><div style="" class="datagrid-cell datagrid-cell-c1-note">-</div></td></tr></tbody></table></div><div class="datagrid-footer" style="width: 0px;"><div class="datagrid-footer-inner" style="display: none;"></div></div></div><table id="dg" style="display: none;" title="全体供应商列表" data-options="
+                rownumbers:true,
+                singleSelect:false,
+                autoRowHeight:false,
+                pagination:true,
+                fitColumns:true,
+                striped:true,
+                checkOnSelect:false,
+                selectOnCheck:false,
+                collapsible:true,
+                toolbar:&#39;#tb&#39;,
+                pageSize:10" class="datagrid-f">
+            <thead>
+                <tr>
+                    <th field="code" width="110">供应商编码</th>
+                    <th field="name" width="226">供应商名称</th>
+                    <th field="level" width="112">等级</th>
+                    <th field="provide" width="170">主供品类</th>
+                    <th field="full" width="130">资料是否完善</th>
+                    <th field="issubmit" width="136">调查表格是否提交</th>
+                    <th field="status" width="120">审核状态</th>
+                    <th field="note" width="105">备注</th>
+                </tr>
+            </thead>
+        </table><style type="text/css" easyui="true">
+.datagrid-cell-c1-code{width:101px}
+.datagrid-cell-c1-name{width:217px}
+.datagrid-cell-c1-level{width:103px}
+.datagrid-cell-c1-provide{width:161px}
+.datagrid-cell-c1-full{width:121px}
+.datagrid-cell-c1-issubmit{width:127px}
+.datagrid-cell-c1-status{width:111px}
+.datagrid-cell-c1-note{width:96px}
+</style></div><div class="datagrid-pager pagination"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><select class="pagination-page-list"><option>10</option><option>20</option><option>30</option><option>40</option><option>50</option></select></td><td><div class="pagination-btn-separator"></div></td><td><a href="javascript:void(0)" class="l-btn l-btn-small l-btn-plain l-btn-disabled l-btn-plain-disabled" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text l-btn-empty">&nbsp;</span><span class="l-btn-icon pagination-first">&nbsp;</span></span></a></td><td><a href="javascript:void(0)" class="l-btn l-btn-small l-btn-plain l-btn-disabled l-btn-plain-disabled" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text l-btn-empty">&nbsp;</span><span class="l-btn-icon pagination-prev">&nbsp;</span></span></a></td><td><div class="pagination-btn-separator"></div></td><td><span style="padding-left:6px;">第</span></td><td><input class="pagination-num" type="text" value="1" size="2"></td><td><span style="padding-right:6px;">共80页</span></td><td><div class="pagination-btn-separator"></div></td><td><a href="javascript:void(0)" class="l-btn l-btn-small l-btn-plain" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text l-btn-empty">&nbsp;</span><span class="l-btn-icon pagination-next">&nbsp;</span></span></a></td><td><a href="javascript:void(0)" class="l-btn l-btn-small l-btn-plain" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text l-btn-empty">&nbsp;</span><span class="l-btn-icon pagination-last">&nbsp;</span></span></a></td><td><div class="pagination-btn-separator"></div></td><td><a href="javascript:void(0)" class="l-btn l-btn-small l-btn-plain" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text l-btn-empty">&nbsp;</span><span class="l-btn-icon pagination-load">&nbsp;</span></span></a></td></tr></tbody></table><div class="pagination-info">显示1到10,共800记录</div><div style="clear:both;"></div></div></div></div>
+      
+    </div>
+    <script type="text/javascript" src="./jquery.min.js.下载"></script>
+    <script type="text/javascript" src="./jquery.easyui.min.js.下载"></script>
+    <script type="text/javascript" src="./easyui-lang-zh_CN.js.下载"></script>
+
+
+    
+  
+
+    
+    <script type="text/javascript">
+            (function($){
+            function pagerFilter(data){
+                if ($.isArray(data)){   // is array
+                    data = {
+                        total: data.length,
+                        rows: data
+                    }
+                }
+                var target = this;
+                var dg = $(target);
+                var state = dg.data('datagrid');
+                var opts = dg.datagrid('options');
+                if (!state.allRows){
+                    state.allRows = (data.rows);
+                }
+                if (!opts.remoteSort && opts.sortName){
+                    var names = opts.sortName.split(',');
+                    var orders = opts.sortOrder.split(',');
+                    state.allRows.sort(function(r1,r2){
+                        var r = 0;
+                        for(var i=0; i<names.length; i++){
+                            var sn = names[i];
+                            var so = orders[i];
+                            var col = $(target).datagrid('getColumnOption', sn);
+                            var sortFunc = col.sorter || function(a,b){
+                                return a==b ? 0 : (a>b?1:-1);
+                            };
+                            r = sortFunc(r1[sn], r2[sn]) * (so=='asc'?1:-1);
+                            if (r != 0){
+                                return r;
+                            }
+                        }
+                        return r;
+                    });
+                }
+                var start = (opts.pageNumber-1)*parseInt(opts.pageSize);
+                var end = start + parseInt(opts.pageSize);
+                data.rows = state.allRows.slice(start, end);
+                return data;
+            }
+
+            var loadDataMethod = $.fn.datagrid.methods.loadData;
+            var deleteRowMethod = $.fn.datagrid.methods.deleteRow;
+            $.extend($.fn.datagrid.methods, {
+                clientPaging: function(jq){
+                    return jq.each(function(){
+                        var dg = $(this);
+                        var state = dg.data('datagrid');
+                        var opts = state.options;
+                        opts.loadFilter = pagerFilter;
+                        var onBeforeLoad = opts.onBeforeLoad;
+                        opts.onBeforeLoad = function(param){
+                            state.allRows = null;
+                            return onBeforeLoad.call(this, param);
+                        }
+                        var pager = dg.datagrid('getPager');
+                        pager.pagination({
+                            onSelectPage:function(pageNum, pageSize){
+                                opts.pageNumber = pageNum;
+                                opts.pageSize = pageSize;
+                                pager.pagination('refresh',{
+                                    pageNumber:pageNum,
+                                    pageSize:pageSize
+                                });
+                                dg.datagrid('loadData',state.allRows);
+                            }
+                        });
+                        $(this).datagrid('loadData', state.data);
+                        if (opts.url){
+                            $(this).datagrid('reload');
+                        }
+                    });
+                },
+                loadData: function(jq, data){
+                    jq.each(function(){
+                        $(this).data('datagrid').allRows = null;
+                    });
+                    return loadDataMethod.call($.fn.datagrid.methods, jq, data);
+                },
+                deleteRow: function(jq, index){
+                    return jq.each(function(){
+                        var row = $(this).datagrid('getRows')[index];
+                        deleteRowMethod.call($.fn.datagrid.methods, $(this), index);
+                        var state = $(this).data('datagrid');
+                        if (state.options.loadFilter == pagerFilter){
+                            for(var i=0; i<state.allRows.length; i++){
+                                if (state.allRows[i] == row){
+                                    state.allRows.splice(i,1);
+                                    break;
+                                }
+                            }
+                            $(this).datagrid('loadData', state.allRows);
+                        }
+                    });
+                },
+                getAllRows: function(jq){
+                    return jq.data('datagrid').allRows;
+                }
+            })
+        })(jQuery);
+
+        function getData(){
+            var rows = [];
+            for(var i=1; i<=800; i++){
+                rows.push({
+                    code: '10695',
+                    name: '南京天泽星网股份有限公司',
+                    level: '正式',
+                    provide: '光纤通信设备配件',
+                    full: '√',
+                    issubmit: '√',
+                    status:'已审核',
+                    note: '-'
+                });
+            }
+            return rows;
+        }
+        
+        $(function(){
+            $('#dg').datagrid({data:getData()}).datagrid('clientPaging');
+        });    
+
+
+        $(".more").click(function(){
+            $(this).closest(".conditions").siblings().toggleClass("hide");
+        });
+    </script>
+ 
+
+<div class="panel combo-p" style="position: absolute; z-index: 10; display: none;"><div class="combo-panel panel-body panel-body-noheader" title=""><div id="_easyui_combobox_i1_0" class="combobox-item combobox-item-selected">合同模板1</div></div></div><div class="panel combo-p" style="position: absolute; z-index: 10; display: none;"><div class="combo-panel panel-body panel-body-noheader" title=""><div id="_easyui_combobox_i2_0" class="combobox-item combobox-item-selected">公司名称</div></div></div><div class="panel combo-p" style="position: absolute; z-index: 10; display: none;"><div class="combo-panel panel-body panel-body-noheader" title="" id="" style="overflow: hidden;"><div class="datebox-calendar-inner panel-noscroll"><div class="calendar calendar-noborder easyui-fluid" style="width: 1px; height: 180px;"><div class="calendar-header"><div class="calendar-nav calendar-prevmonth"></div><div class="calendar-nav calendar-nextmonth"></div><div class="calendar-nav calendar-prevyear"></div><div class="calendar-nav calendar-nextyear"></div><div class="calendar-title"><span class="calendar-text">三月 2017</span></div></div><div class="calendar-body" style="height: 150px;"><table class="calendar-dtable" cellspacing="0" cellpadding="0" border="0"><thead><tr><th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th></tr></thead><tbody><tr class="calendar-first"><td class="calendar-day calendar-other-month calendar-sunday calendar-first " abbr="2017,2,26" style="">26</td><td class="calendar-day calendar-other-month " abbr="2017,2,27" style="">27</td><td class="calendar-day calendar-other-month " abbr="2017,2,28" style="">28</td><td class="calendar-day calendar-today calendar-selected " abbr="2017,3,1" style="">1</td><td class="calendar-day " abbr="2017,3,2" style="">2</td><td class="calendar-day " abbr="2017,3,3" style="">3</td><td class="calendar-day calendar-saturday calendar-last " abbr="2017,3,4" style="">4</td></tr><tr class=""><td class="calendar-day calendar-sunday calendar-first " abbr="2017,3,5" style="">5</td><td class="calendar-day " abbr="2017,3,6" style="">6</td><td class="calendar-day " abbr="2017,3,7" style="">7</td><td class="calendar-day " abbr="2017,3,8" style="">8</td><td class="calendar-day " abbr="2017,3,9" style="">9</td><td class="calendar-day " abbr="2017,3,10" style="">10</td><td class="calendar-day calendar-saturday calendar-last " abbr="2017,3,11" style="">11</td></tr><tr class=""><td class="calendar-day calendar-sunday calendar-first " abbr="2017,3,12" style="">12</td><td class="calendar-day " abbr="2017,3,13" style="">13</td><td class="calendar-day " abbr="2017,3,14" style="">14</td><td class="calendar-day " abbr="2017,3,15" style="">15</td><td class="calendar-day " abbr="2017,3,16" style="">16</td><td class="calendar-day " abbr="2017,3,17" style="">17</td><td class="calendar-day calendar-saturday calendar-last " abbr="2017,3,18" style="">18</td></tr><tr class=""><td class="calendar-day calendar-sunday calendar-first " abbr="2017,3,19" style="">19</td><td class="calendar-day " abbr="2017,3,20" style="">20</td><td class="calendar-day " abbr="2017,3,21" style="">21</td><td class="calendar-day " abbr="2017,3,22" style="">22</td><td class="calendar-day " abbr="2017,3,23" style="">23</td><td class="calendar-day " abbr="2017,3,24" style="">24</td><td class="calendar-day calendar-saturday calendar-last " abbr="2017,3,25" style="">25</td></tr><tr class=""><td class="calendar-day calendar-sunday calendar-first " abbr="2017,3,26" style="">26</td><td class="calendar-day " abbr="2017,3,27" style="">27</td><td class="calendar-day " abbr="2017,3,28" style="">28</td><td class="calendar-day " abbr="2017,3,29" style="">29</td><td class="calendar-day " abbr="2017,3,30" style="">30</td><td class="calendar-day " abbr="2017,3,31" style="">31</td><td class="calendar-day calendar-other-month calendar-saturday calendar-last " abbr="2017,4,1" style="">1</td></tr><tr class="calendar-last"><td class="calendar-day calendar-other-month calendar-sunday calendar-first " abbr="2017,4,2" style="">2</td><td class="calendar-day calendar-other-month " abbr="2017,4,3" style="">3</td><td class="calendar-day calendar-other-month " abbr="2017,4,4" style="">4</td><td class="calendar-day calendar-other-month " abbr="2017,4,5" style="">5</td><td class="calendar-day calendar-other-month " abbr="2017,4,6" style="">6</td><td class="calendar-day calendar-other-month " abbr="2017,4,7" style="">7</td><td class="calendar-day calendar-other-month calendar-saturday calendar-last " abbr="2017,4,8" style="">8</td></tr></tbody></table><div class="calendar-menu" style="display: none;"><div class="calendar-menu-year-inner"><span class="calendar-nav calendar-menu-prev"></span><span><input class="calendar-menu-year" type="text"></span><span class="calendar-nav calendar-menu-next"></span></div><div class="calendar-menu-month-inner"></div></div></div></div></div><div style="padding:2px"><input class="timespinner-f spinner-f textbox-f" style="display: none;"><span class="textbox easyui-fluid spinner" style="width: 0px; height: 20px;"><span class="textbox-addon textbox-addon-right" style="right: 0px;"><a href="javascript:void(0)" class="textbox-icon spinner-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 20px;"><a href="javascript:void(0)" class="spinner-arrow-up" tabindex="-1"></a><a href="javascript:void(0)" class="spinner-arrow-down" tabindex="-1"></a></a></span><input type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 18px; padding-top: 0px; padding-bottom: 0px; height: 20px; line-height: 20px; width: 0px;"><input type="hidden" class="textbox-value" value=""></span></div></div></div></body></html>

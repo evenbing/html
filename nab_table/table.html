@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>NBA_腾讯体育_腾讯网_NBA中国数字媒体独家官方合作伙伴</title>
+    <meta name="keywords" content="NBA总决赛,勒布朗-詹姆斯,库里,骑士,勇士,汤普森,视频,直播,数据,比分,球队,赛程,湖人,科比,热火,詹姆斯,火箭,哈登,杜兰特,库里,林书豪,姚明,马刺">
+    <meta name="description" content="腾讯NBA频道是NBA官方合作伙伴，覆盖最新的NBA赛况，呈现海量NBA资讯，全方位报道30支球队以及科比、詹姆斯、库里、杜兰特、哈登、霍华德、林书豪、汤普森等NBA球星动态，提供直播、视频、数据、图片、专题、评论等各类信息，收录球队、球员、比分、赛程赛果等各类数据。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="http://mat1.gtimg.com/statsnba/common/styles/reset-0a5db03b3e.css">
+    <link rel="stylesheet" href="http://mat1.gtimg.com/statsnba/nbascore/styles/index-53456458fa.css">
+    <script type="text/javascript" src="http://mat1.gtimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main-f3ac1c98bf" src="http://mat1.gtimg.com/statsnba/nbascore/scripts/main-f3ac1c98bf.js"></script>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<style type="text/css">
+.statictis {
+    width: 1240px;
+    height: 100%;
+    margin: 40px auto 0;
+}
+.statictis .left {
+    width: 900px;
+    height: 100%;
+    float: left;
+}
+.statictis .left .home, .statictis .left .visit {
+    margin-bottom: 30px;
+}
+.statictis .left .home .title, .statictis .left .visit .title {
+    height: 50px;
+}
+.statictis .left .home .title a, .statictis .left .visit .title a {
+    text-decoration: none;
+}
+.statictis .left .home .title a img, .statictis .left .visit .title a img {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    margin-right: 16px;
+    vertical-align: middle;
+    line-height: 50px;
+    float: left;
+}
+.statictis .left .home .data, .statictis .left .visit .data {
+    height: 100%;
+}
+.statictis .left .home .data table, .statictis .left .visit .data table {
+    border-collapse: inherit;
+    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 14px;
+    color: #555;
+    font-family: Arial,"Microsoft Yahei";
+}
+.statictis .left .home .data table tr.dark, .statictis .left .visit .data table tr.dark {
+    background: #f9f9f9;
+}
+.statictis .left .home .data table tr.dark, .statictis .left .visit .data table tr.dark .blue_h{
+    border-top-width:2px;
+    padding-top:0px;
+    height: 33px;
+    border-top-style: solid;
+    border-top-color: #579edd;
+    background: #fff;
+}
+.statictis .left .home .data table tr.tit, .statictis .left .visit .data table tr.tit {
+    font-weight: 700;
+}
+.statictis .left .home .data table tr td, .statictis .left .visit .data table tr td {
+    border-left: 1px solid #e9e9e9;
+    border-top: 1px solid #e9e9e9;
+    text-align: center;
+    width: 58px;
+    height: 34px;
+}
+.statictis .left .home .data table tr td.bg, .statictis .left .visit .data table tr td.bg {
+    background: #ececec;
+}
+.statictis .left .home .data table tr:first-child td, .statictis .left .visit .data table tr:first-child td {
+    border-left: 1px solid #e9e9e9;
+    border-top: 1px solid #e9e9e9;
+    text-align: center;
+    padding-top: 1px;
+    height: 33px;
+}
+
+.statictis .left .home .data table tr td:first-child, .statictis .left .visit .data table tr td:first-child {
+    width: 131px;
+    height: 34px;
+}
+.statictis .left .home .data table tr:first-child td:first-child, .statictis .left .visit .data table tr:first-child td:first-child {
+    padding-top: 1px;
+    width: 132px;
+    height: 33px;
+}
+.statictis .left .home .data table tr.dark .red, .statictis .left .home .data table tr.light .red, .statictis .left .visit .data table tr.dark .red, .statictis .left .visit .data table tr.light .red {
+    color: #f23d63;
+}
+.statictis .left .home .data table tr.light, .statictis .left .visit .data table tr.light {
+    background: #fff;
+}
+.statictis .left .home .data table tr.light, .statictis .left .visit .data table tr.light .others_v{
+	border-top-color: #fff;
+    background: #fff;
+}
+.statictis .left .home .data table tr.dark .blue_v,.statictis .left .visit .data table tr.dark .blue_v{
+	border-left-width:2px;
+	border-left-style:solid;
+	border-left-color:#579edd;
+	background:#fff;
+	border-top:1px solid #e9e9e9
+}
+.statictis .left .home .data table tr.dark .others_v,.statictis .left .home .data table tr.light .check,.statictis .left .visit .data table tr.dark .others_v,.statictis .left .visit .data table tr.light .check{border-top-color:#fff;background:#fff}
+.statictis .left .home .data table tr.dark .others_h,.statictis .left .visit .data table tr.dark .others_h{border-left-color:#fff;background:#fff}
+.statictis .left .home .data table tr.light,.statictis .left .visit .data table tr.light{background:#fff}
+.statictis .left .home .data table tr.light .blue_h,.statictis .left .visit .data table tr.light .blue_h{border-top-width:2px;height:33px;border-top-style:solid;border-top-color:#579edd;background:#fff}
+.statictis .right,.statictis .right .compare{height:100%;width:300px}
+.statictis .left .home .data table tr.light .blue_v,.statictis .left .visit .data table tr.light .blue_v{border-left-width:2px;border-left-style:solid;border-left-color:#579edd;background:#fff;border-top:1px solid #e9e9e9}
+.statictis .left .home .data table tr.light .others_h,.statictis .left .visit .data table tr.light .others_h{border-left-color:#fff;background:#fff}
+.statictis .left .home .data table tr.light .others_v,.statictis .left .visit .data table tr.light .others_v{border-top-color:#fff;background:#fff}
+.statictis .left .home .data table tr.tit,.statictis .left .visit .data table tr.tit{font-weight:700}
+.statictis .left .home .data table tr.hitrate td,.statictis .left .home .data table tr.hitrate th,.statictis .left .home .data table tr.total td,.statictis .left .home .data table tr.total th,.statictis .left .visit .data table tr.hitrate td,.statictis .left .visit .data table tr.hitrate th,.statictis .left .visit .data table tr.total td,.statictis .left .visit .data table tr.total th{border-left:1px solid #f9f9f9}
+.statictis .left .home .data table tr.hitrate td:first-child,.statictis .left .home .data table tr.hitrate th:first-child,.statictis .left .home .data table tr.total td:first-child,.statictis .left .home .data table tr.total th:first-child,.statictis .left .visit .data table tr.hitrate td:first-child,.statictis .left .visit .data table tr.hitrate th:first-child,.statictis .left .visit .data table tr.total td:first-child,.statictis .left .visit .data table tr.total th:first-child{border-left:1px solid #e9e9e9}
+.statictis .left .home .data table tr.hitrate td:first-child,.statictis .left .home .data table tr.total td:first-child,.statictis .left .visit .data table tr.hitrate td:first-child,.statictis .left .visit .data table tr.total td:first-child{font-weight:700}
+</style>
+</head>
+<body>
+<div class="statictis">
+	<div class="left">
+		<div class="visit">
+					<div class="title">
+						<a href="http://nba.stats.qq.com/team/?id=cavaliers" target="_blank" bosszone="SSSJ_staTeam">
+							<img src="http://mat1.gtimg.com/sports/nba/logo/1602/5.png" alt="42x42">
+							<h2>克里夫兰 骑士</h2>
+						</a>
+					</div>
+					<div class="data">
+						<table>
+							<tbody>
+								<tr data-playerid="" class="dark  tit   ">
+									<td data-coord="0,0" class="">首发球员</td><td data-coord="0,1" class="">时间</td><td data-coord="0,2" class="bg">得分</td><td data-coord="0,3" class="bg">篮板</td><td data-coord="0,4" class="bg">助攻</td><td data-coord="0,5" class="">投篮</td><td data-coord="0,6" class="">三分</td><td data-coord="0,7" class="">罚球</td><td data-coord="0,8" class="">前场板</td><td data-coord="0,9" class="">后场板</td><td data-coord="0,10" class="">抢断</td><td data-coord="0,11" class="">盖帽</td><td data-coord="0,12" class="">失误</td><td data-coord="0,13" class="">犯规</td>
+								</tr>
+								<tr data-playerid="3704" class="light     ">
+									<td data-coord="1,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=3704" target="_blank" bosszone="SSSJ_staPla">
+										詹姆斯
+									</a></td><td data-coord="1,1" class="">34</td><td data-coord="1,2" class="red">35</td><td data-coord="1,3" class="">8</td><td data-coord="1,4" class="red">8</td><td data-coord="1,5" class="">13/18</td><td data-coord="1,6" class="">4/7</td><td data-coord="1,7" class="">5/8</td><td data-coord="1,8" class="">1</td><td data-coord="1,9" class="">7</td><td data-coord="1,10" class="">3</td><td data-coord="1,11" class="">1</td><td data-coord="1,12" class="">2</td><td data-coord="1,13" class="">4</td>
+								</tr>
+								<tr data-playerid="4840" class="dark     ">
+									<td data-coord="2,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=4840" target="_blank" bosszone="SSSJ_staPla">
+										欧文
+									</a></td><td data-coord="2,1" class="">31</td><td data-coord="2,2" class="">24</td><td data-coord="2,3" class="">2</td><td data-coord="2,4" class="">7</td><td data-coord="2,5" class="">9/15</td><td data-coord="2,6" class="">4/8</td><td data-coord="2,7" class="">2/2</td><td data-coord="2,8" class="">1</td><td data-coord="2,9" class="">1</td><td data-coord="2,10" class="">2</td><td data-coord="2,11" class="">0</td><td data-coord="2,12" class="">3</td><td data-coord="2,13" class="">0</td>
+								</tr>
+								<tr data-playerid="4391" class="light     ">
+									<td data-coord="3,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=4391" target="_blank" bosszone="SSSJ_staPla">
+										乐福
+									</a></td><td data-coord="3,1" class="">27</td><td data-coord="3,2" class="">15</td><td data-coord="3,3" class="red">11</td><td data-coord="3,4" class="">3</td><td data-coord="3,5" class="">5/13</td><td data-coord="3,6" class="">3/7</td><td data-coord="3,7" class="">2/2</td><td data-coord="3,8" class="">2</td><td data-coord="3,9" class="">9</td><td data-coord="3,10" class="">4</td><td data-coord="3,11" class="">1</td><td data-coord="3,12" class="">1</td><td data-coord="3,13" class="">2</td>
+								</tr>
+								<tr data-playerid="4884" class="dark     ">
+									<td data-coord="4,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=4884" target="_blank" bosszone="SSSJ_staPla">
+										汤普森
+									</a></td><td data-coord="4,1" class="">29</td><td data-coord="4,2" class="">6</td><td data-coord="4,3" class="">5</td><td data-coord="4,4" class="">1</td><td data-coord="4,5" class="">1/3</td><td data-coord="4,6" class="">0/0</td><td data-coord="4,7" class="">4/4</td><td data-coord="4,8" class="">1</td><td data-coord="4,9" class="">4</td><td data-coord="4,10" class="">0</td><td data-coord="4,11" class="">1</td><td data-coord="4,12" class="">0</td><td data-coord="4,13" class="">0</td>
+								</tr>
+								<tr data-playerid="3835" class="light     ">
+									<td data-coord="5,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=3835" target="_blank" bosszone="SSSJ_staPla">
+										JR史密斯
+									</a></td><td data-coord="5,1" class="">23</td><td data-coord="5,2" class="">6</td><td data-coord="5,3" class="">1</td><td data-coord="5,4" class="">0</td><td data-coord="5,5" class="">2/4</td><td data-coord="5,6" class="">1/3</td><td data-coord="5,7" class="">1/2</td><td data-coord="5,8" class="">0</td><td data-coord="5,9" class="">1</td><td data-coord="5,10" class="">2</td><td data-coord="5,11" class="">0</td><td data-coord="5,12" class="">1</td><td data-coord="5,13" class="">4</td>
+								</tr>
+								<tr data-playerid="" class="dark  tit   ">
+									<td data-coord="6,0" class="">替补球员</td><td data-coord="6,1" class="">时间</td><td data-coord="6,2" class="bg">得分</td><td data-coord="6,3" class="bg">篮板</td><td data-coord="6,4" class="bg">助攻</td><td data-coord="6,5" class="">投篮</td><td data-coord="6,6" class="">三分</td><td data-coord="6,7" class="">罚球</td><td data-coord="6,8" class="">前场板</td><td data-coord="6,9" class="">后场板</td><td data-coord="6,10" class="">抢断</td><td data-coord="6,11" class="">盖帽</td><td data-coord="6,12" class="">失误</td><td data-coord="6,13" class="">犯规</td>
+								</tr>
+								<tr data-playerid="3929" class="light     ">
+									<td data-coord="7,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=3929" target="_blank" bosszone="SSSJ_staPla">
+										德隆
+									</a></td><td data-coord="7,1" class="">17</td><td data-coord="7,2" class="">14</td><td data-coord="7,3" class="">0</td><td data-coord="7,4" class="">0</td><td data-coord="7,5" class="">5/6</td><td data-coord="7,6" class="">2/3</td><td data-coord="7,7" class="">2/2</td><td data-coord="7,8" class="">0</td><td data-coord="7,9" class="">0</td><td data-coord="7,10" class="">0</td><td data-coord="7,11" class="">0</td><td data-coord="7,12" class="">0</td><td data-coord="7,13" class="">1</td>
+								</tr>
+								<tr data-playerid="3523" class="dark     ">
+									<td data-coord="8,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=3523" target="_blank" bosszone="SSSJ_staPla">
+										理查德-杰弗森
+									</a></td><td data-coord="8,1" class="">14</td><td data-coord="8,2" class="">9</td><td data-coord="8,3" class="">3</td><td data-coord="8,4" class="">1</td><td data-coord="8,5" class="">3/5</td><td data-coord="8,6" class="">1/3</td><td data-coord="8,7" class="">2/2</td><td data-coord="8,8" class="">0</td><td data-coord="8,9" class="">3</td><td data-coord="8,10" class="">0</td><td data-coord="8,11" class="">0</td><td data-coord="8,12" class="">1</td><td data-coord="8,13" class="">5</td>
+								</tr>
+								<tr data-playerid="3754" class="light     ">
+									<td data-coord="9,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=3754" target="_blank" bosszone="SSSJ_staPla">
+										科沃尔
+									</a></td><td data-coord="9,1" class="">11</td><td data-coord="9,2" class="">7</td><td data-coord="9,3" class="">0</td><td data-coord="9,4" class="">0</td><td data-coord="9,5" class="">2/4</td><td data-coord="9,6" class="">2/4</td><td data-coord="9,7" class="">1/1</td><td data-coord="9,8" class="">0</td><td data-coord="9,9" class="">0</td><td data-coord="9,10" class="">0</td><td data-coord="9,11" class="">0</td><td data-coord="9,12" class="">2</td><td data-coord="9,13" class="">2</td>
+								</tr>
+								<tr data-playerid="3934" class="dark     ">
+									<td data-coord="10,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=3934" target="_blank" bosszone="SSSJ_staPla">
+										弗莱
+									</a></td><td data-coord="10,1" class="">12</td><td data-coord="10,2" class="">6</td><td data-coord="10,3" class="">2</td><td data-coord="10,4" class="">2</td><td data-coord="10,5" class="">2/6</td><td data-coord="10,6" class="">2/5</td><td data-coord="10,7" class="">0/0</td><td data-coord="10,8" class="">0</td><td data-coord="10,9" class="">2</td><td data-coord="10,10" class="">1</td><td data-coord="10,11" class="">0</td><td data-coord="10,12" class="">0</td><td data-coord="10,13" class="">0</td>
+								</tr>
+								<tr data-playerid="3723" class="light     ">
+									<td data-coord="11,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=3723" target="_blank" bosszone="SSSJ_staPla">
+										D.琼斯
+									</a></td><td data-coord="11,1" class="">8</td><td data-coord="11,2" class="">5</td><td data-coord="11,3" class="">1</td><td data-coord="11,4" class="">0</td><td data-coord="11,5" class="">2/4</td><td data-coord="11,6" class="">0/0</td><td data-coord="11,7" class="">1/1</td><td data-coord="11,8" class="">0</td><td data-coord="11,9" class="">1</td><td data-coord="11,10" class="">0</td><td data-coord="11,11" class="">1</td><td data-coord="11,12" class="">0</td><td data-coord="11,13" class="">3</td>
+								</tr>
+								<tr data-playerid="4898" class="dark     ">
+									<td data-coord="12,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=4898" target="_blank" bosszone="SSSJ_staPla">
+										香珀特
+									</a></td><td data-coord="12,1" class="">12</td><td data-coord="12,2" class="">4</td><td data-coord="12,3" class="">3</td><td data-coord="12,4" class="">0</td><td data-coord="12,5" class="">2/3</td><td data-coord="12,6" class="">0/0</td><td data-coord="12,7" class="">0/0</td><td data-coord="12,8" class="">0</td><td data-coord="12,9" class="">3</td><td data-coord="12,10" class="">1</td><td data-coord="12,11" class="">1</td><td data-coord="12,12" class="">0</td><td data-coord="12,13" class="">0</td>
+								</tr>
+								<tr data-playerid="4883" class="light     ">
+									<td data-coord="13,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=4883" target="_blank" bosszone="SSSJ_staPla">
+										德里克-威廉姆斯
+									</a></td><td data-coord="13,1" class="">8</td><td data-coord="13,2" class="">2</td><td data-coord="13,3" class="">0</td><td data-coord="13,4" class="">2</td><td data-coord="13,5" class="">1/2</td><td data-coord="13,6" class="">0/0</td><td data-coord="13,7" class="">0/0</td><td data-coord="13,8" class="">0</td><td data-coord="13,9" class="">0</td><td data-coord="13,10" class="">0</td><td data-coord="13,11" class="">0</td><td data-coord="13,12" class="">1</td><td data-coord="13,13" class="">0</td>
+								</tr>
+								<tr data-playerid="3752" class="dark     ">
+									<td data-coord="14,0" class="">
+									<a href="http://nba.stats.qq.com/player/?id=3752" target="_blank" bosszone="SSSJ_staPla">
+										詹姆斯-琼斯
+									</a></td><td data-coord="14,1" class="">8</td><td data-coord="14,2" class="">2</td><td data-coord="14,3" class="">2</td><td data-coord="14,4" class="">0</td><td data-coord="14,5" class="">1/2</td><td data-coord="14,6" class="">0/1</td><td data-coord="14,7" class="">0/0</td><td data-coord="14,8" class="">1</td><td data-coord="14,9" class="">1</td><td data-coord="14,10" class="">0</td><td data-coord="14,11" class="">0</td><td data-coord="14,12" class="">0</td><td data-coord="14,13" class="">0</td>
+								</tr>
+								<tr data-playerid="" class=" dark    total ">
+									<td data-coord="15,0">总计</td><td data-coord="15,1"></td><td data-coord="15,2">135</td><td data-coord="15,3">38</td><td data-coord="15,4">24</td><td data-coord="15,5">48/85</td><td data-coord="15,6">19/41</td><td data-coord="15,7">20/24</td><td data-coord="15,8">6</td><td data-coord="15,9">32</td><td data-coord="15,10">13</td><td data-coord="15,11">5</td><td data-coord="15,12">11</td><td data-coord="15,13">21</td>
+								</tr>
+								<tr data-playerid="" class=" dark    hitrate ">
+									<td data-coord="16,0">命中率</td><td data-coord="16,1"></td><td data-coord="16,2"></td><td data-coord="16,3"></td><td data-coord="16,4"></td><td data-coord="16,5">56.5%</td><td data-coord="16,6">46.3%</td><td data-coord="16,7">83.3%</td><td data-coord="16,8"></td><td data-coord="16,9"></td><td data-coord="16,10"></td><td data-coord="16,11"></td><td data-coord="16,12"></td><td data-coord="16,13"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
